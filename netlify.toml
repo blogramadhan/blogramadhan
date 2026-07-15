@@ -1,0 +1,29 @@
+# Konfigurasi deploy Netlify untuk situs Hugo.
+
+[build]
+  command = "hugo --gc --minify"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.147.9"
+  TZ = "Asia/Jakarta"
+
+# Konteks selain produksi (deploy preview / branch) memakai URL dinamis Netlify.
+[context.deploy-preview]
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+# Jangan indeks halaman admin.
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+# Sedikit header keamanan umum.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

@@ -1,0 +1,72 @@
+# Konfigurasi Decap CMS — panel admin berbasis web di /admin/
+# Aktif setelah situs di-deploy & backend Git diatur (lihat catatan di bawah).
+
+backend:
+  name: git-gateway      # untuk Netlify Identity. Ganti ke 'github' bila pakai GitHub OAuth.
+  branch: main           # sesuaikan dengan nama branch utama Anda
+
+# Uji lokal: jalankan `npx decap-server` lalu buka /admin/ saat `hugo server` aktif.
+local_backend: true
+
+media_folder: "static/images"   # tempat berkas unggahan disimpan
+public_folder: "/images"        # URL berkas saat ditampilkan
+
+# Format & lokasi editor
+locale: "id"
+publish_mode: editorial_workflow
+
+collections:
+  - name: "posts"
+    label: "Tulisan Blog"
+    label_singular: "Tulisan"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    format: "toml-frontmatter"
+    summary: "{{title}} — {{year}}/{{month}}/{{day}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Judul", name: "title", widget: "string" }
+      - { label: "Tanggal", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm" }
+      - { label: "Draf", name: "draft", widget: "boolean", default: false }
+      - { label: "Deskripsi", name: "description", widget: "text", required: false }
+      - { label: "Tag", name: "tags", widget: "list", required: false }
+      - { label: "Kategori", name: "categories", widget: "list", required: false }
+      - { label: "Gambar sampul", name: "featured_image", widget: "image", required: false }
+      - { label: "Tampilkan daftar isi", name: "toc", widget: "boolean", default: false, required: false }
+      - { label: "Isi", name: "body", widget: "markdown" }
+
+  - name: "projects"
+    label: "Portofolio"
+    label_singular: "Proyek"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    format: "toml-frontmatter"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Judul", name: "title", widget: "string" }
+      - { label: "Tanggal", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm" }
+      - { label: "Draf", name: "draft", widget: "boolean", default: false }
+      - { label: "Deskripsi", name: "description", widget: "text", required: false }
+      - { label: "Tahun", name: "year", widget: "string", required: false }
+      - { label: "Peran", name: "role", widget: "string", required: false }
+      - { label: "Teknologi", name: "tech", widget: "list", required: false }
+      - { label: "Tautan Repo", name: "repo", widget: "string", required: false }
+      - { label: "Tautan Demo", name: "demo", widget: "string", required: false }
+      - { label: "Gambar sampul", name: "featured_image", widget: "image", required: false }
+      - { label: "Isi", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Halaman"
+    files:
+      - name: "about"
+        label: "Tentang"
+        file: "content/about/index.md"
+        format: "toml-frontmatter"
+        fields:
+          - { label: "Judul", name: "title", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "about" }
+          - { label: "Deskripsi", name: "description", widget: "text", required: false }
+          - { label: "Foto", name: "featured_image", widget: "image", required: false }
+          - { label: "Isi", name: "body", widget: "markdown" }

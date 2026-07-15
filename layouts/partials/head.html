@@ -1,0 +1,53 @@
+{{- $title := .Title -}}
+{{- $isHome := .IsHome -}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2">
+
+{{- if $isHome }}
+<title>{{ site.Title }}</title>
+{{- else }}
+<title>{{ $title }} · {{ site.Title }}</title>
+{{- end }}
+
+{{ $desc := .Description | default .Summary | default site.Params.description }}
+<meta name="description" content="{{ $desc | plainify | truncate 160 }}">
+<meta name="author" content="{{ site.Params.author }}">
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Open Graph -->
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ if $isHome }}{{ site.Title }}{{ else }}{{ $title }}{{ end }}">
+<meta property="og:description" content="{{ $desc | plainify | truncate 160 }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+
+<!-- Ikon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' font-family='Georgia,serif'%3E%E2%9C%92%EF%B8%8F%3C/text%3E%3C/svg%3E">
+
+<!-- Font: Fraunces (display serif) + Newsreader (teks) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- CSS terkelola oleh Hugo Pipes -->
+{{ $css := resources.Get "css/main.css" }}
+{{ if hugo.IsProduction }}
+  {{ $css = $css | minify | fingerprint }}
+{{ end }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $css.Data.Integrity }}"{{ end }}>
+
+<!-- Cegah kedip mode gelap -->
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  })();
+</script>
+
+{{ with .OutputFormats.Get "rss" }}
+<link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }}">
+{{ end }}

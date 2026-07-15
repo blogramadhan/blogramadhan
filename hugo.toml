@@ -1,0 +1,70 @@
+baseURL = "https://ramadhan.me/"
+languageCode = "id-ID"
+defaultContentLanguage = "id"
+title = "Rizko — Jurnal & Karya"
+enableRobotsTXT = true
+enableGitInfo = false
+enableEmoji = true
+
+# Ringkasan otomatis
+summaryLength = 40
+
+# Pagination (Hugo v0.128+)
+[pagination]
+  pagerSize = 6
+
+[params]
+  # Identitas situs
+  author = "Rizko"
+  description = "Jurnal pribadi, catatan teknis, dan portofolio karya — ditulis dengan tenang."
+  tagline = "Menulis pelan, membangun perlahan."
+  # Teks intro di beranda
+  intro = "Selamat datang. Ini ruang tenang tempat saya menautkan pikiran, catatan teknis, dan karya yang sedang saya rawat."
+  # Kontak / sosial (kosongkan bila tak dipakai)
+  email = "kramadhan@gmail.com"
+  github = "https://github.com/"
+  linkedin = ""
+  twitter = ""
+  # Fitur
+  showReadingTime = true
+  dateFormat = "2 January 2006"
+  # Copyright
+  copyrightYear = 2026
+
+[menu]
+  [[menu.main]]
+    name = "Beranda"
+    pageRef = "/"
+    weight = 10
+  [[menu.main]]
+    name = "Blog"
+    pageRef = "/posts"
+    weight = 20
+  [[menu.main]]
+    name = "Portofolio"
+    pageRef = "/projects"
+    weight = 30
+  [[menu.main]]
+    name = "Tentang"
+    pageRef = "/about"
+    weight = 40
+
+[markup]
+  [markup.highlight]
+    style = "nord"
+    noClasses = false
+    lineNos = false
+    tabWidth = 2
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]

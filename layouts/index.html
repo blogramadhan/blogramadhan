@@ -1,0 +1,83 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="wrap">
+    <p class="hero-kicker">{{ site.Params.tagline }}</p>
+    <h1 class="hero-title">{{ site.Params.intro | default site.Params.description }}</h1>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ "/posts" | relURL }}">Baca tulisan</a>
+      <a class="btn btn-ghost" href="{{ "/about" | relURL }}">Tentang saya</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <hr class="rule-ornament" aria-hidden="true">
+</div>
+
+{{ $posts := where site.RegularPages "Section" "posts" }}
+{{ if $posts }}
+<section class="home-section">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 class="section-title">Tulisan Terbaru</h2>
+      <a class="section-link" href="{{ "/posts" | relURL }}">Semua tulisan →</a>
+    </header>
+
+    {{ $featured := first 1 $posts }}
+    {{ range $featured }}
+    <article class="feature">
+      {{ with .Params.featured_image }}
+      <a class="feature-media" href="{{ $.RelPermalink }}" tabindex="-1" aria-hidden="true">
+        <img src="{{ . }}" alt="" loading="lazy">
+      </a>
+      {{ end }}
+      <div class="feature-body">
+        <span class="feature-badge">Sorotan</span>
+        {{ partial "post-meta.html" . }}
+        <h3 class="feature-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p class="feature-excerpt">{{ .Summary | plainify | truncate 240 }}</p>
+        <a class="card-more" href="{{ .RelPermalink }}">Baca selengkapnya <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+    {{ end }}
+
+    {{ $rest := after 1 $posts }}
+    {{ if $rest }}
+    <div class="card-grid">
+      {{ range first 4 $rest }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ $projects := where site.RegularPages "Section" "projects" }}
+{{ if $projects }}
+<section class="home-section home-section--alt">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 class="section-title">Karya Pilihan</h2>
+      <a class="section-link" href="{{ "/projects" | relURL }}">Semua karya →</a>
+    </header>
+    <div class="project-grid">
+      {{ range first 3 $projects }}
+      <article class="project-card">
+        <div class="project-top">
+          <h3 class="project-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{ with .Params.year }}<span class="project-year">{{ . }}</span>{{ end }}
+        </div>
+        <p class="project-desc">{{ .Summary | plainify | truncate 140 }}</p>
+        {{ with .Params.tech }}
+        <ul class="project-tags">
+          {{ range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+        {{ end }}
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

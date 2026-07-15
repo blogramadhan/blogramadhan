@@ -1,0 +1,14 @@
+{{- /* Kartu ringkas untuk daftar tulisan. Menerima sebuah Page. */ -}}
+<article class="card">
+  {{ with .Params.featured_image }}
+    <a class="card-media" href="{{ $.RelPermalink }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ . }}" alt="" loading="lazy">
+    </a>
+  {{ end }}
+  <div class="card-body">
+    {{ partial "post-meta.html" . }}
+    <h3 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p class="card-excerpt">{{ .Summary | plainify | truncate 160 }}</p>
+    <a class="card-more" href="{{ .RelPermalink }}">Baca selengkapnya <span aria-hidden="true">→</span></a>
+  </div>
+</article>

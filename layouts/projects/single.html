@@ -1,0 +1,32 @@
+{{ define "main" }}
+<article class="post">
+  <header class="post-header wrap-narrow">
+    <a class="post-eyebrow" href="{{ .Parent.RelPermalink }}">Portofolio</a>
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="post-subtitle">{{ . }}</p>{{ end }}
+    <div class="post-byline">
+      {{ with .Params.year }}<span>{{ . }}</span>{{ end }}
+      {{ with .Params.role }}<span class="dot" aria-hidden="true">·</span><span>{{ . }}</span>{{ end }}
+    </div>
+    {{ with .Params.tech }}
+    <ul class="project-tags project-tags--header">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+    {{ end }}
+    <div class="project-links project-links--header">
+      {{ with .Params.repo }}<a class="btn btn-ghost btn-sm" href="{{ . }}" rel="noopener" target="_blank">Lihat Kode ↗</a>{{ end }}
+      {{ with .Params.demo }}<a class="btn btn-primary btn-sm" href="{{ . }}" rel="noopener" target="_blank">Demo Langsung ↗</a>{{ end }}
+    </div>
+  </header>
+
+  {{ with .Params.featured_image }}
+  <figure class="post-hero"><img src="{{ . }}" alt="{{ $.Title }}"></figure>
+  {{ end }}
+
+  <div class="post-content wrap-narrow">
+    {{ .Content }}
+  </div>
+
+  <footer class="post-footer wrap-narrow">
+    <a class="back-link" href="{{ .Parent.RelPermalink }}">← Kembali ke {{ .Parent.Title }}</a>
+  </footer>
+</article>
+{{ end }}

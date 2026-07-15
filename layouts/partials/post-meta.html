@@ -1,0 +1,6 @@
+{{- $showReading := site.Params.showReadingTime -}}
+<div class="post-meta">
+  {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ $.Date.Format (site.Params.dateFormat | default "2 January 2006") }}</time>{{ end }}
+  {{ if and $showReading .IsPage }}<span class="dot" aria-hidden="true">·</span><span>{{ .ReadingTime }} mnt baca</span>{{ end }}
+  {{ with .Params.categories }}<span class="dot" aria-hidden="true">·</span><span>{{ index . 0 }}</span>{{ end }}
+</div>

@@ -1,0 +1,49 @@
+{{ define "main" }}
+<article class="post">
+  <header class="post-header wrap-narrow">
+    {{ with .Params.categories }}<a class="post-eyebrow" href="{{ "/categories/" | relURL }}{{ (index . 0) | urlize }}/">{{ index . 0 }}</a>{{ end }}
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="post-subtitle">{{ . }}</p>{{ end }}
+    <div class="post-byline">
+      <span class="byline-author">oleh {{ site.Params.author }}</span>
+      <span class="dot" aria-hidden="true">·</span>
+      {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format (site.Params.dateFormat | default "2 January 2006") }}</time>{{ end }}
+      {{ if site.Params.showReadingTime }}<span class="dot" aria-hidden="true">·</span><span>{{ .ReadingTime }} mnt baca</span>{{ end }}
+    </div>
+  </header>
+
+  {{ with .Params.featured_image }}
+  <figure class="post-hero">
+    <img src="{{ . }}" alt="{{ $.Title }}">
+  </figure>
+  {{ end }}
+
+  {{ $toc := and (.Params.toc | default false) (ge (len .TableOfContents) 40) }}
+  <div class="post-layout {{ if $toc }}has-toc{{ end }}">
+    {{ if $toc }}
+    <aside class="post-toc">
+      <p class="toc-title">Daftar Isi</p>
+      {{ .TableOfContents }}
+    </aside>
+    {{ end }}
+
+    <div class="post-content wrap-narrow">
+      {{ .Content }}
+
+      {{ with .Params.tags }}
+      <div class="post-tags">
+        {{ range . }}<a class="tag" href="{{ "/tags/" | relURL }}{{ . | urlize }}/">#{{ . }}</a>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+
+  <footer class="post-footer wrap-narrow">
+    <div class="post-nav">
+      {{ with .PrevInSection }}<a class="post-nav-link prev" href="{{ .RelPermalink }}"><span class="pn-label">← Berikutnya</span><span class="pn-title">{{ .Title }}</span></a>{{ end }}
+      {{ with .NextInSection }}<a class="post-nav-link next" href="{{ .RelPermalink }}"><span class="pn-label">Sebelumnya →</span><span class="pn-title">{{ .Title }}</span></a>{{ end }}
+    </div>
+    <a class="back-link" href="{{ .Parent.RelPermalink }}">← Kembali ke {{ .Parent.Title }}</a>
+  </footer>
+</article>
+{{ end }}

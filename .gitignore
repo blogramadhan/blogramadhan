@@ -1,0 +1,9 @@
+# Hasil build Hugo
+/public/
+/resources/_gen/
+/.hugo_build.lock
+
+# Berkas OS/editor
+.DS_Store
+Thumbs.db
+*.swp

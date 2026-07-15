@@ -1,0 +1,41 @@
+{{ define "main" }}
+<div class="wrap">
+  <header class="page-head">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ with .Content }}<div class="page-lead">{{ . }}</div>
+    {{ else }}{{ with .Description }}<p class="page-lead">{{ . }}</p>{{ end }}{{ end }}
+  </header>
+
+  {{ $pages := .Pages }}
+  {{ if $pages }}
+    {{ $paginator := .Paginate $pages }}
+    <div class="list-stream">
+      {{ range $paginator.Pages }}
+      <article class="list-item">
+        <div class="list-item-meta">
+          {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2 Jan 2006" }}</time>{{ end }}
+        </div>
+        <div class="list-item-body">
+          <h2 class="list-item-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <p class="list-item-excerpt">{{ .Summary | plainify | truncate 200 }}</p>
+          <div class="list-item-foot">
+            {{ if site.Params.showReadingTime }}<span>{{ .ReadingTime }} mnt baca</span>{{ end }}
+            {{ with .Params.tags }}<span class="tag-row">{{ range first 3 . }}<a class="tag" href="{{ "/tags/" | relURL }}{{ . | urlize }}/">#{{ . }}</a>{{ end }}</span>{{ end }}
+          </div>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+
+    {{ if gt $paginator.TotalPages 1 }}
+    <nav class="pagination" aria-label="Halaman">
+      {{ if $paginator.HasPrev }}<a class="page-prev" href="{{ $paginator.Prev.URL }}">← Sebelumnya</a>{{ end }}
+      <span class="page-count">Hal. {{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>
+      {{ if $paginator.HasNext }}<a class="page-next" href="{{ $paginator.Next.URL }}">Berikutnya →</a>{{ end }}
+    </nav>
+    {{ end }}
+  {{ else }}
+    <p class="empty-note">Belum ada tulisan di sini. Segera hadir.</p>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default "id" }}" data-theme="light">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  {{ partial "header.html" . }}
+  <main id="main" class="site-main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  {{ partial "theme-toggle-script.html" . }}
+</body>
+</html>

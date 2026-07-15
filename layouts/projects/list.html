@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="wrap">
+  <header class="page-head">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ with .Content }}<div class="page-lead">{{ . }}</div>
+    {{ else }}{{ with .Description }}<p class="page-lead">{{ . }}</p>{{ end }}{{ end }}
+  </header>
+
+  {{ $pages := .Pages }}
+  {{ if $pages }}
+  <div class="project-grid project-grid--wide">
+    {{ range $pages }}
+    <article class="project-card project-card--lg">
+      <div class="project-top">
+        <h2 class="project-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        {{ with .Params.year }}<span class="project-year">{{ . }}</span>{{ end }}
+      </div>
+      <p class="project-desc">{{ .Summary | plainify | truncate 170 }}</p>
+      {{ with .Params.tech }}
+      <ul class="project-tags">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+      {{ end }}
+      <div class="project-links">
+        <a class="project-open" href="{{ .RelPermalink }}">Rincian →</a>
+        {{ with .Params.repo }}<a href="{{ . }}" rel="noopener" target="_blank">Kode ↗</a>{{ end }}
+        {{ with .Params.demo }}<a href="{{ . }}" rel="noopener" target="_blank">Demo ↗</a>{{ end }}
+      </div>
+    </article>
+    {{ end }}
+  </div>
+  {{ else }}
+  <p class="empty-note">Belum ada karya yang dipublikasikan.</p>
+  {{ end }}
+</div>
+{{ end }}

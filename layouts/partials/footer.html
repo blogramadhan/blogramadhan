@@ -1,0 +1,24 @@
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">✒</span>
+      <p class="footer-tagline">{{ site.Params.tagline }}</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Navigasi kaki">
+      {{ range site.Menus.main }}
+        <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+
+    <div class="footer-social">
+      {{ with site.Params.email }}<a href="mailto:{{ . }}" aria-label="Email">Email</a>{{ end }}
+      {{ with site.Params.github }}{{ if . }}<a href="{{ . }}" rel="me noopener" target="_blank">GitHub</a>{{ end }}{{ end }}
+      {{ with site.Params.linkedin }}{{ if . }}<a href="{{ . }}" rel="me noopener" target="_blank">LinkedIn</a>{{ end }}{{ end }}
+      {{ with site.Params.twitter }}{{ if . }}<a href="{{ . }}" rel="me noopener" target="_blank">Twitter</a>{{ end }}{{ end }}
+    </div>
+  </div>
+  <div class="wrap footer-legal">
+    <p>© {{ site.Params.copyrightYear | default now.Year }} {{ site.Params.author }}. Dibangun dengan <a href="https://gohugo.io" rel="noopener" target="_blank">Hugo</a>.</p>
+  </div>
+</footer>
