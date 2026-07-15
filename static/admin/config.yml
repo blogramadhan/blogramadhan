@@ -2,8 +2,11 @@
 # Aktif setelah situs di-deploy & backend Git diatur (lihat catatan di bawah).
 
 backend:
-  name: git-gateway      # untuk Netlify Identity. Ganti ke 'github' bila pakai GitHub OAuth.
-  branch: main           # sesuaikan dengan nama branch utama Anda
+  name: github
+  repo: USERNAME/blog                                  # ← ganti: user/repo GitHub Anda
+  branch: main
+  base_url: https://cms-auth.SUBDOMAIN.workers.dev     # ← ganti: URL Worker OAuth Anda
+  auth_endpoint: /auth
 
 # Uji lokal: jalankan `npx decap-server` lalu buka /admin/ saat `hugo server` aktif.
 local_backend: true
