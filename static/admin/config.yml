@@ -3,7 +3,7 @@
 
 backend:
   name: github
-  repo: blogramadhan/blogRamadhan
+  repo: blogramadhan/blogramadhan
   branch: main
   base_url: https://cms-auth.SUBDOMAIN.workers.dev     # ← ganti: URL Worker OAuth Anda
   auth_endpoint: /auth
