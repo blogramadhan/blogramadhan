@@ -1,21 +1,23 @@
 +++
-title = "Rizko"
+title = "Kurnia Ramadhan"
 layout = "about"
-description = "Seorang perawat kode dan pengumpul pikiran."
+description = "ASN, Pranata Komputer, dan pengumpul pikiran yang menulis dengan tenang."
 +++
 
-Halo, saya **Rizko**. Saya menulis di ruang ini untuk memperlambat diri — merapikan
-apa yang saya pelajari, apa yang saya bangun, dan apa yang sedang saya renungkan.
+Halo, saya **Kurnia Ramadhan**. Sehari-hari saya seorang **Aparatur Sipil Negara**
+dengan jabatan fungsional **Pranata Komputer Ahli Muda** — bekerja di persimpangan
+antara teknologi, data, dan pelayanan publik.
 
-Sehari-hari saya bekerja dengan perangkat lunak: merancang, menulis, dan merawat kode.
-Tetapi saya percaya bahwa hal terbaik dari pekerjaan ini bukan sekadar barisan program,
-melainkan cara berpikir yang tenang dan teliti — dan itulah yang ingin saya latih lewat tulisan.
+Ruang ini saya rawat untuk memperlambat diri: merapikan apa yang saya pelajari,
+mencatat apa yang saya bangun, dan menautkan pikiran-pikiran yang mudah menguap
+kalau tidak segera dituliskan.
 
 ## Apa yang akan Anda temukan di sini
 
-- **Catatan teknis** — hal-hal yang saya pelajari saat membangun sesuatu, ditulis agar
-  saya (dan mungkin Anda) tidak perlu belajar dua kali.
-- **Jurnal** — refleksi pelan tentang pekerjaan, kebiasaan, dan cara hidup yang lebih sadar.
+- **Catatan teknis** — hal-hal yang saya pelajari saat membangun dan merawat sistem,
+  ditulis agar saya (dan mungkin Anda) tidak perlu belajar dua kali.
+- **Jurnal** — refleksi pelan tentang pekerjaan, kebiasaan, dan cara bekerja yang
+  lebih sadar dan teliti.
 - **Portofolio** — karya-karya yang saya rawat, lengkap dengan cerita di baliknya.
 
 ## Sedikit prinsip
@@ -23,5 +25,9 @@ melainkan cara berpikir yang tenang dan teliti — dan itulah yang ingin saya la
 > Menulis pelan, membangun perlahan. Yang penting bukan cepat sampai,
 > melainkan tetap di jalan.
 
-Jika ada tulisan yang bermanfaat, atau sekadar ingin menyapa, jangan ragu untuk
-menghubungi saya lewat kanal di bawah ini.
+Bagi saya, hal terbaik dari pekerjaan teknis bukan sekadar barisan program yang jalan,
+melainkan cara berpikir yang tenang, rapi, dan bisa dipertanggungjawabkan — dan itulah
+yang ingin terus saya latih lewat tulisan.
+
+Jika ada tulisan yang bermanfaat, atau sekadar ingin menyapa, jangan ragu menghubungi
+saya lewat kanal di bawah ini.

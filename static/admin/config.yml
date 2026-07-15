@@ -3,7 +3,7 @@
 
 backend:
   name: github
-  repo: USERNAME/blog                                  # ← ganti: user/repo GitHub Anda
+  repo: blogramadhan/blog                              # ← sesuaikan nama repo bila berbeda
   branch: main
   base_url: https://cms-auth.SUBDOMAIN.workers.dev     # ← ganti: URL Worker OAuth Anda
   auth_endpoint: /auth
