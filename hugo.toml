@@ -17,7 +17,7 @@ summaryLength = 40
   # Identitas situs
   author = "Kurnia Ramadhan"
   # Ditampilkan sebagai pil kecil di atas judul beranda.
-  role = "Pranata Komputer · ASN"
+  role = "Catatan Ringan"
   description = "Jurnal pribadi, catatan teknis, dan portofolio karya — ditulis dengan tenang."
   tagline = "Menulis pelan, membangun perlahan."
   # Teks intro di beranda
