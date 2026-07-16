@@ -25,12 +25,14 @@ var uiFS embed.FS
 var (
 	contentDir string
 	imagesDir  string // static/images — tujuan unggahan gambar
+	configPath string // hugo.toml — sumber identitas situs & teks beranda
 )
 
 func main() {
 	addr := flag.String("addr", "127.0.0.1:1414", "alamat server dashboard")
 	staticDir := flag.String("static", "static", "folder static Hugo (tujuan unggahan)")
 	flag.StringVar(&contentDir, "content", "content", "folder konten Hugo")
+	flag.StringVar(&configPath, "config", "hugo.toml", "berkas konfigurasi Hugo")
 	flag.Parse()
 
 	abs, err := filepath.Abs(contentDir)
@@ -41,6 +43,15 @@ func main() {
 		log.Fatalf("Folder konten tidak ditemukan: %s\nJalankan dashboard dari root proyek Hugo.", abs)
 	}
 	contentDir = abs
+
+	cAbs, err := filepath.Abs(configPath)
+	if err != nil {
+		log.Fatal(err)
+	}
+	if _, err := os.Stat(cAbs); err != nil {
+		log.Fatalf("Konfigurasi Hugo tidak ditemukan: %s\nJalankan dashboard dari root proyek Hugo.", cAbs)
+	}
+	configPath = cAbs
 
 	sAbs, err := filepath.Abs(*staticDir)
 	if err != nil {
@@ -60,6 +71,7 @@ func main() {
 	mux.HandleFunc("/api/delete", handleDelete)
 	mux.HandleFunc("/api/upload", handleUpload)
 	mux.HandleFunc("/api/media", handleMedia)
+	mux.HandleFunc("/api/site", handleSite)
 	// Pratinjau gambar untuk pustaka media di dashboard.
 	mux.Handle("/media/", http.StripPrefix("/media/", http.FileServer(http.Dir(imagesDir))))
 
@@ -254,6 +266,265 @@ func handleDelete(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	writeJSON(w, map[string]string{"status": "ok"})
+}
+
+// ---------- Identitas situs (hugo.toml) ----------
+
+// Kolom yang boleh disunting dari dashboard. Sengaja dibatasi pada teks yang
+// tampil ke pembaca — baseURL, menu, dan setelan markup tetap lewat berkas,
+// karena salah ketik di sana bisa menggagalkan build.
+type SiteField struct {
+	Key     string `json:"key"`
+	Section string `json:"-"` // "" = tingkat atas, "params" = [params]
+	Label   string `json:"label"`
+	Kind    string `json:"kind"` // text | area
+	Hint    string `json:"hint"`
+	Value   string `json:"value"`
+}
+
+var siteFields = []SiteField{
+	{Key: "title", Section: "", Label: "Judul Situs", Kind: "text",
+		Hint: "Tampil di tab peramban dan hasil pencarian."},
+	{Key: "author", Section: "params", Label: "Nama Penulis", Kind: "text",
+		Hint: "Dipakai di header, byline tulisan, dan monogram."},
+	{Key: "role", Section: "params", Label: "Peran", Kind: "text",
+		Hint: "Pil kecil di atas judul beranda. Kosongkan untuk menyembunyikan."},
+	{Key: "tagline", Section: "params", Label: "Tagline", Kind: "text",
+		Hint: "Judul besar di beranda."},
+	{Key: "intro", Section: "params", Label: "Intro Beranda", Kind: "area",
+		Hint: "Paragraf pengantar di bawah judul beranda."},
+	{Key: "description", Section: "params", Label: "Deskripsi Situs", Kind: "area",
+		Hint: "Ringkasan untuk mesin pencari & pratinjau tautan."},
+	{Key: "email", Section: "params", Label: "Email", Kind: "text", Hint: ""},
+	{Key: "github", Section: "params", Label: "GitHub", Kind: "text", Hint: ""},
+	{Key: "linkedin", Section: "params", Label: "LinkedIn", Kind: "text",
+		Hint: "Kosongkan bila tak dipakai — tautannya otomatis hilang."},
+	{Key: "twitter", Section: "params", Label: "Twitter", Kind: "text",
+		Hint: "Kosongkan bila tak dipakai."},
+}
+
+// tomlSectionOf mengenali baris kepala seksi: [params] atau [[menu.main]].
+func tomlSectionOf(t string) (string, bool) {
+	if strings.HasPrefix(t, "[[") && strings.HasSuffix(t, "]]") {
+		return strings.TrimSpace(t[2 : len(t)-2]), true
+	}
+	if strings.HasPrefix(t, "[") && strings.HasSuffix(t, "]") {
+		return strings.TrimSpace(t[1 : len(t)-1]), true
+	}
+	return "", false
+}
+
+// splitInlineComment memisahkan nilai dari komentar di ujung baris, dengan
+// mengabaikan '#' yang berada di dalam tanda kutip.
+func splitInlineComment(v string) (val, comment string) {
+	inStr := false
+	for i := 0; i < len(v); i++ {
+		switch v[i] {
+		case '"':
+			bs := 0
+			for j := i - 1; j >= 0 && v[j] == '\\'; j-- {
+				bs++
+			}
+			if bs%2 == 0 {
+				inStr = !inStr
+			}
+		case '#':
+			if !inStr {
+				return strings.TrimRight(v[:i], " \t"), v[i:]
+			}
+		}
+	}
+	return strings.TrimRight(v, " \t"), ""
+}
+
+// tomlQuote menyandikan string sebagai basic string TOML satu baris.
+// Baris baru sengaja di-escape, bukan ditulis apa adanya, agar berkas tetap sah.
+func tomlQuote(s string) string {
+	r := strings.NewReplacer(
+		`\`, `\\`, `"`, `\"`,
+		"\n", `\n`, "\r", `\r`, "\t", `\t`,
+	)
+	return `"` + r.Replace(s) + `"`
+}
+
+func indentOf(line string) string {
+	return line[:len(line)-len(strings.TrimLeft(line, " \t"))]
+}
+
+func readSiteConfig() ([]SiteField, error) {
+	b, err := os.ReadFile(configPath)
+	if err != nil {
+		return nil, err
+	}
+	found := map[string]string{}
+	cur := ""
+	for _, line := range strings.Split(strings.ReplaceAll(string(b), "\r\n", "\n"), "\n") {
+		t := strings.TrimSpace(line)
+		if t == "" || strings.HasPrefix(t, "#") {
+			continue
+		}
+		if s, ok := tomlSectionOf(t); ok {
+			cur = s
+			continue
+		}
+		eq := strings.Index(t, "=")
+		if eq < 0 {
+			continue
+		}
+		key := strings.TrimSpace(t[:eq])
+		val, _ := splitInlineComment(strings.TrimSpace(t[eq+1:]))
+		for _, f := range siteFields {
+			if f.Section == cur && f.Key == key {
+				found[key] = unquoteToml(val)
+			}
+		}
+	}
+	out := make([]SiteField, 0, len(siteFields))
+	for _, f := range siteFields {
+		f.Value = found[f.Key]
+		out = append(out, f)
+	}
+	return out, nil
+}
+
+// unquoteToml membalik escape basic string TOML.
+func unquoteToml(s string) string {
+	s = strings.TrimSpace(s)
+	if len(s) >= 2 && s[0] == '"' && s[len(s)-1] == '"' {
+		s = s[1 : len(s)-1]
+		r := strings.NewReplacer(
+			`\n`, "\n", `\r`, "\r", `\t`, "\t",
+			`\"`, `"`, `\\`, `\`,
+		)
+		s = r.Replace(s)
+	}
+	return s
+}
+
+func writeSiteConfig(vals map[string]string) error {
+	b, err := os.ReadFile(configPath)
+	if err != nil {
+		return err
+	}
+	lines := strings.Split(strings.ReplaceAll(string(b), "\r\n", "\n"), "\n")
+
+	byKey := map[string]SiteField{}
+	for _, f := range siteFields {
+		byKey[f.Key] = f
+	}
+
+	written := map[string]bool{}
+	// Baris kepala tiap seksi. Kunci baru disisipkan tepat di bawahnya — bukan di
+	// ujung seksi — supaya tidak menempel pada komentar milik kunci lain
+	// (mis. mendarat di bawah "# Copyright" dan terbaca seolah berkaitan).
+	headerLineOf := map[string]int{"": -1} // -1 = tingkat atas, sisipkan di baris pertama
+	seen := map[string]bool{"": true}
+	cur := ""
+
+	for i, line := range lines {
+		t := strings.TrimSpace(line)
+		if t == "" || strings.HasPrefix(t, "#") {
+			continue
+		}
+		if s, ok := tomlSectionOf(t); ok {
+			cur = s
+			if !seen[cur] {
+				headerLineOf[cur] = i
+				seen[cur] = true
+			}
+			continue
+		}
+		eq := strings.Index(t, "=")
+		if eq < 0 {
+			continue
+		}
+		key := strings.TrimSpace(t[:eq])
+		f, ok := byKey[key]
+		if !ok || f.Section != cur {
+			continue
+		}
+		v, ok := vals[key]
+		if !ok {
+			continue
+		}
+		_, comment := splitInlineComment(strings.TrimSpace(t[eq+1:]))
+		nl := indentOf(line) + key + " = " + tomlQuote(v)
+		if comment != "" {
+			nl += "  " + comment
+		}
+		lines[i] = nl
+		written[key] = true
+	}
+
+	// Kunci yang belum ada di berkas disisipkan di ujung seksinya.
+	// Dikerjakan dari indeks terbesar agar penyisipan tidak menggeser sisanya.
+	type ins struct {
+		at   int
+		text string
+	}
+	var pending []ins
+	for _, f := range siteFields {
+		v, ok := vals[f.Key]
+		if !ok || written[f.Key] {
+			continue
+		}
+		at, ok := headerLineOf[f.Section]
+		if !ok {
+			return fmt.Errorf("seksi [%s] tidak ada di %s — tambahkan kunci %s secara manual",
+				f.Section, filepath.Base(configPath), f.Key)
+		}
+		indent := "  "
+		if f.Section == "" {
+			indent = ""
+		}
+		pending = append(pending, ins{at: at, text: indent + f.Key + " = " + tomlQuote(v)})
+	}
+	sort.Slice(pending, func(i, j int) bool { return pending[i].at > pending[j].at })
+	for _, p := range pending {
+		lines = append(lines[:p.at+1], append([]string{p.text}, lines[p.at+1:]...)...)
+	}
+
+	out := strings.Join(lines, "\n")
+	// Tulis lewat berkas sementara lalu rename: kalau gagal di tengah jalan,
+	// hugo.toml lama tetap utuh dan situs tidak ikut rusak.
+	tmp := configPath + ".tmp"
+	if err := os.WriteFile(tmp, []byte(out), 0644); err != nil {
+		return err
+	}
+	return os.Rename(tmp, configPath)
+}
+
+func handleSite(w http.ResponseWriter, r *http.Request) {
+	if r.Method == http.MethodPost {
+		var req map[string]string
+		if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
+			http.Error(w, "json tidak valid", http.StatusBadRequest)
+			return
+		}
+		// Hanya kunci yang dikenal yang diteruskan.
+		vals := map[string]string{}
+		for _, f := range siteFields {
+			if v, ok := req[f.Key]; ok {
+				vals[f.Key] = strings.TrimSpace(v)
+			}
+		}
+		if len(vals) == 0 {
+			http.Error(w, "tidak ada kolom yang dikenali", http.StatusBadRequest)
+			return
+		}
+		if err := writeSiteConfig(vals); err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
+		}
+		writeJSON(w, map[string]string{"status": "ok"})
+		return
+	}
+	fields, err := readSiteConfig()
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+	writeJSON(w, fields)
 }
 
 // ---------- Media ----------

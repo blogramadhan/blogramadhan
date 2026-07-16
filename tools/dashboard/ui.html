@@ -171,9 +171,24 @@
   .preview-title { font-family:var(--font-serif); font-size:2rem; line-height:1.15; margin:0 0 .3rem; }
   .preview-sub { color:var(--ink-faint); font-style:italic; font-family:var(--font-serif); margin:0 0 1.5rem; }
 
+  /* Pratinjau hero beranda pada editor identitas situs — meniru tampilan asli. */
+  .hero-pv { padding:1rem 0; }
+  .hero-pv-pil { display:inline-flex; align-items:center; font-size:.7rem; font-weight:550;
+    text-transform:uppercase; letter-spacing:.1em; color:var(--accent);
+    background:var(--accent-wash); border:1px solid var(--accent); border-radius:99px;
+    padding:.25rem .6rem; margin-bottom:1rem; }
+  .hero-pv-judul { font-size:2rem; font-weight:700; letter-spacing:-.035em; line-height:1.1;
+    margin:0; color:var(--ink); max-width:22ch; }
+  .hero-pv-lead { color:var(--ink-soft); font-size:1rem; line-height:1.6; margin:1rem 0 0;
+    max-width:46ch; }
+
   .empty { display:grid; place-items:center; height:100%; text-align:center; color:var(--ink-faint); }
-  .empty .mark { font-size:3rem; color:var(--accent); opacity:.5; }
-  .empty h2 { font-family:var(--font-serif); font-weight:400; color:var(--ink-soft); }
+  .empty .mark { display:inline-grid; place-items:center; width:3rem; height:3rem;
+    background:var(--accent); color:#fff; border-radius:12px; font-size:1.1rem;
+    font-weight:700; opacity:.85; margin-bottom:.4rem; }
+  :root[data-theme="dark"] .empty .mark { color:#0b0d11; }
+  .empty h2 { font-family:var(--font-serif); font-weight:600; letter-spacing:-.02em;
+    color:var(--ink-soft); font-size:1.1rem; }
 
   /* Modal */
   .modal-bg { position:fixed; inset:0; background:rgba(20,15,10,.45); display:none;
@@ -238,7 +253,7 @@
       <div class="brand"><span class="mark">KR</span> Dashboard <small>Blog</small></div>
     </div>
     <div class="side-actions">
-      <button class="btn btn-primary" id="newBtn" style="flex:1; justify-content:center">＋ Tulisan Baru</button>
+      <button class="btn btn-primary" id="newBtn" style="flex:1; justify-content:center">+ Tulisan Baru</button>
       <button class="icon-btn" id="themeBtn" title="Ganti tema">◐</button>
       <button class="icon-btn" id="reloadBtn" title="Muat ulang daftar">⟳</button>
     </div>
@@ -257,9 +272,10 @@
     <div class="editor" id="editor">
       <div class="empty" id="emptyState">
         <div>
-          <div class="mark">✒</div>
+          <div class="mark">KR</div>
           <h2>Pilih tulisan di kiri, atau buat yang baru.</h2>
-          <p>Perubahan disimpan langsung ke berkas Markdown di folder <code>content/</code>.</p>
+          <p>Perubahan disimpan langsung ke berkas Markdown di folder <code>content/</code>.<br>
+             Untuk teks beranda &amp; identitas, buka <strong>Situs → Identitas &amp; Beranda</strong>.</p>
         </div>
       </div>
     </div>
@@ -355,7 +371,7 @@
 
 <script>
 const $ = s => document.querySelector(s);
-let items = [], cur = null, dirty = false, newSection = 'posts', bodyMode = 'visual';
+let items = [], cur = null, curSite = null, dirty = false, newSection = 'posts', bodyMode = 'visual';
 
 // ---------- Tema ----------
 (function(){ try{ const t=localStorage.getItem('dash-theme'); if(t) document.documentElement.setAttribute('data-theme',t);}catch(e){} })();
@@ -378,7 +394,15 @@ function renderList(){
   const groups = {};
   filtered.forEach(i => { (groups[i.section] = groups[i.section]||[]).push(i); });
   const label = { posts:'Blog', projects:'Portofolio', halaman:'Halaman' };
+
+  // Entri tetap: teks beranda & identitas yang tinggal di hugo.toml, bukan di content/.
   let html = '';
+  if(!q || 'identitas situs beranda'.includes(q)){
+    html += `<div class="group-label">Situs</div>
+      <button class="entry${curSite?' active':''}" id="siteEntry">
+        <div class="t"><span class="tt">⚙ Identitas &amp; Beranda</span></div>
+        <div class="meta">hugo.toml</div></button>`;
+  }
   Object.keys(groups).sort().forEach(sec => {
     html += `<div class="group-label">${label[sec]||sec}</div>`;
     groups[sec].forEach(i => {
@@ -390,17 +414,84 @@ function renderList(){
     });
   });
   $('#list').innerHTML = html || '<div class="group-label">Tidak ada hasil</div>';
-  document.querySelectorAll('.entry').forEach(el => {
+  document.querySelectorAll('.entry[data-path]').forEach(el => {
     el.onclick = () => openDoc(decodeURIComponent(el.dataset.path));
   });
+  const se = $('#siteEntry');
+  if(se) se.onclick = () => openSite();
 }
 
 async function openDoc(path){
   if(dirty && !confirm('Perubahan belum disimpan. Lanjut tanpa menyimpan?')) return;
   cur = await api('/api/read?path='+encodeURIComponent(path));
+  curSite = null;
   dirty = false;
   renderEditor();
   renderList();
+}
+
+// ---------- Identitas situs & teks beranda (hugo.toml) ----------
+async function openSite(){
+  if(dirty && !confirm('Perubahan belum disimpan. Lanjut tanpa menyimpan?')) return;
+  curSite = await api('/api/site');
+  cur = null;
+  dirty = false;
+  renderSiteEditor();
+  renderList();
+}
+
+function renderSiteEditor(){
+  $('#path').textContent = 'hugo.toml — identitas situs & teks beranda';
+  $('#editor').innerHTML = `
+    <div class="pane pane-form">
+      <p class="hint" style="margin:0 0 1.2rem">
+        Teks di bawah ini tinggal di <code>hugo.toml</code>, bukan di folder
+        <code>content/</code> — itulah sebabnya tidak muncul sebagai tulisan.
+        Perubahan langsung terlihat di beranda setelah disimpan.
+      </p>
+      ${curSite.map(f => `
+        <div class="field">
+          <label for="s_${f.key}">${esc(f.label)}</label>
+          ${f.kind === 'area'
+            ? `<textarea id="s_${f.key}" rows="3">${esc(f.value)}</textarea>`
+            : `<input type="text" id="s_${f.key}" value="${escAttr(f.value)}">`}
+          ${f.hint ? `<div class="hint">${esc(f.hint)}</div>` : ''}
+        </div>`).join('')}
+    </div>
+    <div class="pane pane-preview">
+      <div class="hint" style="margin-bottom:1rem">Pratinjau beranda</div>
+      <div class="hero-pv">
+        <span class="hero-pv-pil" id="pv_role"></span>
+        <h1 class="hero-pv-judul" id="pv_tagline"></h1>
+        <p class="hero-pv-lead" id="pv_intro"></p>
+      </div>
+    </div>`;
+  curSite.forEach(f => $('#s_'+f.key).addEventListener('input', () => { markDirty(); }));
+  updateSitePreview();
+  setSaveState();
+}
+
+function updateSitePreview(){
+  const v = k => { const el = $('#s_'+k); return el ? el.value.trim() : ''; };
+  const role = v('role');
+  $('#pv_role').textContent = role;
+  $('#pv_role').style.display = role ? 'inline-flex' : 'none';
+  $('#pv_tagline').textContent = v('tagline') || v('title') || 'Tanpa judul';
+  $('#pv_intro').textContent = v('intro') || v('description');
+}
+
+function collectSite(){
+  const out = {};
+  curSite.forEach(f => { out[f.key] = $('#s_'+f.key).value; });
+  return out;
+}
+
+async function saveSite(){
+  await api('/api/site', {method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify(collectSite())});
+  curSite = await api('/api/site');
+  dirty = false; setSaveState();
+  toast('Identitas situs tersimpan ✓');
 }
 
 function renderEditor(){
@@ -857,11 +948,16 @@ function blockMd(node){
   return out.join('\n\n');
 }
 
-function markDirty(){ dirty = true; setSaveState(); updatePreview(); }
+function markDirty(){
+  dirty = true; setSaveState();
+  if(curSite) updateSitePreview(); else updatePreview();
+}
 function setSaveState(){
   const el = $('#saveState');
-  el.textContent = dirty ? '● belum disimpan' : (cur?'tersimpan':'');
+  el.textContent = dirty ? '● belum disimpan' : ((cur||curSite)?'tersimpan':'');
   el.classList.toggle('dirty', dirty);
+  // Identitas situs tidak bisa "dihapus" seperti tulisan.
+  $('#deleteBtn').style.display = curSite ? 'none' : '';
 }
 
 function updatePreview(){
@@ -889,6 +985,7 @@ function collect(){
 }
 
 async function save(){
+  if(curSite) return saveSite();
   if(!cur) return;
   const doc = collect();
   await api('/api/save', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(doc)});
@@ -899,7 +996,10 @@ async function save(){
 
 $('#saveBtn').onclick = () => save().catch(e=>toast('Gagal: '+e.message));
 document.addEventListener('keydown', e => {
-  if((e.ctrlKey||e.metaKey) && e.key==='s'){ e.preventDefault(); if(cur) save().catch(e=>toast('Gagal: '+e.message)); }
+  if((e.ctrlKey||e.metaKey) && e.key==='s'){
+    e.preventDefault();
+    if(cur || curSite) save().catch(e=>toast('Gagal: '+e.message));
+  }
 });
 
 $('#deleteBtn').onclick = async () => {
@@ -913,6 +1013,8 @@ $('#deleteBtn').onclick = async () => {
 };
 
 $('#siteBtn').onclick = () => {
+  // Saat menyunting identitas situs, yang relevan adalah beranda.
+  if(curSite){ window.open('http://localhost:1313/', '_blank'); return; }
   if(!cur) return;
   const slug = cur.path.replace(/^content\//,'').replace(/\.md$/,'').replace(/\/index$/,'');
   window.open('http://localhost:1313/'+slug+'/', '_blank');

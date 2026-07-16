@@ -40,6 +40,30 @@ Editor punya dua mode yang bisa diganti kapan saja:
   Otomatis dikonversi ke Markdown saat menyimpan.
 - **Markdown** — menyunting sumber Markdown mentah dengan pratinjau instan di sampingnya.
 
+#### Identitas situs & teks beranda
+
+Tiga baris di beranda — pil peran, judul besar, dan paragraf pengantar — **bukan
+konten**, melainkan parameter di `hugo.toml`. Karena itu dulu tidak muncul di daftar
+tulisan. Sekarang tersedia di sidebar: **Situs → Identitas & Beranda**.
+
+| Teks di beranda | Kunci `hugo.toml` |
+| --- | --- |
+| Pil kecil di atas judul | `params.role` |
+| Judul besar | `params.tagline` |
+| Paragraf pengantar | `params.intro` |
+
+Formulirnya juga mencakup judul situs, nama penulis, deskripsi SEO, dan tautan sosial,
+lengkap dengan pratinjau hero yang ikut berubah saat diketik.
+
+Penyuntingannya bersifat *bedah*: hanya baris kunci yang bersangkutan yang diganti,
+sehingga komentar, urutan, indentasi, dan bagian lain (`[menu]`, `[markup]`) tetap utuh.
+Berkas ditulis lewat berkas sementara lalu di-*rename*, jadi bila gagal di tengah jalan
+`hugo.toml` lama tidak ikut rusak. Nilai berisi kutip, `\`, `#`, atau baris baru
+di-*escape* otomatis agar TOML tetap sah.
+
+Sengaja dibatasi pada teks yang tampil ke pembaca — `baseURL`, `[menu]`, dan setelan
+markup tetap disunting lewat berkas, karena salah ketik di sana bisa menggagalkan build.
+
 #### Gambar
 
 Tiga cara menyisipkan, semuanya berujung sama:
