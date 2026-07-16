@@ -8,6 +8,7 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
+	"io"
 	"log"
 	"net/http"
 	"os"
@@ -21,10 +22,14 @@ import (
 //go:embed ui.html
 var uiFS embed.FS
 
-var contentDir string
+var (
+	contentDir string
+	imagesDir  string // static/images — tujuan unggahan gambar
+)
 
 func main() {
 	addr := flag.String("addr", "127.0.0.1:1414", "alamat server dashboard")
+	staticDir := flag.String("static", "static", "folder static Hugo (tujuan unggahan)")
 	flag.StringVar(&contentDir, "content", "content", "folder konten Hugo")
 	flag.Parse()
 
@@ -37,6 +42,15 @@ func main() {
 	}
 	contentDir = abs
 
+	sAbs, err := filepath.Abs(*staticDir)
+	if err != nil {
+		log.Fatal(err)
+	}
+	imagesDir = filepath.Join(sAbs, "images")
+	if err := os.MkdirAll(imagesDir, 0755); err != nil {
+		log.Fatalf("Tidak bisa menyiapkan folder gambar %s: %v", imagesDir, err)
+	}
+
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", serveUI)
 	mux.HandleFunc("/api/list", handleList)
@@ -44,9 +58,14 @@ func main() {
 	mux.HandleFunc("/api/save", handleSave)
 	mux.HandleFunc("/api/create", handleCreate)
 	mux.HandleFunc("/api/delete", handleDelete)
+	mux.HandleFunc("/api/upload", handleUpload)
+	mux.HandleFunc("/api/media", handleMedia)
+	// Pratinjau gambar untuk pustaka media di dashboard.
+	mux.Handle("/media/", http.StripPrefix("/media/", http.FileServer(http.Dir(imagesDir))))
 
-	fmt.Printf("\n  ✒  Dashboard Blog berjalan di  http://%s\n", *addr)
-	fmt.Printf("     Konten: %s\n\n", contentDir)
+	fmt.Printf("\n  ▪  Dashboard Blog berjalan di  http://%s\n", *addr)
+	fmt.Printf("     Konten: %s\n", contentDir)
+	fmt.Printf("     Gambar: %s\n\n", imagesDir)
 	if err := http.ListenAndServe(*addr, mux); err != nil {
 		log.Fatal(err)
 	}
@@ -235,6 +254,120 @@ func handleDelete(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	writeJSON(w, map[string]string{"status": "ok"})
+}
+
+// ---------- Media ----------
+
+// Ekstensi yang boleh disimpan. Peramban sudah mengubah foto raster menjadi
+// WebP sebelum dikirim; GIF & SVG dilewatkan apa adanya karena tidak cocok
+// dikonversi (animasi hilang / vektor jadi raster).
+var allowedExt = map[string]bool{
+	".webp": true, ".jpg": true, ".jpeg": true, ".png": true,
+	".gif": true, ".svg": true,
+}
+
+type MediaItem struct {
+	Name string `json:"name"`
+	URL  string `json:"url"`  // URL publik di situs, mis. /images/foo.webp
+	Src  string `json:"src"`  // URL pratinjau di dashboard
+	Size int64  `json:"size"` // byte
+	Mod  string `json:"mod"`
+}
+
+const maxUpload = 25 << 20 // 25 MB — sudah sangat longgar untuk gambar terkompresi
+
+func handleUpload(w http.ResponseWriter, r *http.Request) {
+	if r.Method != http.MethodPost {
+		http.Error(w, "metode tidak didukung", http.StatusMethodNotAllowed)
+		return
+	}
+	r.Body = http.MaxBytesReader(w, r.Body, maxUpload)
+	if err := r.ParseMultipartForm(8 << 20); err != nil {
+		http.Error(w, "berkas terlalu besar atau form tidak valid", http.StatusBadRequest)
+		return
+	}
+	file, hdr, err := r.FormFile("file")
+	if err != nil {
+		http.Error(w, "berkas tidak ditemukan", http.StatusBadRequest)
+		return
+	}
+	defer file.Close()
+
+	// Nama diambil dari form bila ada (hasil slugify di peramban), jika tidak
+	// pakai nama asli berkas.
+	name := strings.TrimSpace(r.FormValue("name"))
+	if name == "" {
+		name = hdr.Filename
+	}
+	ext := strings.ToLower(filepath.Ext(name))
+	if ext == "" {
+		ext = strings.ToLower(filepath.Ext(hdr.Filename))
+	}
+	if !allowedExt[ext] {
+		http.Error(w, "jenis berkas tidak didukung: "+ext, http.StatusBadRequest)
+		return
+	}
+	base := slugify(strings.TrimSuffix(name, filepath.Ext(name)))
+	if base == "" {
+		base = "gambar"
+	}
+
+	// Cari nama yang belum terpakai agar unggahan lama tidak tertimpa.
+	target := filepath.Join(imagesDir, base+ext)
+	for i := 2; ; i++ {
+		if _, err := os.Stat(target); os.IsNotExist(err) {
+			break
+		}
+		target = filepath.Join(imagesDir, fmt.Sprintf("%s-%d%s", base, i, ext))
+	}
+
+	out, err := os.Create(target)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+	defer out.Close()
+	if _, err := io.Copy(out, file); err != nil {
+		os.Remove(target)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	fname := filepath.Base(target)
+	writeJSON(w, map[string]string{
+		"status": "ok",
+		"name":   fname,
+		"url":    "/images/" + fname,
+		"src":    "/media/" + fname,
+	})
+}
+
+func handleMedia(w http.ResponseWriter, r *http.Request) {
+	entries, err := os.ReadDir(imagesDir)
+	if err != nil {
+		writeJSON(w, []MediaItem{})
+		return
+	}
+	items := []MediaItem{}
+	for _, e := range entries {
+		if e.IsDir() || !allowedExt[strings.ToLower(filepath.Ext(e.Name()))] {
+			continue
+		}
+		fi, err := e.Info()
+		if err != nil {
+			continue
+		}
+		items = append(items, MediaItem{
+			Name: e.Name(),
+			URL:  "/images/" + e.Name(),
+			Src:  "/media/" + e.Name(),
+			Size: fi.Size(),
+			Mod:  fi.ModTime().Format(time.RFC3339),
+		})
+	}
+	// Terbaru dulu.
+	sort.Slice(items, func(i, j int) bool { return items[i].Mod > items[j].Mod })
+	writeJSON(w, items)
 }
 
 // ---------- Front matter (subset TOML datar) ----------

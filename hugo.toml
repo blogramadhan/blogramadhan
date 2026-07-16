@@ -16,6 +16,8 @@ summaryLength = 40
 [params]
   # Identitas situs
   author = "Kurnia Ramadhan"
+  # Ditampilkan sebagai pil kecil di atas judul beranda.
+  role = "Pranata Komputer · ASN"
   description = "Jurnal pribadi, catatan teknis, dan portofolio karya — ditulis dengan tenang."
   tagline = "Menulis pelan, membangun perlahan."
   # Teks intro di beranda
@@ -51,7 +53,9 @@ summaryLength = 40
 
 [markup]
   [markup.highlight]
-    style = "nord"
+    # noClasses=false → Chroma memancarkan class, diwarnai assets/css/syntax.css
+    # (dibangkitkan dari gaya github & github-dark). Ganti gaya = bangkitkan ulang.
+    style = "github"
     noClasses = false
     lineNos = false
     tabWidth = 2

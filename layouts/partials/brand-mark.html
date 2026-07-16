@@ -1,0 +1,7 @@
+{{- /* Monogram dari inisial nama penulis, mis. "Kurnia Ramadhan" → "KR". */ -}}
+{{- $name := site.Params.author | default site.Title -}}
+{{- $initials := "" -}}
+{{- range first 2 (split $name " ") -}}
+  {{- with . }}{{ $initials = printf "%s%s" $initials (upper (substr . 0 1)) }}{{ end -}}
+{{- end -}}
+<span class="brand-mark" aria-hidden="true">{{ $initials | default "•" }}</span>

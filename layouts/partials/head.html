@@ -2,7 +2,8 @@
 {{- $isHome := .IsHome -}}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#faf7f2">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0d11" media="(prefers-color-scheme: dark)">
 
 {{- if $isHome }}
 <title>{{ site.Title }}</title>
@@ -22,16 +23,18 @@
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ site.Title }}">
 
-<!-- Ikon -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' font-family='Georgia,serif'%3E%E2%9C%92%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<!-- Ikon: monogram KR pada kotak biru -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d4ed8'/%3E%3Ctext x='50%25' y='50%25' dy='.35em' text-anchor='middle' font-size='30' font-weight='700' font-family='system-ui,sans-serif' fill='white'%3EKR%3C/text%3E%3C/svg%3E">
 
-<!-- Font: Fraunces (display serif) + Newsreader (teks) -->
+<!-- Font: Inter (teks & judul) + JetBrains Mono (kode) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-<!-- CSS terkelola oleh Hugo Pipes -->
-{{ $css := resources.Get "css/main.css" }}
+<!-- CSS terkelola oleh Hugo Pipes: tema + pewarnaan sintaks digabung jadi satu berkas -->
+{{ $main := resources.Get "css/main.css" }}
+{{ $syntax := resources.Get "css/syntax.css" }}
+{{ $css := slice $main $syntax | resources.Concat "css/bundle.css" }}
 {{ if hugo.IsProduction }}
   {{ $css = $css | minify | fingerprint }}
 {{ end }}

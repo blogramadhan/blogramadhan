@@ -1,5 +1,6 @@
 {{ define "main" }}
-<article class="post">
+{{ $toc := and (.Params.toc | default false) (ge (len .TableOfContents) 40) }}
+<article class="post{{ if $toc }} post--toc{{ end }}">
   <header class="post-header wrap-narrow">
     {{ with .Params.categories }}<a class="post-eyebrow" href="{{ "/categories/" | relURL }}{{ (index . 0) | urlize }}/">{{ index . 0 }}</a>{{ end }}
     <h1 class="post-title">{{ .Title }}</h1>
@@ -18,7 +19,6 @@
   </figure>
   {{ end }}
 
-  {{ $toc := and (.Params.toc | default false) (ge (len .TableOfContents) 40) }}
   <div class="post-layout {{ if $toc }}has-toc{{ end }}">
     {{ if $toc }}
     <aside class="post-toc">

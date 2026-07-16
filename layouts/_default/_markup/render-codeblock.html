@@ -1,0 +1,33 @@
+{{- /*
+  Render hook blok kode: membungkus keluaran Chroma dengan kepala berisi
+  label bahasa + tombol salin. Berlaku untuk semua pagar ```bahasa di Markdown.
+
+  Bahasa yang tidak dikenal Chroma tetap tampil rapi (tanpa warna) — Hugo
+  akan memperlakukannya sebagai teks biasa.
+*/ -}}
+{{- $lang := strings.TrimSpace (.Type | default "") -}}
+{{- $label := $lang -}}
+{{- if not $lang }}{{ $label = "teks" }}{{ end -}}
+
+{{- /* Nama tampilan yang lebih enak dibaca untuk bahasa umum. */ -}}
+{{- $names := dict
+      "js" "JavaScript" "javascript" "JavaScript" "ts" "TypeScript" "typescript" "TypeScript"
+      "py" "Python" "python" "Python" "go" "Go" "golang" "Go"
+      "sh" "Shell" "bash" "Bash" "zsh" "Zsh" "console" "Terminal"
+      "html" "HTML" "css" "CSS" "scss" "SCSS" "json" "JSON" "yaml" "YAML" "yml" "YAML"
+      "toml" "TOML" "sql" "SQL" "php" "PHP" "java" "Java" "c" "C" "cpp" "C++"
+      "cs" "C#" "rb" "Ruby" "ruby" "Ruby" "rs" "Rust" "rust" "Rust"
+      "md" "Markdown" "markdown" "Markdown" "diff" "Diff" "dockerfile" "Dockerfile"
+      "teks" "Teks"
+-}}
+{{- with index $names (lower $label) }}{{ $label = . }}{{ end -}}
+
+<div class="code-block">
+  <div class="code-head">
+    <span class="code-lang">{{ $label }}</span>
+    <button class="code-copy" type="button" aria-label="Salin kode">
+      <span class="code-copy-text">Salin</span>
+    </button>
+  </div>
+  {{ highlight (strings.TrimRight "\n" .Inner) $lang .Options }}
+</div>

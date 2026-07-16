@@ -11,6 +11,8 @@ backend:
 # Uji lokal: jalankan `npx decap-server` lalu buka /admin/ saat `hugo server` aktif.
 local_backend: true
 
+# Sama dengan tujuan unggahan dashboard lokal (tools/dashboard), jadi kedua
+# editor memakai satu folder gambar yang sama.
 media_folder: "static/images"   # tempat berkas unggahan disimpan
 public_folder: "/images"        # URL berkas saat ditampilkan
 

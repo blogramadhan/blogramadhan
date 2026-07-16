@@ -11,5 +11,6 @@
   </main>
   {{ partial "footer.html" . }}
   {{ partial "theme-toggle-script.html" . }}
+  {{ if and .IsPage (strings.Contains .Content "code-block") }}{{ partial "code-copy-script.html" . }}{{ end }}
 </body>
 </html>

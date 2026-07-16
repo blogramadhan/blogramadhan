@@ -1,10 +1,11 @@
 {{ define "main" }}
 <section class="hero">
   <div class="wrap">
-    <p class="hero-kicker">{{ site.Params.tagline }}</p>
-    <h1 class="hero-title">{{ site.Params.intro | default site.Params.description }}</h1>
+    {{ with site.Params.role }}<p class="hero-kicker">{{ . }}</p>{{ end }}
+    <h1 class="hero-title">{{ site.Params.tagline | default site.Title }}</h1>
+    <p class="hero-lead">{{ site.Params.intro | default site.Params.description }}</p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="{{ "/posts" | relURL }}">Baca tulisan</a>
+      <a class="btn btn-primary" href="{{ "/posts" | relURL }}">Baca tulisan <span aria-hidden="true">→</span></a>
       <a class="btn btn-ghost" href="{{ "/about" | relURL }}">Tentang saya</a>
     </div>
   </div>
@@ -25,7 +26,8 @@
 
     {{ $featured := first 1 $posts }}
     {{ range $featured }}
-    <article class="feature">
+    {{/* Tanpa gambar sampul, grid dua kolom menyisakan kolom kanan kosong. */}}
+    <article class="feature{{ if not .Params.featured_image }} feature--noimg{{ end }}">
       {{ with .Params.featured_image }}
       <a class="feature-media" href="{{ $.RelPermalink }}" tabindex="-1" aria-hidden="true">
         <img src="{{ . }}" alt="" loading="lazy">

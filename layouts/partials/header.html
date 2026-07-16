@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="{{ "/" | relURL }}">
-      <span class="brand-mark">✒</span>
+      {{ partial "brand-mark.html" . }}
       <span class="brand-text">{{ site.Params.author | default site.Title }}</span>
     </a>
 

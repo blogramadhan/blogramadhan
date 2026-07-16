@@ -1,0 +1,42 @@
+{{- /* Tombol salin pada blok kode. Hanya dimuat bila halaman memang punya kode. */ -}}
+<script>
+(function () {
+  document.querySelectorAll('.code-block').forEach(function (block) {
+    var btn = block.querySelector('.code-copy');
+    var pre = block.querySelector('pre');
+    if (!btn || !pre) return;
+
+    btn.addEventListener('click', function () {
+      // Ambil hanya sel kode bila nomor baris aktif, agar nomornya tidak ikut tersalin.
+      var codeCell = pre.querySelector('.lntd:last-child');
+      var text = (codeCell || pre).innerText.replace(/\n$/, '');
+
+      var done = function (ok) {
+        var label = btn.querySelector('.code-copy-text');
+        label.textContent = ok ? 'Tersalin' : 'Gagal';
+        btn.classList.toggle('is-done', ok);
+        setTimeout(function () {
+          label.textContent = 'Salin';
+          btn.classList.remove('is-done');
+        }, 1600);
+      };
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+      } else {
+        // Cadangan untuk konteks non-HTTPS (mis. pratinjau lokal).
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        var ok = false;
+        try { ok = document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(ta);
+        done(ok);
+      }
+    });
+  });
+})();
+</script>
