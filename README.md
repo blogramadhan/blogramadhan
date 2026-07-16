@@ -47,13 +47,47 @@ membuka pratinjau tema aslinya. Pintasan **Ctrl/Cmd+S** untuk menyimpan.
 
 Panel admin berbasis web yang menyatu dengan situs, menyimpan lewat Git. Editornya
 sudah WYSIWYG bawaan (widget `markdown` Decap = rich text dengan toggle Markdown).
-Berkas konfigurasinya sudah disiapkan di `static/admin/`. Untuk mengaktifkannya:
+Berkas konfigurasinya sudah disiapkan di `static/admin/`.
 
-- **Uji lokal:** jalankan `npx decap-server` lalu buka `http://localhost:1313/admin/`
-  saat `hugo server` aktif (memakai `local_backend: true`).
-- **Di produksi:** deploy situs, lalu pilih backend Git di `static/admin/config.yml`:
-  - *Netlify:* aktifkan **Identity** + **Git Gateway** (cocok dengan `name: git-gateway`).
-  - *GitHub OAuth:* ganti backend menjadi `name: github` dengan `repo: user/repo`.
+Situs di-deploy di **Netlify**, dan login `/admin` memakai **GitHub OAuth** yang
+dijembatani layanan OAuth bawaan Netlify — jadi tidak perlu server tambahan.
+Sekali atur, lewat tiga langkah berikut:
+
+**1. Buat GitHub OAuth App**
+
+Buka <https://github.com/settings/developers> → **OAuth Apps** → **New OAuth App**:
+
+- **Application name:** bebas (mis. "Blog CMS")
+- **Homepage URL:** URL situs Netlify Anda (mis. `https://ramadhan.me`)
+- **Authorization callback URL:** `https://api.netlify.com/auth/done` ← wajib persis ini
+
+Klik **Register**, catat **Client ID**, lalu **Generate a new client secret** dan catat
+**Client Secret** (hanya tampil sekali).
+
+**2. Daftarkan ke Netlify**
+
+Di dashboard Netlify, klik proyek/situs Anda lebih dulu (bukan menu tim/akun), lalu:
+
+**Project configuration** → **Access & security** → **OAuth** → bagian
+**Authentication Providers** → **Install Provider**:
+
+- **Provider:** GitHub
+- **Client ID** & **Client Secret:** isi dari langkah 1 → simpan
+
+> Dashboard versi lama menamai menu ini **Site configuration** → **Access control**.
+> Isinya sama, hanya beda penamaan.
+
+**3. Pakai**
+
+Buka `https://<situs-anda>/admin/` → **Login with GitHub** → izinkan akses. Setiap kali
+menyimpan di CMS, Decap membuat commit ke repo `blogramadhan/blogramadhan`, dan Netlify
+otomatis rebuild situs.
+
+> Akun GitHub yang dipakai login harus punya akses tulis ke repo tersebut.
+
+**Uji lokal (opsional):** jalankan `npx decap-server` di terminal terpisah lalu buka
+`http://localhost:1313/admin/` saat `hugo server` aktif (memakai `local_backend: true`,
+tanpa perlu login GitHub).
 
 ## Menulis tulisan baru
 

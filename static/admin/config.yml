@@ -1,12 +1,12 @@
 # Konfigurasi Decap CMS — panel admin berbasis web di /admin/
-# Aktif setelah situs di-deploy & backend Git diatur (lihat catatan di bawah).
+# Login memakai GitHub OAuth yang dijembatani Netlify (base_url bawaan Decap:
+# https://api.netlify.com). Lihat README bagian "Decap CMS di /admin" untuk
+# cara mendaftarkan OAuth App-nya di Netlify.
 
 backend:
   name: github
   repo: blogramadhan/blogramadhan
   branch: main
-  base_url: https://cms-auth.SUBDOMAIN.workers.dev     # ← ganti: URL Worker OAuth Anda
-  auth_endpoint: /auth
 
 # Uji lokal: jalankan `npx decap-server` lalu buka /admin/ saat `hugo server` aktif.
 local_backend: true
