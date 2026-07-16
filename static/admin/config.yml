@@ -21,11 +21,29 @@ locale: "id"
 publish_mode: editorial_workflow
 
 collections:
+  # CATATAN PENTING — kenapa ada `delete: false` di koleksi folder:
+  #
+  # Decap menampilkan SEMUA berkas .md di dalam `folder`, termasuk `_index.md`
+  # milik Hugo. `_index.md` bukan tulisan: ia halaman bagian yang memasok judul
+  # ("Blog"/"Portofolio") dan teks pembuka halaman daftar. Di layar CMS ia
+  # tampak seperti entri sampah dan pernah terhapus — akibatnya judul halaman
+  # jatuh ke nama folder, jadi "Posts"/"Projects" dalam bahasa Inggris.
+  #
+  # Decap belum bisa mengecualikan berkas dari koleksi folder (permintaan fitur
+  # decaporg/decap-cms#2727, masih terbuka) dan `filter` hanya cocok pada nilai
+  # persis — tidak ada pola/regex (#7347). Jadi `_index` tak bisa disembunyikan
+  # tanpa menaruh field khusus-CMS di setiap tulisan.
+  #
+  # `delete: false` menutup risikonya di sumbernya: entri tidak bisa dihapus
+  # dari /admin sama sekali. Menghapus tulisan dilakukan lewat dashboard lokal
+  # (tools/dashboard) atau langsung di GitHub — tindakan merusak yang memang
+  # sebaiknya disengaja.
   - name: "posts"
     label: "Tulisan Blog"
     label_singular: "Tulisan"
     folder: "content/posts"
     create: true
+    delete: false
     slug: "{{slug}}"
     format: "toml-frontmatter"
     summary: "{{title}} — {{year}}/{{month}}/{{day}}"
@@ -46,6 +64,7 @@ collections:
     label_singular: "Proyek"
     folder: "content/projects"
     create: true
+    delete: false     # lihat catatan di koleksi "posts" di atas
     slug: "{{slug}}"
     format: "toml-frontmatter"
     sortable_fields: ["date", "title"]
@@ -64,6 +83,10 @@ collections:
 
   - name: "pages"
     label: "Halaman"
+    # Koleksi `files` menyebut berkas satu per satu, jadi entrinya tidak bisa
+    # dibuat maupun dihapus — hanya disunting. Ini rumah yang benar untuk
+    # halaman bagian: `_index.md` disunting lewat form yang sesuai (judul &
+    # deskripsi saja), bukan lewat form tulisan yang menuntut tanggal & draf.
     files:
       - name: "about"
         label: "Tentang"
@@ -75,3 +98,23 @@ collections:
           - { label: "Deskripsi", name: "description", widget: "text", required: false }
           - { label: "Foto", name: "featured_image", widget: "image", required: false }
           - { label: "Isi", name: "body", widget: "markdown" }
+
+      - name: "posts_index"
+        label: "Halaman Daftar Blog"
+        file: "content/posts/_index.md"
+        format: "toml-frontmatter"
+        fields:
+          - { label: "Judul halaman", name: "title", widget: "string",
+              hint: "Judul besar di /posts/. Mis. \"Blog\"." }
+          - { label: "Teks pembuka", name: "description", widget: "text", required: false,
+              hint: "Kalimat pengantar di bawah judul." }
+
+      - name: "projects_index"
+        label: "Halaman Daftar Portofolio"
+        file: "content/projects/_index.md"
+        format: "toml-frontmatter"
+        fields:
+          - { label: "Judul halaman", name: "title", widget: "string",
+              hint: "Judul besar di /projects/. Mis. \"Portofolio\"." }
+          - { label: "Teks pembuka", name: "description", widget: "text", required: false,
+              hint: "Kalimat pengantar di bawah judul." }
