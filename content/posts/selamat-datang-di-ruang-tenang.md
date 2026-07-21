@@ -1,6 +1,6 @@
 +++
-title = "Selamat Datang di Ruang Tenang Ini"
-date = 2026-07-10T09:00:00+07:00
+title = "Selamat Datang di Ruangs Tenang Ini"
+date = 2026-07-10T02:00:00.000Z
 draft = false
 description = "Mengapa saya membangun blog ini, dan apa yang saya harap tumbuh darinya."
 tags = ["catatan", "menulis"]
