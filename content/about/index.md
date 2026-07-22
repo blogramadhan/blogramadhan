@@ -1,7 +1,8 @@
 +++
 title = "Kurnia Ramadhan"
+date = 2026-07-22T09:03:55+07:00
+draft = false
 layout = "about"
-description = "ASN, Pranata Komputer, dan pengumpul pikiran yang menulis dengan tenang."
 +++
 
 Halo, saya **Kurnia Ramadhan**. Sehari-hari saya seorang **Aparatur Sipil Negara**

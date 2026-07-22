@@ -18,10 +18,10 @@ summaryLength = 40
   author = "Kurnia Ramadhan"
   # Ditampilkan sebagai pil kecil di atas judul beranda.
   role = "Catatan Ringan"
-  description = "Jurnal pribadi, catatan teknis, dan portofolio karya — ditulis dengan tenang."
+  description = "Jurnal pribadi, catatan teknis, dan portofolio karya"
   tagline = "Menulis pelan, membangun perlahan."
   # Teks intro di beranda
-  intro = "Selamat datang. Ini ruang tenang tempat saya menautkan pikiran, catatan teknis, dan karya yang sedang saya rawat."
+  intro = "Selamat datang. Ini ruang .tempat saya menautkan pikiran, catatan teknis, dan karya yang sedang saya rawat."
   # Kontak / sosial (kosongkan bila tak dipakai)
   email = "kramadhan@gmail.com"
   github = "https://github.com/blogramadhan"
