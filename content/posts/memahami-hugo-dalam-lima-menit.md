@@ -1,5 +1,5 @@
 +++
-title = "Memahami Hugo dalam Lima Menits"
+title = "Memahami Hugo dalam Lima Menit"
 date = 2026-07-05T13:30:00.000Z
 draft = false
 description = "Peta ringkas cara kerja Hugo: dari berkas Markdown menjadi situs statis yang cepat."
