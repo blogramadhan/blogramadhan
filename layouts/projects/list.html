@@ -10,7 +10,14 @@
   {{ if $pages }}
   <div class="project-grid project-grid--wide">
     {{ range $pages }}
+    {{ $p := . }}
     <article class="project-card project-card--lg">
+      {{ with .Params.featured_image }}
+      <a class="project-media" href="{{ $p.RelPermalink }}" tabindex="-1" aria-hidden="true">
+        <img src="{{ . }}" alt="" loading="lazy">
+      </a>
+      {{ end }}
+      <div class="project-body">
       <div class="project-top">
         <h2 class="project-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         {{ with .Params.year }}<span class="project-year">{{ . }}</span>{{ end }}
@@ -23,6 +30,7 @@
         <a class="project-open" href="{{ .RelPermalink }}">Rincian →</a>
         {{ with .Params.repo }}<a href="{{ . }}" rel="noopener" target="_blank">Kode ↗</a>{{ end }}
         {{ with .Params.demo }}<a href="{{ . }}" rel="noopener" target="_blank">Demo ↗</a>{{ end }}
+      </div>
       </div>
     </article>
     {{ end }}

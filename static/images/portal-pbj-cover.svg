@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Portal PBJ — portal analisis pengadaan barang/jasa pemerintah">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/><stop offset="0.6" stop-color="#141b27"/><stop offset="1" stop-color="#0b0f16"/>
+    </linearGradient>
+    <linearGradient id="blueText" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#93b4fd"/><stop offset="1" stop-color="#3b6fe0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#2563eb" stop-opacity="0.22"/><stop offset="1" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <g stroke="#ffffff" stroke-opacity="0.03">    <path d="M100 0V1000M200 0V1000M300 0V1000M400 0V1000M500 0V1000M600 0V1000M700 0V1000M800 0V1000M900 0V1000M1000 0V1000M1100 0V1000M1200 0V1000M1300 0V1000M1400 0V1000M1500 0V1000"/>    <path d="M0 100H1600M0 200H1600M0 300H1600M0 400H1600M0 500H1600M0 600H1600M0 700H1600M0 800H1600M0 900H1600"/>  </g>  <ellipse cx="1180" cy="480" rx="620" ry="500" fill="url(#glow)"/>
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="352" font-size="23" font-weight="700" letter-spacing="6" fill="#60a5fa">PENGADAAN BARANG/JASA</text>
+    <text x="96" y="452" font-size="80" font-weight="800" letter-spacing="-2" fill="#f2f4f8">PORTAL <tspan fill="url(#blueText)">PBJ</tspan></text>
+    <rect x="100" y="486" width="110" height="5" rx="2.5" fill="#2563eb"/>
+    <text x="100" y="552" font-size="31" fill="#9aa5b6">Analisis Pengadaan Pemerintah</text>
+    <text x="100" y="600" font-size="22" fill="#6f7b8d">Data SPSE &amp; INAPROC dalam satu panel kerja.</text>
+    <g>
+      <rect x="100" y="648" width="292" height="54" rx="27" fill="#2563eb" fill-opacity="0.12" stroke="#3b6fe0" stroke-opacity="0.5" stroke-width="2"/>
+      <text x="246" y="683" text-anchor="middle" font-size="23" font-weight="600" fill="#93b4fd">portal.pbj.my.id</text>
+    </g>
+    <g>
+      <rect x="780" y="180" width="236" height="140" rx="14" fill="#12171f" stroke="#232a36" stroke-width="2"/>
+      <text x="802" y="222" font-size="15" font-weight="700" letter-spacing="2" fill="#6f7b8d">PAKET TERSEDIA</text>
+      <text x="802" y="284" font-size="42" font-weight="700" fill="#e8eaed">98.529</text>
+    </g>
+    <g>
+      <rect x="1032" y="180" width="236" height="140" rx="14" fill="#12171f" stroke="#232a36" stroke-width="2"/>
+      <text x="1054" y="222" font-size="15" font-weight="700" letter-spacing="2" fill="#6f7b8d">LPSE TERDAFTAR</text>
+      <text x="1054" y="284" font-size="42" font-weight="700" fill="#e8eaed">591</text>
+    </g>
+    <g>
+      <rect x="1284" y="180" width="236" height="140" rx="14" fill="#12171f" stroke="#232a36" stroke-width="2"/>
+      <text x="1306" y="222" font-size="15" font-weight="700" letter-spacing="2" fill="#6f7b8d">INSTANSI</text>
+      <text x="1306" y="284" font-size="42" font-weight="700" fill="#e8eaed">649</text>
+    </g>
+    <g>
+      <rect x="780" y="360" width="236" height="232" rx="14" fill="#12171f" stroke="#232a36" stroke-width="2"/>
+      <rect x="802" y="382" width="52" height="52" rx="14" fill="#2563eb"/>
+      <circle cx="825" cy="405" r="9" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M832 412L840 420" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="802" y="480" font-size="19" font-weight="650" fill="#e8eaed">Pencarian</text>
+      <text x="802" y="506" font-size="19" font-weight="650" fill="#e8eaed">Penyedia</text>
+      <rect x="802" y="530" width="168" height="8" rx="4" fill="#6b7686" fill-opacity="0.38"/>
+      <rect x="802" y="550" width="122" height="8" rx="4" fill="#6b7686" fill-opacity="0.28"/>
+    </g>
+    <g>
+      <rect x="1032" y="360" width="236" height="232" rx="14" fill="#12171f" stroke="#232a36" stroke-width="2"/>
+      <rect x="1054" y="382" width="52" height="52" rx="14" fill="#10b981"/>
+      <rect x="1070" y="398" width="20" height="24" rx="3" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M1076 394h8v6h-8z" fill="#ffffff"/>
+      <text x="1054" y="480" font-size="19" font-weight="650" fill="#e8eaed">Paket</text>
+      <text x="1054" y="506" font-size="19" font-weight="650" fill="#e8eaed">Aktif</text>
+      <rect x="1054" y="530" width="168" height="8" rx="4" fill="#6b7686" fill-opacity="0.38"/>
+      <rect x="1054" y="550" width="122" height="8" rx="4" fill="#6b7686" fill-opacity="0.28"/>
+    </g>
+    <g>
+      <rect x="1284" y="360" width="236" height="232" rx="14" fill="#12171f" stroke="#232a36" stroke-width="2"/>
+      <rect x="1306" y="382" width="52" height="52" rx="14" fill="#6366f1"/>
+      <rect x="1322" y="396" width="20" height="26" rx="3" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M1327 409l4 4 7-9" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="1306" y="480" font-size="19" font-weight="650" fill="#e8eaed">Rencana Umum</text>
+      <text x="1306" y="506" font-size="19" font-weight="650" fill="#e8eaed">Pengadaan</text>
+      <rect x="1306" y="530" width="168" height="8" rx="4" fill="#6b7686" fill-opacity="0.38"/>
+      <rect x="1306" y="550" width="122" height="8" rx="4" fill="#6b7686" fill-opacity="0.28"/>
+    </g>
+    <g>
+      <rect x="780" y="614" width="236" height="232" rx="14" fill="#12171f" stroke="#232a36" stroke-width="2"/>
+      <rect x="802" y="636" width="52" height="52" rx="14" fill="#0ea5e9"/>
+      <rect x="814" y="654" width="28" height="17" rx="3" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="828" cy="662" r="4" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="802" y="734" font-size="19" font-weight="650" fill="#e8eaed">Realisasi</text>
+      <text x="802" y="760" font-size="19" font-weight="650" fill="#e8eaed">Pengadaan</text>
+      <rect x="802" y="784" width="168" height="8" rx="4" fill="#6b7686" fill-opacity="0.38"/>
+      <rect x="802" y="804" width="122" height="8" rx="4" fill="#6b7686" fill-opacity="0.28"/>
+    </g>
+    <g>
+      <rect x="1032" y="614" width="236" height="232" rx="14" fill="#12171f" stroke="#232a36" stroke-width="2"/>
+      <rect x="1054" y="636" width="52" height="52" rx="14" fill="#8b5cf6"/>
+      <path d="M1071 674v-10M1080 674v-18M1089 674v-26" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="1054" y="734" font-size="19" font-weight="650" fill="#e8eaed">Analisis &amp;</text>
+      <text x="1054" y="760" font-size="19" font-weight="650" fill="#e8eaed">Pengawasan</text>
+      <rect x="1054" y="784" width="168" height="8" rx="4" fill="#6b7686" fill-opacity="0.38"/>
+      <rect x="1054" y="804" width="122" height="8" rx="4" fill="#6b7686" fill-opacity="0.28"/>
+    </g>
+    <g>
+      <rect x="1284" y="614" width="236" height="232" rx="14" fill="#12171f" stroke="#232a36" stroke-width="2"/>
+      <rect x="1306" y="636" width="52" height="52" rx="14" fill="#ef4444"/>
+      <circle cx="1332" cy="662" r="12" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M1327 657l10 10M1337 657l-10 10" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="1306" y="734" font-size="19" font-weight="650" fill="#e8eaed">Daftar</text>
+      <text x="1306" y="760" font-size="19" font-weight="650" fill="#e8eaed">Hitam</text>
+      <rect x="1306" y="784" width="168" height="8" rx="4" fill="#6b7686" fill-opacity="0.38"/>
+      <rect x="1306" y="804" width="122" height="8" rx="4" fill="#6b7686" fill-opacity="0.28"/>
+    </g>
+  </g>
+</svg>

@@ -27,9 +27,11 @@
     {{ $featured := first 1 $posts }}
     {{ range $featured }}
     {{/* Tanpa gambar sampul, grid dua kolom menyisakan kolom kanan kosong. */}}
+    {{/* `with` mengganti konteks, jadi halamannya diikat dulu — `$` menunjuk beranda. */}}
+    {{ $p := . }}
     <article class="feature{{ if not .Params.featured_image }} feature--noimg{{ end }}">
       {{ with .Params.featured_image }}
-      <a class="feature-media" href="{{ $.RelPermalink }}" tabindex="-1" aria-hidden="true">
+      <a class="feature-media" href="{{ $p.RelPermalink }}" tabindex="-1" aria-hidden="true">
         <img src="{{ . }}" alt="" loading="lazy">
       </a>
       {{ end }}
@@ -65,7 +67,14 @@
     </header>
     <div class="project-grid">
       {{ range first 3 $projects }}
+      {{ $p := . }}
       <article class="project-card">
+        {{ with .Params.featured_image }}
+        <a class="project-media" href="{{ $p.RelPermalink }}" tabindex="-1" aria-hidden="true">
+          <img src="{{ . }}" alt="" loading="lazy">
+        </a>
+        {{ end }}
+        <div class="project-body">
         <div class="project-top">
           <h3 class="project-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
           {{ with .Params.year }}<span class="project-year">{{ . }}</span>{{ end }}
@@ -76,6 +85,7 @@
           {{ range . }}<li>{{ . }}</li>{{ end }}
         </ul>
         {{ end }}
+        </div>
       </article>
       {{ end }}
     </div>

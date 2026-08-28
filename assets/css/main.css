@@ -292,10 +292,18 @@ h1, h2, h3, h4 {
 .project-grid--wide { grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr)); }
 .project-card {
   background: var(--card); border: 1px solid var(--line);
-  border-radius: var(--radius); padding: 1.6rem 1.7rem;
-  display: flex; flex-direction: column; gap: .85rem;
+  border-radius: var(--radius); overflow: hidden;
+  display: flex; flex-direction: column;
   position: relative; transition: transform .25s, box-shadow .25s, border-color .25s;
 }
+/* Padding hidup di .project-body agar sampul bisa menempel penuh ke tepi kartu. */
+.project-body {
+  padding: 1.6rem 1.7rem;
+  display: flex; flex-direction: column; gap: .85rem; flex: 1;
+}
+.project-media { display: block; overflow: hidden; border-bottom: 1px solid var(--line); }
+.project-media img { width: 100%; aspect-ratio: 16/10; object-fit: cover; transition: transform .5s ease; }
+.project-card:hover .project-media img { transform: scale(1.04); }
 .project-card::before {
   content: ""; position: absolute; inset: 0 auto 0 0; width: 3px;
   background: var(--accent);
@@ -303,7 +311,7 @@ h1, h2, h3, h4 {
 }
 .project-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lift); border-color: var(--line-strong); }
 .project-card:hover::before { opacity: 1; }
-.project-card--lg { padding: 2rem 2rem 1.8rem; }
+.project-card--lg .project-body { padding: 2rem 2rem 1.8rem; }
 .project-top { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
 .project-title { font-size: 1.15rem; font-weight: 650; margin: 0; letter-spacing: -0.02em; }
 .project-title a { color: var(--ink); }
