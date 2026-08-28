@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Perbandingan ETF emas, emas batangan, tabungan emas, dan emas digital">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1219"/><stop offset="1" stop-color="#0b0e14"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg3)"/>
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="60" y="102" font-size="52" font-weight="800" fill="#f2f4f8">Empat Cara Memiliki Emas</text>
+    <text x="60" y="152" font-size="26" fill="#8a94a5">Bukan soal mana yang terbaik, tapi mana yang cocok dengan cara Anda memakainya.</text>
+
+    <!-- Header -->
+    <rect x="60" y="196" width="1480" height="72" fill="#161c27"/>
+    <g font-size="22" font-weight="700" letter-spacing="2" fill="#f0b429">
+      <text x="92" y="242">INSTRUMEN</text>
+      <text x="577" y="242" text-anchor="middle">MINIMUM BELI</text>
+      <text x="852" y="242" text-anchor="middle">BIAYA</text>
+      <text x="1127" y="242" text-anchor="middle">LIKUIDITAS</text>
+      <text x="1402" y="242" text-anchor="middle">WUJUD FISIK</text>
+    </g>
+
+    <!-- Baris sorotan -->
+    <rect x="60" y="268" width="1480" height="170" fill="#1d1608"/>
+    <rect x="60" y="268" width="6" height="170" fill="#f0b429"/>
+
+    <!-- Garis kisi -->
+    <g stroke="#232a36" stroke-width="2">
+      <line x1="60" y1="268" x2="1540" y2="268"/>
+      <line x1="60" y1="438" x2="1540" y2="438"/>
+      <line x1="60" y1="608" x2="1540" y2="608"/>
+      <line x1="60" y1="778" x2="1540" y2="778"/>
+      <line x1="60" y1="948" x2="1540" y2="948"/>
+      <line x1="440" y1="196" x2="440" y2="948"/>
+      <line x1="715" y1="196" x2="715" y2="948"/>
+      <line x1="990" y1="196" x2="990" y2="948"/>
+      <line x1="1265" y1="196" x2="1265" y2="948"/>
+    </g>
+
+    <!-- Baris 1: ETF Emas -->
+    <text x="92" y="340" font-size="30" font-weight="700" fill="#ffd97a">ETF Emas</text>
+    <text x="92" y="378" font-size="19" fill="#a08c62">XGLD · XDES · XMES · XSGO · XTRA</text>
+    <g text-anchor="middle" fill="#eef1f6">
+      <text x="577" y="346" font-size="23">≈Rp25 ribu</text>
+      <text x="852" y="346" font-size="23">0,3–0,5%</text>
+      <text x="1127" y="346" font-size="23">Tinggi</text>
+      <text x="1402" y="346" font-size="23">Tidak dipegang</text>
+    </g>
+    <g text-anchor="middle" font-size="18" fill="#8a94a5">
+      <text x="577" y="380">1 lot = 100 unit</text>
+      <text x="852" y="380">per tahun</text>
+      <text x="1127" y="380">sepanjang jam bursa</text>
+      <text x="1402" y="380">klaim lewat EGR</text>
+    </g>
+
+    <!-- Baris 2: Emas batangan -->
+    <text x="92" y="510" font-size="30" font-weight="700" fill="#eef1f6">Emas batangan</text>
+    <text x="92" y="548" font-size="19" fill="#7c8698">Antam, UBS, dan sejenisnya</text>
+    <g text-anchor="middle" fill="#eef1f6">
+      <text x="577" y="516" font-size="23">0,5–1 gram</text>
+      <text x="852" y="516" font-size="23">Spread + simpan</text>
+      <text x="1127" y="516" font-size="23">Sedang</text>
+      <text x="1402" y="516" font-size="23">Ya</text>
+    </g>
+    <g text-anchor="middle" font-size="18" fill="#8a94a5">
+      <text x="577" y="550">satuan keping</text>
+      <text x="852" y="550">selisih beli–buyback</text>
+      <text x="1127" y="550">perlu toko atau buyback</text>
+      <text x="1402" y="550">logam ada di tangan</text>
+    </g>
+
+    <!-- Baris 3: Tabungan Emas -->
+    <text x="92" y="680" font-size="30" font-weight="700" fill="#eef1f6">Tabungan emas</text>
+    <text x="92" y="718" font-size="19" fill="#7c8698">Pegadaian dan bank tertentu</text>
+    <g text-anchor="middle" fill="#eef1f6">
+      <text x="577" y="686" font-size="23">Pecahan gram</text>
+      <text x="852" y="686" font-size="23">Titip + spread</text>
+      <text x="1127" y="686" font-size="23">Sedang–tinggi</text>
+      <text x="1402" y="686" font-size="23">Bisa dicetak</text>
+    </g>
+    <g text-anchor="middle" font-size="18" fill="#8a94a5">
+      <text x="577" y="720">mulai dari ribuan rupiah</text>
+      <text x="852" y="720">biaya administrasi tahunan</text>
+      <text x="1127" y="720">lewat aplikasi atau outlet</text>
+      <text x="1402" y="720">dikenai biaya cetak</text>
+    </g>
+
+    <!-- Baris 4: Emas digital -->
+    <text x="92" y="850" font-size="30" font-weight="700" fill="#eef1f6">Emas digital</text>
+    <text x="92" y="888" font-size="19" fill="#7c8698">Platform terdaftar Bappebti</text>
+    <g text-anchor="middle" fill="#eef1f6">
+      <text x="577" y="856" font-size="23">Puluhan ribu</text>
+      <text x="852" y="856" font-size="23">Spread jual–beli</text>
+      <text x="1127" y="856" font-size="23">Tinggi</text>
+      <text x="1402" y="856" font-size="23">Bisa ditarik</text>
+    </g>
+    <g text-anchor="middle" font-size="18" fill="#8a94a5">
+      <text x="577" y="890">nominal kecil</text>
+      <text x="852" y="890">tanpa biaya tahunan tetap</text>
+      <text x="1127" y="890">hampir sepanjang hari</text>
+      <text x="1402" y="890">di atas ambang minimum</text>
+    </g>
+
+    <text x="60" y="988" font-size="19" fill="#66707f">Indikatif per Agustus 2026. Selalu cek prospektus produk dan tarif resmi masing-masing penyedia.</text>
+  </g>
+</svg>

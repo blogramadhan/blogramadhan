@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Alur kerja ETF emas: investor, bursa, KIK ETF, EGR di KSEI, hingga emas fisik di brankas">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1219"/><stop offset="1" stop-color="#0b0e14"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe6a3"/><stop offset="1" stop-color="#e0a021"/>
+    </linearGradient>
+    <marker id="arw" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0 1 L11 6 L0 11 z" fill="#f0b429"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg2)"/>
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+
+    <text x="90" y="108" font-size="52" font-weight="800" fill="#f2f4f8">Bagaimana ETF Emas Bekerja</text>
+    <text x="90" y="160" font-size="27" fill="#8a94a5">Dari order di aplikasi sekuritas sampai batangan emas di brankas.</text>
+    <rect x="90" y="188" width="96" height="4" rx="2" fill="#f0b429"/>
+
+    <!-- Rantai lima simpul -->
+    <g>
+      <!-- 1 -->
+      <rect x="90" y="250" width="250" height="200" rx="16" fill="#161c27" stroke="#2b3342" stroke-width="2"/>
+      <circle cx="124" cy="296" r="22" fill="url(#g2)"/>
+      <text x="124" y="305" text-anchor="middle" font-size="24" font-weight="800" fill="#1a1206">1</text>
+      <text x="110" y="360" font-size="28" font-weight="700" fill="#eef1f6">Investor</text>
+      <text x="110" y="396" font-size="20" fill="#8a94a5">Beli &amp; jual unit lewat</text>
+      <text x="110" y="424" font-size="20" fill="#8a94a5">aplikasi sekuritas</text>
+      <!-- 2 -->
+      <rect x="392" y="250" width="250" height="200" rx="16" fill="#161c27" stroke="#2b3342" stroke-width="2"/>
+      <circle cx="426" cy="296" r="22" fill="url(#g2)"/>
+      <text x="426" y="305" text-anchor="middle" font-size="24" font-weight="800" fill="#1a1206">2</text>
+      <text x="412" y="360" font-size="28" font-weight="700" fill="#eef1f6">Bursa Efek</text>
+      <text x="412" y="396" font-size="20" fill="#8a94a5">XGLD · XDES · XMES</text>
+      <text x="412" y="424" font-size="20" fill="#8a94a5">XSGO · XTRA</text>
+      <!-- 3 -->
+      <rect x="694" y="250" width="250" height="200" rx="16" fill="#161c27" stroke="#2b3342" stroke-width="2"/>
+      <circle cx="728" cy="296" r="22" fill="url(#g2)"/>
+      <text x="728" y="305" text-anchor="middle" font-size="24" font-weight="800" fill="#1a1206">3</text>
+      <text x="714" y="360" font-size="26" font-weight="700" fill="#eef1f6">ETF Emas (KIK)</text>
+      <text x="714" y="396" font-size="20" fill="#8a94a5">Dikelola manajer</text>
+      <text x="714" y="424" font-size="20" fill="#8a94a5">investasi, ≥95% emas</text>
+      <!-- 4 -->
+      <rect x="996" y="250" width="250" height="200" rx="16" fill="#161c27" stroke="#2b3342" stroke-width="2"/>
+      <circle cx="1030" cy="296" r="22" fill="url(#g2)"/>
+      <text x="1030" y="305" text-anchor="middle" font-size="24" font-weight="800" fill="#1a1206">4</text>
+      <text x="1016" y="360" font-size="28" font-weight="700" fill="#eef1f6">EGR di KSEI</text>
+      <text x="1016" y="396" font-size="20" fill="#8a94a5">Bukti kepemilikan</text>
+      <text x="1016" y="424" font-size="20" fill="#8a94a5">emas elektronik</text>
+      <!-- 5 -->
+      <rect x="1298" y="250" width="250" height="200" rx="16" fill="#20180a" stroke="#f0b429" stroke-opacity="0.5" stroke-width="2"/>
+      <circle cx="1332" cy="296" r="22" fill="url(#g2)"/>
+      <text x="1332" y="305" text-anchor="middle" font-size="24" font-weight="800" fill="#1a1206">5</text>
+      <text x="1318" y="360" font-size="28" font-weight="700" fill="#ffd97a">Emas fisik</text>
+      <text x="1318" y="396" font-size="20" fill="#b49a6a">Murni ≥99,5% LBMA</text>
+      <text x="1318" y="424" font-size="20" fill="#b49a6a">di brankas bullion</text>
+    </g>
+
+    <g stroke="#f0b429" stroke-width="3" marker-end="url(#arw)" stroke-opacity="0.85">
+      <line x1="348" y1="350" x2="382" y2="350"/>
+      <line x1="650" y1="350" x2="684" y2="350"/>
+      <line x1="952" y1="350" x2="986" y2="350"/>
+      <line x1="1254" y1="350" x2="1288" y2="350"/>
+    </g>
+
+    <text x="90" y="512" font-size="24" fill="#7c8698">Harga unit bergerak mengikuti harga emas. Investor memegang klaim atas emas — bukan logamnya.</text>
+
+    <line x1="90" y1="566" x2="1548" y2="566" stroke="#232a36" stroke-width="2"/>
+    <text x="90" y="630" font-size="30" font-weight="700" letter-spacing="4" fill="#f0b429">PEMAIN DI BALIK LAYAR</text>
+
+    <g>
+      <rect x="100" y="668" width="450" height="232" rx="16" fill="#12171f" stroke="#232a36" stroke-width="2"/>
+      <text x="132" y="722" font-size="28" font-weight="700" fill="#eef1f6">Manajer Investasi</text>
+      <text x="132" y="770" font-size="21" fill="#8a94a5">Merancang dan mengelola portofolio,</text>
+      <text x="132" y="800" font-size="21" fill="#8a94a5">menjaga bobot emas minimal 95%,</text>
+      <text x="132" y="830" font-size="21" fill="#8a94a5">dan menerbitkan atau menarik unit</text>
+      <text x="132" y="860" font-size="21" fill="#8a94a5">di pasar primer.</text>
+
+      <rect x="575" y="668" width="450" height="232" rx="16" fill="#12171f" stroke="#232a36" stroke-width="2"/>
+      <text x="607" y="722" font-size="28" font-weight="700" fill="#eef1f6">Bank Kustodian</text>
+      <text x="607" y="770" font-size="21" fill="#8a94a5">Menyimpan aset dan catatan</text>
+      <text x="607" y="800" font-size="21" fill="#8a94a5">kepemilikan, menghitung Nilai</text>
+      <text x="607" y="830" font-size="21" fill="#8a94a5">Aktiva Bersih (NAB) harian, serta</text>
+      <text x="607" y="860" font-size="21" fill="#8a94a5">mengadministrasikan unit.</text>
+
+      <rect x="1050" y="668" width="450" height="232" rx="16" fill="#12171f" stroke="#232a36" stroke-width="2"/>
+      <text x="1082" y="722" font-size="28" font-weight="700" fill="#eef1f6">Dealer Partisipan</text>
+      <text x="1082" y="770" font-size="21" fill="#8a94a5">Anggota bursa yang menciptakan dan</text>
+      <text x="1082" y="800" font-size="21" fill="#8a94a5">menebus unit dalam jumlah besar,</text>
+      <text x="1082" y="830" font-size="21" fill="#8a94a5">sehingga harga di pasar tetap</text>
+      <text x="1082" y="860" font-size="21" fill="#8a94a5">menempel pada NAB.</text>
+    </g>
+  </g>
+</svg>

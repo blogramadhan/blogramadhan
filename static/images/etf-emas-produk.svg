@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Daftar lima ETF emas syariah yang tercatat di Bursa Efek Indonesia beserta manajer investasi dan harga perdananya">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1219"/><stop offset="1" stop-color="#0b0e14"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg4)"/>
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="70" y="102" font-size="52" font-weight="800" fill="#f2f4f8">Lima ETF Emas Perdana di BEI</text>
+    <text x="70" y="152" font-size="26" fill="#8a94a5">Tercatat 10 Agustus 2026 — seluruhnya berprinsip syariah.</text>
+    <g font-size="20" font-weight="700" letter-spacing="3" fill="#f0b429">
+      <text x="100" y="214">KODE</text>
+      <text x="320" y="214">PRODUK &amp; MANAJER INVESTASI</text>
+      <text x="1500" y="214" text-anchor="end">HARGA PERDANA</text>
+    </g>
+    <line x1="70" y1="230" x2="1530" y2="230" stroke="#232a36" stroke-width="2"/>
+    <g>
+      <rect x="70" y="250" width="1460" height="124" rx="14" fill="#12171f" stroke="#232a36" stroke-width="2"/>
+      <rect x="100" y="274" width="180" height="76" rx="12" fill="#f0b429" fill-opacity="0.10" stroke="#f0b429" stroke-opacity="0.55" stroke-width="2"/>
+      <text x="190" y="326" text-anchor="middle" font-size="31" font-weight="800" letter-spacing="2" fill="#ffd97a">XDES</text>
+      <text x="320" y="304" font-size="26" fill="#eef1f6">Reksa Dana Syariah BRI MI Gold ETF Syariah</text>
+      <text x="320" y="342" font-size="21" fill="#8a94a5">PT BRI Manajemen Investasi</text>
+      <text x="1500" y="316" text-anchor="end" font-size="34" font-weight="700" fill="#ffd97a">Rp1.000</text>
+      <text x="1500" y="346" text-anchor="end" font-size="18" fill="#7c8698">per unit</text>
+    </g>
+    <g>
+      <rect x="70" y="390" width="1460" height="124" rx="14" fill="#12171f" stroke="#232a36" stroke-width="2"/>
+      <rect x="100" y="414" width="180" height="76" rx="12" fill="#f0b429" fill-opacity="0.10" stroke="#f0b429" stroke-opacity="0.55" stroke-width="2"/>
+      <text x="190" y="466" text-anchor="middle" font-size="31" font-weight="800" letter-spacing="2" fill="#ffd97a">XGLD</text>
+      <text x="320" y="444" font-size="26" fill="#eef1f6">Reksa Dana Syariah Premier ETF Gold Sharia Indonesia</text>
+      <text x="320" y="482" font-size="21" fill="#8a94a5">PT Indo Premier Investment Management</text>
+      <text x="1500" y="456" text-anchor="end" font-size="34" font-weight="700" fill="#ffd97a">Rp256</text>
+      <text x="1500" y="486" text-anchor="end" font-size="18" fill="#7c8698">per unit</text>
+    </g>
+    <g>
+      <rect x="70" y="530" width="1460" height="124" rx="14" fill="#12171f" stroke="#232a36" stroke-width="2"/>
+      <rect x="100" y="554" width="180" height="76" rx="12" fill="#f0b429" fill-opacity="0.10" stroke="#f0b429" stroke-opacity="0.55" stroke-width="2"/>
+      <text x="190" y="606" text-anchor="middle" font-size="31" font-weight="800" letter-spacing="2" fill="#ffd97a">XMES</text>
+      <text x="320" y="584" font-size="26" fill="#eef1f6">Reksa Dana Syariah Mandiri ETF Emas</text>
+      <text x="320" y="622" font-size="21" fill="#8a94a5">PT Mandiri Manajemen Investasi</text>
+      <text x="1500" y="596" text-anchor="end" font-size="34" font-weight="700" fill="#ffd97a">Rp757</text>
+      <text x="1500" y="626" text-anchor="end" font-size="18" fill="#7c8698">per unit</text>
+    </g>
+    <g>
+      <rect x="70" y="670" width="1460" height="124" rx="14" fill="#12171f" stroke="#232a36" stroke-width="2"/>
+      <rect x="100" y="694" width="180" height="76" rx="12" fill="#f0b429" fill-opacity="0.10" stroke="#f0b429" stroke-opacity="0.55" stroke-width="2"/>
+      <text x="190" y="746" text-anchor="middle" font-size="31" font-weight="800" letter-spacing="2" fill="#ffd97a">XSGO</text>
+      <text x="320" y="724" font-size="26" fill="#eef1f6">Reksa Dana Syariah Syailendra ETF Sharia Gold</text>
+      <text x="320" y="762" font-size="21" fill="#8a94a5">PT Syailendra Capital</text>
+      <text x="1500" y="736" text-anchor="end" font-size="34" font-weight="700" fill="#ffd97a">Rp1.000</text>
+      <text x="1500" y="766" text-anchor="end" font-size="18" fill="#7c8698">per unit</text>
+    </g>
+    <g>
+      <rect x="70" y="810" width="1460" height="124" rx="14" fill="#12171f" stroke="#232a36" stroke-width="2"/>
+      <rect x="100" y="834" width="180" height="76" rx="12" fill="#f0b429" fill-opacity="0.10" stroke="#f0b429" stroke-opacity="0.55" stroke-width="2"/>
+      <text x="190" y="886" text-anchor="middle" font-size="31" font-weight="800" letter-spacing="2" fill="#ffd97a">XTRA</text>
+      <text x="320" y="864" font-size="26" fill="#eef1f6">Reksa Dana Syariah Trimegah Syariah ETF Emas</text>
+      <text x="320" y="902" font-size="21" fill="#8a94a5">PT Trimegah Asset Management</text>
+      <text x="1500" y="876" text-anchor="end" font-size="34" font-weight="700" fill="#ffd97a">Rp248</text>
+      <text x="1500" y="906" text-anchor="end" font-size="18" fill="#7c8698">per unit</text>
+    </g>
+    <text x="70" y="976" font-size="19" fill="#66707f">Harga perdana adalah harga pencatatan awal. Setelahnya harga bergerak mengikuti harga emas dan permintaan di pasar.</text>
+  </g>
+</svg>
