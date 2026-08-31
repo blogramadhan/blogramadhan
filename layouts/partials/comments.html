@@ -1,0 +1,69 @@
+{{- /*
+  Komentar Giscus — menumpang GitHub Discussions milik repo ini sendiri.
+
+  Skripnya disuntikkan dari sisi klien, bukan dirender langsung, karena tema
+  giscus harus cocok dengan tema yang sedang dipakai pembaca. Hugo tidak tahu
+  itu saat build; hanya peramban yang tahu (head.html sudah menetapkan
+  data-theme sebelum body dirender).
+
+  Mati dengan sendirinya bila categoryId belum diisi, jadi situs tetap bisa
+  di-build sebelum penyiapan di GitHub selesai. Matikan per tulisan lewat
+  frontmatter: comments = false
+*/ -}}
+
+{{- $c := site.Params.comments -}}
+{{- $on := true -}}
+{{- if isset .Params "comments" -}}{{- $on = .Params.comments -}}{{- end -}}
+
+{{- if and $c $c.enable $on -}}
+  {{- if and $c.repoId $c.categoryId -}}
+<section class="post-comments wrap-narrow" id="komentar">
+  <h2 class="comments-title">Komentar</h2>
+  <p class="comments-note">Berkomentar memerlukan akun GitHub. Tulisan Anda tersimpan sebagai diskusi publik di repositori situs ini.</p>
+  <div id="giscus-mount"></div>
+</section>
+<script>
+  (function () {
+    var mount = document.getElementById('giscus-mount');
+    if (!mount) return;
+
+    var ORIGIN = 'https://giscus.app';
+    var TEMA = { terang: {{ $c.themeLight | default "light" }}, gelap: {{ $c.themeDark | default "dark" }} };
+
+    function temaKini() {
+      return document.documentElement.getAttribute('data-theme') === 'dark' ? TEMA.gelap : TEMA.terang;
+    }
+
+    var s = document.createElement('script');
+    s.src = ORIGIN + '/client.js';
+    s.async = true;
+    s.crossOrigin = 'anonymous';
+    s.setAttribute('data-repo', {{ $c.repo }});
+    s.setAttribute('data-repo-id', {{ $c.repoId }});
+    s.setAttribute('data-category', {{ $c.category }});
+    s.setAttribute('data-category-id', {{ $c.categoryId }});
+    s.setAttribute('data-mapping', {{ $c.mapping | default "pathname" }});
+    s.setAttribute('data-strict', '1');
+    s.setAttribute('data-reactions-enabled', '1');
+    s.setAttribute('data-emit-metadata', '0');
+    s.setAttribute('data-input-position', {{ $c.inputPosition | default "top" }});
+    s.setAttribute('data-lang', {{ $c.lang | default "id" }});
+    s.setAttribute('data-loading', 'lazy');
+    s.setAttribute('data-theme', temaKini());
+    mount.appendChild(s);
+
+    // Ikut berganti saat pembaca menekan tombol tema.
+    new MutationObserver(function () {
+      var f = document.querySelector('iframe.giscus-frame');
+      if (!f || !f.contentWindow) return;
+      f.contentWindow.postMessage({ giscus: { setConfig: { theme: temaKini() } } }, ORIGIN);
+    }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  })();
+</script>
+  {{- else if hugo.IsServer -}}
+<section class="post-comments wrap-narrow">
+  <h2 class="comments-title">Komentar</h2>
+  <p class="comments-note">Giscus belum siap: isi <code>categoryId</code> di <code>hugo.toml</code> setelah Discussions diaktifkan. Pesan ini hanya tampil saat <code>hugo server</code>.</p>
+</section>
+  {{- end -}}
+{{- end -}}

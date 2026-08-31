@@ -38,6 +38,8 @@
     </div>
   </div>
 
+  {{ partial "comments.html" . }}
+
   <footer class="post-footer wrap-narrow">
     <div class="post-nav">
       {{ with .PrevInSection }}<a class="post-nav-link prev" href="{{ .RelPermalink }}"><span class="pn-label">← Berikutnya</span><span class="pn-title">{{ .Title }}</span></a>{{ end }}

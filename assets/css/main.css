@@ -537,12 +537,26 @@ h1, h2, h3, h4 {
   /* Daftar isi menggeser kolom teks ke kanan. Judul & kaki artikel ikut digeser
      sejauh (lebar TOC + gap + padding) agar tetap segaris dengan badan teks. */
   .post--toc .post-header,
+  .post--toc .post-comments,
   .post--toc .post-footer {
     max-width: calc(15rem + 2rem + var(--wrap-narrow));
     padding-left: calc(15rem + 2rem + 1.5rem);
     padding-right: 1.5rem;
   }
 }
+/* ---------- Komentar ---------- */
+.post-comments {
+  margin-top: 3.5rem; padding-top: 2.5rem;
+  border-top: 1px solid var(--line);
+}
+.comments-title {
+  font-size: 1.35rem; font-weight: 650; margin: 0 0 .45rem;
+  letter-spacing: -0.02em;
+}
+.comments-note { color: var(--ink-faint); font-size: .88rem; margin: 0 0 1.6rem; line-height: 1.6; }
+.giscus, .giscus-frame { width: 100%; }
+.giscus-frame { border: none; color-scheme: normal; }
+
 .post-toc {
   font-size: .84rem; border-left: 1px solid var(--line); padding-left: 1rem;
   line-height: 1.5;

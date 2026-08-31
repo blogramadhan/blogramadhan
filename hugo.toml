@@ -33,6 +33,22 @@ summaryLength = 40
   # Copyright
   copyrightYear = 2026
 
+# Komentar Giscus (GitHub Discussions).
+# categoryId masih kosong — ambil dari https://giscus.app setelah Discussions
+# diaktifkan dan aplikasi giscus dipasang di repo. Selama kosong, blok komentar
+# tidak dirender sama sekali.
+[params.comments]
+  enable = true
+  repo = "blogramadhan/blogramadhan"
+  repoId = "R_kgDOIdaatA"
+  category = "Announcements"
+  categoryId = "157884867"
+  mapping = "pathname"
+  lang = "id"
+  inputPosition = "top"
+  themeLight = "light"
+  themeDark = "dark"
+
 [menu]
   [[menu.main]]
     name = "Beranda"

@@ -57,6 +57,7 @@ collections:
       - { label: "Kategori", name: "categories", widget: "list", required: false }
       - { label: "Gambar sampul", name: "featured_image", widget: "image", required: false }
       - { label: "Tampilkan daftar isi", name: "toc", widget: "boolean", default: false, required: false }
+      - { label: "Aktifkan komentar", name: "comments", widget: "boolean", default: true, required: false }
       - { label: "Isi", name: "body", widget: "markdown" }
 
   - name: "projects"
