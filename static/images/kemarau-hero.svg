@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Kemarau berlapis di Kalimantan Barat: asap karhutla, ISPU 328, dan air PDAM asin">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#2a1a0e"/><stop offset="0.45" stop-color="#1a1410"/><stop offset="1" stop-color="#0d0f13"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbbf6b"/><stop offset="1" stop-color="#d97706"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fcd9a0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#b45309"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity="0.38"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="haze" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e8b478" stop-opacity="0"/><stop offset="0.5" stop-color="#e8b478" stop-opacity="0.16"/><stop offset="1" stop-color="#e8b478" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+
+  <!-- matahari berkabut -->
+  <ellipse cx="1190" cy="330" rx="420" ry="360" fill="url(#halo)"/>
+  <circle cx="1190" cy="330" r="112" fill="url(#sun)"/>
+  <!-- lapisan asap melintang -->
+  <g>
+    <rect x="820" y="252" width="740" height="26" rx="13" fill="url(#haze)"/>
+    <rect x="780" y="316" width="800" height="34" rx="17" fill="url(#haze)"/>
+    <rect x="840" y="386" width="700" height="24" rx="12" fill="url(#haze)"/>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="322" font-size="23" font-weight="700" letter-spacing="6" fill="#f0a742">KALIMANTAN BARAT · AGUSTUS 2026</text>
+    <text x="96" y="432" font-size="88" font-weight="800" letter-spacing="-2.5" fill="#f4f1ec">KEMARAU YANG</text>
+    <text x="96" y="530" font-size="88" font-weight="800" letter-spacing="-2.5" fill="url(#amber)">DATANG BERLAPIS</text>
+    <rect x="100" y="568" width="120" height="5" rx="2.5" fill="#d97706"/>
+    <text x="100" y="638" font-size="31" fill="#b3a99c">Karhutla, asap, air keran yang asin,</text>
+    <text x="100" y="682" font-size="31" fill="#b3a99c">dan antrean galon air tawar.</text>
+
+    <!-- tiga angka -->
+    <g>
+      <rect x="100" y="748" width="270" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#4a3d30" stroke-width="2"/>
+      <text x="126" y="800" font-size="40" font-weight="800" fill="#fbbf6b">328</text>
+      <text x="126" y="832" font-size="17" fill="#9a8f82">ISPU — berbahaya</text>
+
+      <rect x="392" y="748" width="270" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#4a3d30" stroke-width="2"/>
+      <text x="418" y="800" font-size="40" font-weight="800" fill="#fbbf6b">6.050</text>
+      <text x="418" y="832" font-size="17" fill="#9a8f82">titik panas di Kalbar</text>
+
+      <rect x="684" y="748" width="300" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#4a3d30" stroke-width="2"/>
+      <text x="710" y="800" font-size="40" font-weight="800" fill="#7fd4c1">2.903</text>
+      <text x="710" y="832" font-size="17" fill="#9a8f82">mg/l salinitas intake</text>
+    </g>
+  </g>
+</svg>

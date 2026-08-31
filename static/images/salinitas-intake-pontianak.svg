@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Grafik batang salinitas air baku di empat intake PDAM Pontianak, tertinggi 2.903 miligram per liter di Nipah Kuning">
+  <rect width="1600" height="1000" fill="#12171f"/>
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="70" y="104" font-size="50" font-weight="800" fill="#f2f4f8">Seberapa Asin Air Bakunya</text>
+    <text x="70" y="152" font-size="25" fill="#8a94a5">Salinitas di empat titik pengambilan air baku PDAM Tirta Khatulistiwa, Pontianak.</text>
+    <rect x="70" y="180" width="96" height="4" rx="2" fill="#199e70"/>
+    <line x1="750" y1="280" x2="750" y2="812" stroke="#232a36" stroke-width="2" stroke-dasharray="3 7"/>
+    <text x="750" y="848" text-anchor="middle" font-size="19" fill="#6f7b8d">1.000</text>
+    <line x1="1050" y1="280" x2="1050" y2="812" stroke="#232a36" stroke-width="2" stroke-dasharray="3 7"/>
+    <text x="1050" y="848" text-anchor="middle" font-size="19" fill="#6f7b8d">2.000</text>
+    <line x1="1350" y1="280" x2="1350" y2="812" stroke="#232a36" stroke-width="2" stroke-dasharray="3 7"/>
+    <text x="1350" y="848" text-anchor="middle" font-size="19" fill="#6f7b8d">3.000</text>
+    <line x1="450" y1="280" x2="450" y2="812" stroke="#2a3340" stroke-width="2"/>
+    <text x="450" y="848" text-anchor="middle" font-size="19" fill="#6f7b8d">0</text>
+    <text x="450" y="884" font-size="18" fill="#5f6a7a">miligram per liter</text>
+    <text x="410" y="348" text-anchor="end" font-size="25" fill="#e8eaed">Nipah Kuning</text>
+    <path d="M450 300 H1316.9 Q1320.9 300 1320.9 304 V374 Q1320.9 378 1316.9 378 H450 Z" fill="#199e70"/>
+    <text x="1339" y="349" font-size="26" font-weight="700" fill="#eef1f6">2.903</text>
+    <text x="410" y="488" text-anchor="end" font-size="25" fill="#e8eaed">Selat Panjang</text>
+    <path d="M450 440 H776.0 Q780.0 440 780.0 444 V514 Q780.0 518 776.0 518 H450 Z" fill="#199e70"/>
+    <text x="798" y="489" font-size="26" font-weight="700" fill="#eef1f6">±1.100</text>
+    <text x="410" y="628" text-anchor="end" font-size="25" fill="#e8eaed">Imam Bonjol</text>
+    <path d="M450 580 H656.0 Q660.0 580 660.0 584 V654 Q660.0 658 656.0 658 H450 Z" fill="#199e70"/>
+    <text x="678" y="629" font-size="26" font-weight="700" fill="#eef1f6">&gt;700</text>
+    <text x="410" y="768" text-anchor="end" font-size="25" fill="#e8eaed">Parit Mayor</text>
+    <path d="M450 720 H626.0 Q630.0 720 630.0 724 V794 Q630.0 798 626.0 798 H450 Z" fill="#199e70"/>
+    <text x="648" y="769" font-size="26" font-weight="700" fill="#eef1f6">400–600</text>
+
+    <line x1="525" y1="272" x2="525" y2="818" stroke="#12171f" stroke-width="9" stroke-dasharray="9 7"/>
+    <line x1="525" y1="272" x2="525" y2="818" stroke="#d03b3b" stroke-width="3" stroke-dasharray="9 7"/>
+    <text x="539" y="258" font-size="19" font-weight="600" fill="#e8817f">acuan air minum ±250 mg/l</text>
+
+    <text x="70" y="928" font-size="18" fill="#66707f">Imam Bonjol dilaporkan &gt;700 dan Parit Mayor 400–600; batang digambar pada batas atasnya.</text>
+    <text x="70" y="958" font-size="18" fill="#66707f">Angka per 14 Agustus 2026. Garis acuan mengikuti ambang klorida yang lazim dipakai untuk air minum.</text>
+  </g>
+</svg>

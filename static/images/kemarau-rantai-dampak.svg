@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Rantai sebab akibat: satu kemarau bercabang menjadi jalur asap dan jalur air asin">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1219"/><stop offset="1" stop-color="#0b0e14"/>
+    </linearGradient>
+    <marker id="arA" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 1 L11 6 L0 11 z" fill="#f0a742"/></marker>
+    <marker id="arB" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 1 L11 6 L0 11 z" fill="#4fc3a6"/></marker>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="70" y="104" font-size="50" font-weight="800" fill="#f2f4f8">Satu Kemarau, Dua Jalur</text>
+    <text x="70" y="154" font-size="26" fill="#8a94a5">Asap dan air asin bukan dua musibah terpisah — keduanya berangkat dari sebab yang sama.</text>
+    <rect x="70" y="182" width="96" height="4" rx="2" fill="#f0a742"/>
+
+    <rect x="70" y="415" width="250" height="170" rx="16" fill="#1b1712" stroke="#6b5533" stroke-width="2"/>
+    <text x="94" y="474" font-size="26" font-weight="700" fill="#f4f1ec">Kemarau</text>
+    <text x="94" y="506" font-size="26" font-weight="700" fill="#f4f1ec">panjang</text>
+    <text x="94" y="544" font-size="19" fill="#9a8f82">hujan di hulu berhenti</text>
+
+    <rect x="400" y="230" width="250" height="170" rx="16" fill="#171310" stroke="#5a4426" stroke-width="2"/>
+    <text x="424" y="292" font-size="24" font-weight="700" fill="#eef1f6">Lahan gambut</text>
+    <text x="424" y="322" font-size="24" font-weight="700" fill="#eef1f6">kering</text>
+    <text x="424" y="358" font-size="18" fill="#8a94a5">air tanah turun</text>    <line x1="658" y1="315" x2="690" y2="315" stroke="#f0a742" stroke-width="3" marker-end="url(#arA)"/>
+    <rect x="700" y="230" width="250" height="170" rx="16" fill="#171310" stroke="#5a4426" stroke-width="2"/>
+    <text x="724" y="292" font-size="24" font-weight="700" fill="#eef1f6">Karhutla</text>
+    <text x="724" y="322" font-size="24" font-weight="700" fill="#eef1f6">menyebar</text>
+    <text x="724" y="358" font-size="18" fill="#8a94a5">6.050 titik panas</text>    <line x1="958" y1="315" x2="990" y2="315" stroke="#f0a742" stroke-width="3" marker-end="url(#arA)"/>
+    <rect x="1000" y="230" width="250" height="170" rx="16" fill="#171310" stroke="#5a4426" stroke-width="2"/>
+    <text x="1024" y="292" font-size="24" font-weight="700" fill="#eef1f6">Kabut asap</text>
+    <text x="1024" y="322" font-size="24" font-weight="700" fill="#eef1f6">menetap</text>
+    <text x="1024" y="358" font-size="18" fill="#8a94a5">ISPU 328 — berbahaya</text>    <line x1="1258" y1="315" x2="1290" y2="315" stroke="#f0a742" stroke-width="3" marker-end="url(#arA)"/>
+    <rect x="1300" y="230" width="250" height="170" rx="16" fill="#171310" stroke="#5a4426" stroke-width="2"/>
+    <text x="1324" y="292" font-size="24" font-weight="700" fill="#eef1f6">Napas</text>
+    <text x="1324" y="322" font-size="24" font-weight="700" fill="#eef1f6">terganggu</text>
+    <text x="1324" y="358" font-size="18" fill="#8a94a5">kasus ISPA naik</text>
+    <rect x="400" y="600" width="250" height="170" rx="16" fill="#101917" stroke="#26514a" stroke-width="2"/>
+    <text x="424" y="662" font-size="24" font-weight="700" fill="#eef1f6">Debit Kapuas</text>
+    <text x="424" y="692" font-size="24" font-weight="700" fill="#eef1f6">menyusut</text>
+    <text x="424" y="728" font-size="18" fill="#8a94a5">tekanan hulu melemah</text>    <line x1="658" y1="685" x2="690" y2="685" stroke="#4fc3a6" stroke-width="3" marker-end="url(#arB)"/>
+    <rect x="700" y="600" width="250" height="170" rx="16" fill="#101917" stroke="#26514a" stroke-width="2"/>
+    <text x="724" y="662" font-size="24" font-weight="700" fill="#eef1f6">Air laut</text>
+    <text x="724" y="692" font-size="24" font-weight="700" fill="#eef1f6">masuk hulu</text>
+    <text x="724" y="728" font-size="18" fill="#8a94a5">intrusi saat pasang</text>    <line x1="958" y1="685" x2="990" y2="685" stroke="#4fc3a6" stroke-width="3" marker-end="url(#arB)"/>
+    <rect x="1000" y="600" width="250" height="170" rx="16" fill="#101917" stroke="#26514a" stroke-width="2"/>
+    <text x="1024" y="662" font-size="24" font-weight="700" fill="#eef1f6">Air PDAM</text>
+    <text x="1024" y="692" font-size="24" font-weight="700" fill="#eef1f6">terasa asin</text>
+    <text x="1024" y="728" font-size="18" fill="#8a94a5">2.903 mg/l di intake</text>    <line x1="1258" y1="685" x2="1290" y2="685" stroke="#4fc3a6" stroke-width="3" marker-end="url(#arB)"/>
+    <rect x="1300" y="600" width="250" height="170" rx="16" fill="#101917" stroke="#26514a" stroke-width="2"/>
+    <text x="1324" y="662" font-size="24" font-weight="700" fill="#eef1f6">Warga antre</text>
+    <text x="1324" y="692" font-size="24" font-weight="700" fill="#eef1f6">galon</text>
+    <text x="1324" y="728" font-size="18" fill="#8a94a5">air tawar jadi beli</text>
+    <path d="M320 480 C360 480 360 315 392 315" fill="none" stroke="#f0a742" stroke-width="3" marker-end="url(#arA)"/>
+    <path d="M320 520 C360 520 360 685 392 685" fill="none" stroke="#4fc3a6" stroke-width="3" marker-end="url(#arB)"/>
+    <text x="336" y="268" font-size="19" font-weight="700" letter-spacing="3" fill="#f0a742">DARAT</text>
+    <text x="336" y="768" font-size="19" font-weight="700" letter-spacing="3" fill="#4fc3a6">SUNGAI</text>
+    <text x="70" y="944" font-size="21" fill="#7c8698">Menambal salah satu ujungnya tidak menyentuh pangkalnya. Keduanya menunggu hujan yang sama.</text>
+  </g>
+</svg>
