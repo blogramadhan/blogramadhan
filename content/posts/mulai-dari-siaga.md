@@ -2,8 +2,8 @@
 title = "Mulai dari Siaga"
 date = 2026-09-03T11:00:00+07:00
 draft = false
-description = "Catatan dari ruang ujian UNAR tingkat Siaga di Kubu Raya: 65 soal, 120 menit, dan alasan kenapa saya masih menganggap radio itu penting."
-tags = ["radio-amatir", "unar", "pontianak", "kalbar", "jurnal"]
+description = "Catatan dari ruang ujian UNAR tingkat Siaga di Kubu Raya: 65 soal, 120 menit, dan enam karakter yang keluar di ujungnya — YD7AQT."
+tags = ["radio-amatir", "unar", "yd7aqt", "pontianak", "kalbar", "jurnal"]
 categories = ["Jurnal"]
 featured_image = "/images/unar-siaga-hero.svg"
 +++
@@ -97,11 +97,32 @@ lebih sedikit — sebuah perangkat, sebuah antena, sebuah sumber daya, dan orang
 memakainya. Di provinsi yang tiap tahun berurusan dengan asap, banjir, dan jarak, itu bukan
 hobi nostalgia. Itu cadangan.
 
+## Enam huruf dan angka
+
+Yang paling berkesan datang belakangan, waktu tanda panggil saya keluar:
+
+<p style="text-align:center;font-size:2.2rem;font-weight:800;letter-spacing:0.12em;margin:1.6rem 0">YD7AQT</p>
+
+Enam karakter, dan tidak satu pun dipilih sendiri. Semuanya diberikan, dan masing-masing
+mengatakan sesuatu.
+
+- **YD** — prefiks untuk tingkat Siaga. Huruf ini akan berubah kalau saya naik tingkat nanti.
+- **7** — wilayah panggil Kalimantan. Ini menempelkan saya pada tempat.
+- **AQT** — suffiks urutan, bagian yang benar-benar milik saya sendiri.
+
+Ada yang aneh rasanya punya nama yang diberikan negara, dieja pakai alfabet fonetik, dan
+dimaksudkan untuk diucapkan orang asing di frekuensi: *Yankee Delta Seven Alpha Quebec
+Tango.*
+
+Tapi justru itu gunanya. Callsign bukan nama panggung — ia alamat. Di udara, orang tidak
+perlu tahu siapa saya; mereka cukup tahu di mana harus menjawab.
+
 ## Yang tersisa setelah lulus
 
 Siaga adalah tingkat pertama dari tiga. Lulus hari ini artinya saya boleh mengurus izin dan
 memakai satu pita frekuensi dengan daya yang dibatasi. Bukan kewenangan besar. Persis
-seukuran namanya.
+seukuran namanya — dan huruf **YD** di depan tanda panggil saya mengumumkannya ke siapa pun
+yang mendengar.
 
 Dan menurut saya memang begitu seharusnya. Ada urutan yang masuk akal di sini: belajar
 mendengarkan dulu, mengenali tata caranya, tahu batas-batasnya — baru bicara lebih jauh dan
