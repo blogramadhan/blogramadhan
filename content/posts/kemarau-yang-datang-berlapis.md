@@ -11,7 +11,7 @@ toc = true
 
 Pagi ini saya membuka keran, dan airnya asin.
 
-Bukan asin yang samar — asin yang membuat Anda berhenti sejenak dan memastikan tidak
+Bukan asin yang samar. Asin yang bikin saya berhenti sebentar dan mengecek ulang, jangan-jangan
 salah keran. Di luar, matahari sudah naik tapi warnanya jingga pudar, seperti dilihat lewat kaca
 kotor. Bau asap masuk lewat celah jendela yang tidak pernah benar-benar rapat.
 
@@ -42,8 +42,8 @@ daripada penjelasan mana pun yang bisa saya susun:
 > "Karena di hulu tidak hujan, tekanan dari hulu itu mengecil sehingga air pasang ini, air laut,
 > masuk."
 
-Itu sebabnya menambal salah satu ujungnya tidak pernah menyelesaikan apa pun. Memadamkan api
-tidak membuat air keran tawar kembali. Menambah pasokan galon tidak membersihkan udara. Keduanya
+Itu sebabnya menambal salah satu ujungnya tidak pernah menyelesaikan apa-apa. Memadamkan api
+tidak bikin air keran tawar lagi, dan menambah pasokan galon tidak membersihkan udara. Dua-duanya
 menunggu hujan yang sama.
 
 ## Asap yang menetap
@@ -97,7 +97,7 @@ selalu lebih tawar daripada air yang Anda tampung tengah malam.
 
 ## Antrean yang tidak masuk hitungan siapa pun
 
-Lalu tibalah bagian yang paling mudah dilewatkan ketika kita membicarakan bencana lewat angka.
+Bagian ini yang paling gampang lewat kalau bencana dibicarakan lewat angka saja.
 
 Warga mulai antre sejak pagi di depo-depo air isi ulang. Yang datang terlambat sering mendapati
 pasokan sudah habis. Sebagian rumah tangga membeli dua sampai tiga galon eceran per hari — bukan
@@ -107,9 +107,9 @@ Coba hitung pelan-pelan. Tiga galon sehari, tiga puluh hari. Itu sembilan puluh 
 sebulan, untuk pekerjaan yang bulan lalu dikerjakan oleh keran yang sudah dibayar lewat tagihan
 bulanan.
 
-Bagi sebagian orang, itu pengeluaran tambahan yang menjengkelkan. Bagi sebagian yang lain, itu
-selisih antara cukup dan tidak cukup. Dan inilah yang membuat krisis air terasa berbeda dari
-krisis lain: ia diam-diam memungut pajak paling besar dari orang yang paling sedikit punya.
+Buat sebagian orang itu pengeluaran tambahan yang menjengkelkan. Buat sebagian yang lain itu
+selisih antara cukup dan tidak cukup. Beban terberatnya jatuh ke rumah tangga yang paling
+sedikit punya, dan itu tidak muncul di statistik mana pun.
 
 Antrean itu juga bukan sekadar soal uang. Ia soal waktu — pagi yang habis untuk berdiri
 menunggu, di udara ber-ISPU 328.
@@ -155,12 +155,12 @@ musiman yang akan selesai sendiri.
 
 Disatukan, ia terlihat seperti apa adanya: sebuah bentang alam yang kehilangan kemampuannya
 menyimpan air. Gambut yang tidak lagi basah akan terbakar setiap kemarau. Sungai yang debitnya
-tidak terjaga akan kemasukan laut setiap kemarau. Keduanya bukan cuaca buruk. Keduanya adalah
-tagihan yang jatuh tempo setiap tahun, dan tahun ini jumlahnya kebetulan terbaca jelas.
+tidak terjaga akan kemasukan laut setiap kemarau. Dua-duanya bukan soal cuaca yang kebetulan buruk. Ini
+tagihan yang jatuh tempo tiap tahun, cuma tahun ini angkanya kebetulan terbaca jelas.
 
-Hujan akan turun. Air keran akan tawar lagi, langit akan biru lagi, dan antrean di depo akan
-bubar. Yang saya harap tidak ikut hilang bersama asapnya adalah ingatan bahwa keempatnya pernah
-menjadi satu.
+Hujan akan turun juga nanti, air keran akan tawar lagi, dan antrean di depo bakal bubar sendiri.
+Yang saya harap tidak ikut hilang bersama asapnya cuma satu: ingatan bahwa keempat hal tadi
+pernah menjadi satu.
 
 ---
 

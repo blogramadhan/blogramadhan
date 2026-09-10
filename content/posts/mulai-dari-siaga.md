@@ -29,16 +29,15 @@ baris terasa lucu: nomor peserta saya **0001**.
 Bukan prestasi apa-apa — hanya urutan pendaftaran. Tapi ada yang menyenangkan dari angka itu.
 Saya sedang memulai sesuatu dari betul-betul awal, dan nomornya pun ikut mengatakan begitu.
 
-Sisanya kering dan jelas, seperti seharusnya:
+Sisanya kering dan jelas:
 
 - **65 soal**, pilihan ganda
 - **120 menit**
 - Materi: Pancasila, Radio Regulation, Teknik Radio, Bahasa Inggris
 - Sisa kesempatan ujian: **2 kali**
 
-Baris terakhir itu yang paling saya ingat. Bukan ancaman, tapi juga bukan basa-basi. Ia
-memberi tahu bahwa hari ini bukan satu-satunya kesempatan, sekaligus mengingatkan bahwa
-kesempatan itu ada batasnya.
+Baris terakhir itu yang paling saya ingat. Melegakan sekaligus bikin agak tegang: hari ini
+bukan satu-satunya kesempatan, tapi jatahnya jelas ada ujungnya.
 
 ## Dua jam yang tidak terasa dua jam
 
@@ -73,8 +72,8 @@ Yang menarik justru sebaran angkanya. Nilai-nilai itu bukan skor mentah, melaink
 berbobot — dan bobotnya jelas tidak rata. Regulasi dan teknik radio menyumbang hampir seluruh
 nilai akhir. Pancasila porsinya kecil, Bahasa Inggris nol karena memang tidak diujikan.
 
-Dengan kata lain, ujian ini punya pendapat yang tegas tentang apa yang dianggapnya penting:
-**tahu aturannya, dan tahu cara kerjanya.** Sisanya pelengkap.
+Jadi ujian ini punya pendapat yang cukup tegas soal apa yang dianggapnya penting: **tahu
+aturannya, dan tahu cara kerjanya.**
 
 ## Kenapa radio, di tahun 2026
 
@@ -94,8 +93,8 @@ semuanya bisa putus di hari yang sama.
 
 Radio amatir tidak menghapus kerapuhan itu. Ia cuma menyediakan satu jalur yang kebergantungannya
 lebih sedikit — sebuah perangkat, sebuah antena, sebuah sumber daya, dan orang yang tahu cara
-memakainya. Di provinsi yang tiap tahun berurusan dengan asap, banjir, dan jarak, itu bukan
-hobi nostalgia. Itu cadangan.
+memakainya. Di provinsi yang tiap tahun berurusan dengan asap, banjir, dan jarak, buat saya itu
+masuk akal disiapkan sebagai cadangan, bukan dikoleksi sebagai nostalgia.
 
 ## Enam huruf dan angka
 
@@ -114,8 +113,8 @@ Ada yang aneh rasanya punya nama yang diberikan negara, dieja pakai alfabet fone
 dimaksudkan untuk diucapkan orang asing di frekuensi: *Yankee Delta Seven Alpha Quebec
 Tango.*
 
-Tapi justru itu gunanya. Callsign bukan nama panggung — ia alamat. Di udara, orang tidak
-perlu tahu siapa saya; mereka cukup tahu di mana harus menjawab.
+Tapi memang begitu fungsinya. Callsign itu alamat, bukan nama panggung. Di udara orang tidak
+perlu tahu siapa saya, cukup tahu ke mana harus menjawab.
 
 ## Yang tersisa setelah lulus
 
@@ -124,13 +123,12 @@ memakai satu pita frekuensi dengan daya yang dibatasi. Bukan kewenangan besar. P
 seukuran namanya — dan huruf **YD** di depan tanda panggil saya mengumumkannya ke siapa pun
 yang mendengar.
 
-Dan menurut saya memang begitu seharusnya. Ada urutan yang masuk akal di sini: belajar
-mendengarkan dulu, mengenali tata caranya, tahu batas-batasnya — baru bicara lebih jauh dan
-lebih kuat. Prinsip yang sebetulnya tidak khusus untuk radio.
+Dan menurut saya urutannya memang masuk akal: dengarkan dulu, kenali tata caranya, tahu batas
+kewenangannya, baru bicara lebih jauh dan lebih kuat.
 
 Bapak berjaket RAPI Riders itu sudah pergi waktu saya keluar ruangan. Entah dia peserta,
-pengurus, atau cuma mengantar. Tapi jaketnya masih terbayang: gelombang hijau yang memancar
-dari satu titik, di punggung seseorang yang sedang berdiri di ruang tunggu kantor pemerintah
-di Kubu Raya.
+pengurus, atau cuma mengantar. Tapi jaketnya masih terbayang sampai di jalan pulang: gelombang hijau yang memancar dari satu
+titik, di punggung orang yang lagi berdiri menunggu di kantor pemerintah di Kubu Raya.
 
-Sinyal selalu berangkat dari suatu tempat yang biasa saja.
+Berikutnya tinggal mengurus izinnya, lalu cari tahu cara kerja net yang katanya jalan tiap
+malam.

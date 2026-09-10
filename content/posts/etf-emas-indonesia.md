@@ -71,7 +71,7 @@ misalnya, pembelian di pasar primer disyaratkan setara **500 gram emas**.
 Mekanisme dua lapis inilah yang menjaga harga di layar tidak melenceng jauh dari NAB. Kalau
 harga pasar terlalu mahal dibanding nilai emas di dalamnya, dealer partisipan bisa menciptakan
 unit baru dan menjualnya — menambah pasokan, menekan harga kembali turun. Begitu pula
-sebaliknya. Arbitrase yang membosankan itu adalah alasan ETF bisa dipercaya.
+sebaliknya. Arbitrase yang membosankan itulah yang bikin harga ETF bisa dipercaya.
 
 ## Lima produk yang tercatat
 
@@ -117,9 +117,9 @@ lemari, diwariskan tanpa perantara siapa pun. ETF tidak. Bagi sebagian orang, se
 memiliki emas justru terletak pada sifat "bisa dipegang" itu — dan untuk mereka, ETF bukan
 pengganti.
 
-> Yang saya pelajari: emas fisik dan ETF emas menjawab dua ketakutan yang berbeda. Yang pertama
-> menjawab ketakutan pada sistem. Yang kedua menjawab ketakutan pada inflasi. Keduanya sah, tapi
-> jangan tertukar.
+> Kesimpulan sementara saya: emas fisik dan ETF emas sebetulnya menjawab dua kekhawatiran yang
+> berbeda, dan saya sering melihat orang memakai yang satu untuk alasan yang sebenarnya milik
+> yang lain.
 
 ## Cara membelinya
 
@@ -165,7 +165,7 @@ konsultan pajak dan pantau ketentuan yang keluar setelahnya.
 ## Risiko yang perlu dipahami
 
 **Harga emas bisa turun.** Ini risiko paling mendasar dan paling sering dilupakan, karena emas
-telanjur punya reputasi "aman". Aman dari kebangkrutan penerbit, ya. Aman dari kerugian, tidak.
+telanjur punya reputasi "aman". Aman dari penerbit yang bangkrut, iya. Aman dari rugi, tidak.
 
 **Harga pasar bisa menyimpang dari NAB.** Di ETF yang likuiditasnya belum tebal, harga di layar
 bisa berada di atas atau di bawah nilai emas yang sesungguhnya dikandung. Anda bisa rugi bukan
@@ -182,9 +182,9 @@ meski emas dunia naik.
 **Biaya menggerus diam-diam.** Biaya pengelolaan, kustodian, dan transaksi tidak ditagihkan
 terpisah — ia sudah tercermin dalam NAB. Karena tak terlihat, ia mudah diabaikan.
 
-**Dan yang terakhir, risiko salah paham.** Memiliki unit ETF bukan memiliki emas di tangan. Anda
-tidak bisa mencetaknya jadi keping, tidak bisa membawanya pulang. Kalau itu yang Anda cari,
-instrumen ini bukan jawabannya.
+**Terakhir, risiko salah paham.** Punya unit ETF itu bukan punya emas di tangan. Tidak bisa
+dicetak jadi keping dan tidak bisa dibawa pulang. Kalau itu yang Anda cari, produk ini memang
+bukan jawabannya.
 
 ## Jadi, untuk siapa?
 
@@ -206,12 +206,12 @@ tandakan: emas — aset paling tua dan paling analog yang kita kenal — akhirny
 sama dengan saham, obligasi, dan reksa dana. Ia sekarang punya kode efek, NAB harian, dan
 kustodian. Ia bisa diaudit.
 
-Itu kemajuan yang sunyi tapi nyata. Sekaligus pengingat bahwa setiap lapis kemudahan
-menambahkan satu pihak yang harus dipercaya. Emas di lemari tidak butuh siapa-siapa. Emas di
-bursa butuh manajer investasi, kustodian, KSEI, dan bursa itu sendiri bekerja sebagaimana
-mestinya.
+Itu kemajuan yang sunyi tapi nyata. Sekaligus pengingat bahwa tiap lapis kemudahan menambah
+satu pihak yang harus dipercaya. Emas di lemari tidak butuh siapa-siapa. Emas di bursa butuh
+manajer investasi, kustodian, KSEI, dan bursa itu sendiri bekerja sebagaimana mestinya.
 
-Keduanya punya harga. Yang satu dibayar dengan kerepotan, yang lain dengan kepercayaan.
+Saya sendiri belum memutuskan mau ambil yang mana, dan mungkin dua-duanya dengan porsi yang
+berbeda. Kalau nanti sudah jalan beberapa bulan, saya tulis lagi hasilnya.
 
 ---
 

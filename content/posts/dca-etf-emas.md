@@ -158,7 +158,7 @@ dirata-ratakan itu rupiahnya, bukan lotnya.
 
 ## Jadi, saya ubah atau tidak?
 
-Mari jujur soal besarannya sebelum buru-buru mengubah apa pun. Nol koma tiga puluh tujuh
+Sebelum buru-buru mengubah apa pun, saya lihat dulu besarannya. Nol koma tiga puluh tujuh
 persen dari Rp12,35 juta adalah **sekitar Rp45.500 setahun**. Nyata, pasti, tapi tidak
 mengubah hidup.
 
@@ -171,8 +171,8 @@ Dan cara saya sekarang punya kelebihannya sendiri, yang tidak muncul di simulasi
 - **Nominalnya justru naik saat harga naik**, yang bagi sebagian orang terasa lebih tenang
   daripada memborong deras saat harga jatuh.
 
-Kelebihan terakhir itu, harus saya akui, adalah kelemahan yang menyamar. Membeli lebih banyak
-saat murah justru bagian yang membuat DCA bekerja.
+Cuma, kelebihan yang terakhir itu sebenarnya kelemahan yang menyamar. Membeli lebih banyak
+waktu harga murah justru bagian yang bikin DCA bekerja.
 
 Yang saya pilih: **kompromi.** Frekuensinya tetap harian, dua produk tetap jalan, tapi jumlah
 lotnya tidak lagi selalu satu. Saya patok anggaran harian di kepala — sekitar Rp50.000 — dan

@@ -19,7 +19,7 @@ seorang pengendali, tempat siapa pun yang mendengar boleh melapor bahwa ia hadir
 *check-in*. Dan itu, secara harfiah, memang seluruh isi acaranya — orang-orang menyebutkan
 siapa mereka dan dari mana.
 
-Kedengarannya sederhana sampai Anda melakukannya sendiri.
+Saya kira itu gampang, sampai malam pertama.
 
 ## Menyebut nama sendiri di udara
 
@@ -43,7 +43,7 @@ sesuatu yang dipakai orang lain untuk memanggil saya.
 
 ## Yang terdengar dari kursi saya
 
-Yang membuat saya tidak beranjak sampai net selesai bukan giliran saya sendiri, melainkan
+Giliran saya sendiri cuma sebentar. Yang bikin saya tidak beranjak sampai net selesai justru
 giliran orang lain.
 
 Satu per satu masuk. Mula-mula yang dekat — sesama Kalimantan, kota-kota yang namanya saya
@@ -58,8 +58,8 @@ satu zona waktu. Sementara benda yang saya pegang cuma HT — perangkat yang mua
 tangan, dayanya beberapa watt, dan kalau dipakai di lapangan terbuka mungkin cuma sanggup
 menjangkau beberapa kilometer.
 
-Dua fakta itu tidak masuk akal kalau ditaruh berdampingan. Kecuali kalau Anda tahu bagian
-yang di tengah.
+Dua hal itu tidak nyambung kalau ditaruh berdampingan, dan memang tidak nyambung. Ada bagian
+yang saya lewatkan.
 
 ## Bagian yang di tengah
 
@@ -74,8 +74,8 @@ Dan repeater-repeater ini disambungkan satu sama lain lewat jaringan. Suara yang
 Pontianak keluar lagi di repeater lain, ratusan atau ribuan kilometer jauhnya, lalu turun ke
 HT orang lain yang sedang duduk di ruang tamunya sendiri.
 
-Jadi rantainya begini: HT saya menjangkau repeater. Repeater menjangkau jaringan. Jaringan
-menjangkau Gorontalo. Tiga lompatan, dan cuma lompatan pertama yang benar-benar saya kerjakan.
+Jadi ada tiga lompatan di antara saya dan Gorontalo, dan yang benar-benar saya kerjakan cuma
+lompatan pertama. Sisanya sudah dipasang orang lain jauh sebelum saya punya izin mengudara.
 
 ## Jujur soal kebergantungan
 
@@ -98,8 +98,8 @@ Mengeja pakai alfabet fonetik supaya tidak ada yang salah dengar. Bicara ringkas
 melepas PTT dan benar-benar mendengarkan. Mengikuti satu orang yang memegang kendali,
 meskipun tidak ada yang bisa memaksa Anda.
 
-Disiplin itu tidak berubah kalau jalurnya berubah. Ia sama persis ketika jaringan mati dan
-yang tersisa cuma propagasi. Bedanya, saat itu terjadi, bukan waktu yang tepat untuk baru
+Tata cara itu tidak ikut berubah kalau jalurnya berubah. Waktu jaringan mati dan yang tersisa
+cuma propagasi, aturannya sama persis. Cuma saat itu jelas bukan waktu yang enak buat baru
 mulai belajar.
 
 Net jam setengah sembilan ini latihannya. Malam-malam biasa, tanpa keadaan darurat apa pun,
@@ -116,9 +116,9 @@ Tapi yang paling saya suka dari net ini sebenarnya bukan jarak.
 Ada orang-orang di Sumatera, di Jawa, di Gorontalo, yang malam itu juga menyisihkan sepuluh
 menit dari waktu tidur mereka untuk melakukan hal yang sama sekali tidak produktif:
 menyebutkan nama dan lokasi mereka, lalu mendengarkan orang lain melakukan hal yang sama.
-Tidak ada yang dijual, tidak ada yang dimenangkan, tidak ada algoritma yang mencatat.
+Tidak ada yang dijual di situ, dan tidak ada yang menang.
 
-Cuma sekumpulan orang yang memastikan jalurnya masih hidup, dan sekaligus memastikan mereka
-tidak sendirian di dalamnya.
+Cuma sekumpulan orang yang mengecek jalurnya masih hidup, dan sekalian mengecek masih ada
+orang lain di ujung sana.
 
-Untuk sesuatu yang tidak menghasilkan apa-apa, rasanya cukup berharga.
+Saya belum bosan. Nanti kalau sudah, saya tulis lagi.
