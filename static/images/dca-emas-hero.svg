@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="DCA ETF emas XGLD dan XTRA di Stockbit: 490 order setahun, total ongkos 0,40 persen, dan 0,37 persen keunggulan yang hilang karena mengunci jumlah lot alih-alih nominal rupiah">
+  <defs>
+    <linearGradient id="dbg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#1a1408"/><stop offset="0.5" stop-color="#12110c"/><stop offset="1" stop-color="#0b0e14"/>
+    </linearGradient>
+    <linearGradient id="dgold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7d26b"/><stop offset="1" stop-color="#c98500"/>
+    </linearGradient>
+    <radialGradient id="dglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f0b429" stop-opacity="0.20"/><stop offset="1" stop-color="#f0b429" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#dbg)"/>
+  <ellipse cx="1250" cy="440" rx="400" ry="380" fill="url(#dglow)"/>
+
+  <!-- kalender setoran harian: 5 kolom x 7 baris koin kecil, makin lama makin tebal -->
+  <g>
+    <g fill="#f0b429">
+      <circle cx="1075" cy="250" r="9" fill-opacity="0.22"/><circle cx="1135" cy="250" r="9" fill-opacity="0.26"/><circle cx="1195" cy="250" r="9" fill-opacity="0.30"/><circle cx="1255" cy="250" r="9" fill-opacity="0.34"/><circle cx="1315" cy="250" r="9" fill-opacity="0.38"/>
+      <circle cx="1075" cy="310" r="9" fill-opacity="0.30"/><circle cx="1135" cy="310" r="9" fill-opacity="0.34"/><circle cx="1195" cy="310" r="9" fill-opacity="0.38"/><circle cx="1255" cy="310" r="9" fill-opacity="0.42"/><circle cx="1315" cy="310" r="9" fill-opacity="0.46"/>
+      <circle cx="1075" cy="370" r="9" fill-opacity="0.38"/><circle cx="1135" cy="370" r="9" fill-opacity="0.42"/><circle cx="1195" cy="370" r="9" fill-opacity="0.46"/><circle cx="1255" cy="370" r="9" fill-opacity="0.50"/><circle cx="1315" cy="370" r="9" fill-opacity="0.54"/>
+      <circle cx="1075" cy="430" r="9" fill-opacity="0.46"/><circle cx="1135" cy="430" r="9" fill-opacity="0.50"/><circle cx="1195" cy="430" r="9" fill-opacity="0.54"/><circle cx="1255" cy="430" r="9" fill-opacity="0.58"/><circle cx="1315" cy="430" r="9" fill-opacity="0.62"/>
+      <circle cx="1075" cy="490" r="9" fill-opacity="0.54"/><circle cx="1135" cy="490" r="9" fill-opacity="0.58"/><circle cx="1195" cy="490" r="9" fill-opacity="0.62"/><circle cx="1255" cy="490" r="9" fill-opacity="0.66"/><circle cx="1315" cy="490" r="9" fill-opacity="0.70"/>
+    </g>
+    <!-- tumpukan yang terbentuk -->
+    <g fill="url(#dgold)">
+      <rect x="1058" y="596" width="300" height="26" rx="7" fill-opacity="0.45"/>
+      <rect x="1074" y="632" width="268" height="26" rx="7" fill-opacity="0.60"/>
+      <rect x="1090" y="668" width="236" height="26" rx="7" fill-opacity="0.75"/>
+      <rect x="1106" y="704" width="204" height="26" rx="7"/>
+    </g>
+    <!-- gerigi yang menggerus tumpukan -->
+    <g stroke="#c98500" stroke-width="3" stroke-opacity="0.5" stroke-dasharray="7 9">
+      <line x1="1040" y1="570" x2="1376" y2="570"/>
+    </g>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="316" font-size="23" font-weight="700" letter-spacing="6" fill="#e0a92b">XGLD + XTRA · STOCKBIT · SEPTEMBER 2026</text>
+    <text x="96" y="434" font-size="96" font-weight="800" letter-spacing="-3" fill="#f4f2ec">DCA ETF</text>
+    <text x="96" y="536" font-size="96" font-weight="800" letter-spacing="-3" fill="url(#dgold)">EMAS</text>
+    <rect x="100" y="574" width="120" height="5" rx="2.5" fill="#c98500"/>
+    <text x="100" y="644" font-size="31" fill="#9a9288">Satu lot, tiap hari bursa, tanpa berpikir.</text>
+    <text x="100" y="688" font-size="31" fill="#9a9288">Ternyata itu belum sepenuhnya DCA.</text>
+
+    <g>
+      <rect x="100" y="756" width="240" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#4a3f28" stroke-width="2"/>
+      <text x="126" y="808" font-size="40" font-weight="800" fill="#f4f2ec">490</text>
+      <text x="126" y="840" font-size="17" fill="#8e857a">order dalam setahun</text>
+
+      <rect x="362" y="756" width="240" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#4a3f28" stroke-width="2"/>
+      <text x="388" y="808" font-size="40" font-weight="800" fill="#7fb2e8">0,40%</text>
+      <text x="388" y="840" font-size="17" fill="#8e857a">total ongkos setahun</text>
+
+      <rect x="624" y="756" width="264" height="138" rx="16" fill="#c98500" fill-opacity="0.12" stroke="#c98500" stroke-width="2.5"/>
+      <text x="650" y="808" font-size="40" font-weight="800" fill="#f7d26b">0,37%</text>
+      <text x="650" y="840" font-size="17" fill="#8e857a">hilang: yang dikunci</text>
+      <text x="650" y="862" font-size="17" fill="#8e857a">lot, bukan rupiah</text>
+    </g>
+  </g>
+</svg>
