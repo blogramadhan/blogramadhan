@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Kaspa KAS per September 2026: 96,5 persen pasokan sudah ditambang, inflasi tahunan tinggal 2,5 persen, dan seluruh anggaran keamanan jaringan bernilai sekitar 25,5 juta dolar setahun. Ilustrasi blockDAG menampilkan blok-blok paralel yang saling terhubung, bukan satu rantai tunggal.">
+  <defs>
+    <linearGradient id="kbg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#08201d"/><stop offset="0.5" stop-color="#0b1618"/><stop offset="1" stop-color="#0b0e14"/>
+    </linearGradient>
+    <linearGradient id="kteal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6fe0cd"/><stop offset="1" stop-color="#14a58f"/>
+    </linearGradient>
+    <radialGradient id="kglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#14a58f" stop-opacity="0.22"/><stop offset="1" stop-color="#14a58f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#kbg)"/>
+  <ellipse cx="1250" cy="430" rx="400" ry="380" fill="url(#kglow)"/>
+
+  <!-- blockDAG: blok paralel yang tidak dibuang, tiap blok menunjuk beberapa pendahulu -->
+  <g>
+    <g stroke="#14a58f" stroke-width="2" stroke-opacity="0.30" fill="none">
+      <path d="M1080 300 L1165 260 M1080 300 L1165 360 M1080 400 L1165 360 M1080 400 L1165 460 M1080 500 L1165 460 M1080 500 L1165 560"/>
+      <path d="M1165 260 L1250 300 M1165 360 L1250 300 M1165 360 L1250 400 M1165 460 L1250 400 M1165 460 L1250 500 M1165 560 L1250 500"/>
+      <path d="M1250 300 L1335 260 M1250 300 L1335 360 M1250 400 L1335 360 M1250 400 L1335 460 M1250 500 L1335 460 M1250 500 L1335 560"/>
+      <path d="M1335 260 L1420 320 M1335 360 L1420 320 M1335 360 L1420 420 M1335 460 L1420 420 M1335 460 L1420 520 M1335 560 L1420 520"/>
+    </g>
+    <g fill="#0b1618" stroke="url(#kteal)" stroke-width="3">
+      <rect x="1064" y="284" width="32" height="32" rx="8"/><rect x="1064" y="384" width="32" height="32" rx="8"/><rect x="1064" y="484" width="32" height="32" rx="8"/>
+      <rect x="1149" y="244" width="32" height="32" rx="8"/><rect x="1149" y="344" width="32" height="32" rx="8"/><rect x="1149" y="444" width="32" height="32" rx="8"/><rect x="1149" y="544" width="32" height="32" rx="8"/>
+      <rect x="1234" y="284" width="32" height="32" rx="8"/><rect x="1234" y="384" width="32" height="32" rx="8"/><rect x="1234" y="484" width="32" height="32" rx="8"/>
+      <rect x="1319" y="244" width="32" height="32" rx="8"/><rect x="1319" y="344" width="32" height="32" rx="8"/><rect x="1319" y="444" width="32" height="32" rx="8"/><rect x="1319" y="544" width="32" height="32" rx="8"/>
+    </g>
+    <g fill="url(#kteal)">
+      <rect x="1404" y="304" width="32" height="32" rx="8"/><rect x="1404" y="404" width="32" height="32" rx="8"/><rect x="1404" y="504" width="32" height="32" rx="8"/>
+    </g>
+
+    <!-- emisi yang meluruh: pita yang menipis -->
+    <g fill="#14a58f">
+      <rect x="1064" y="636" width="372" height="22" rx="6" fill-opacity="0.55"/>
+      <rect x="1064" y="668" width="186" height="22" rx="6" fill-opacity="0.38"/>
+      <rect x="1064" y="700" width="93"  height="22" rx="6" fill-opacity="0.26"/>
+      <rect x="1064" y="732" width="46"  height="22" rx="6" fill-opacity="0.18"/>
+    </g>
+    <text x="1064" y="786" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="19" fill="#6f8983">emisi tahunan — separuh tiap 12 bulan</text>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="316" font-size="23" font-weight="700" letter-spacing="6" fill="#4dbfab">KASPA · KAS · SEPTEMBER 2026</text>
+    <text x="96" y="434" font-size="96" font-weight="800" letter-spacing="-3" fill="#f2f4f8">TIGA PERSEN</text>
+    <text x="96" y="536" font-size="96" font-weight="800" letter-spacing="-3" fill="url(#kteal)">TERAKHIR</text>
+    <rect x="100" y="574" width="120" height="5" rx="2.5" fill="#14a58f"/>
+    <text x="100" y="644" font-size="31" fill="#93a09c">Hampir semua koinnya sudah ditambang.</text>
+    <text x="100" y="688" font-size="31" fill="#93a09c">Lalu siapa yang membayar keamanannya?</text>
+
+    <g>
+      <rect x="100" y="756" width="240" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#1f4b45" stroke-width="2"/>
+      <text x="126" y="808" font-size="40" font-weight="800" fill="#f2f4f8">96,5%</text>
+      <text x="126" y="840" font-size="17" fill="#7d8e8a">pasokan sudah ditambang</text>
+
+      <rect x="362" y="756" width="240" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#1f4b45" stroke-width="2"/>
+      <text x="388" y="808" font-size="40" font-weight="800" fill="#f2f4f8">2,5%</text>
+      <text x="388" y="840" font-size="17" fill="#7d8e8a">inflasi tahunan tersisa</text>
+
+      <rect x="624" y="756" width="264" height="138" rx="16" fill="#14a58f" fill-opacity="0.12" stroke="#14a58f" stroke-width="2.5"/>
+      <text x="650" y="808" font-size="40" font-weight="800" fill="#6fe0cd">$25,5jt</text>
+      <text x="650" y="840" font-size="17" fill="#7d8e8a">seluruh anggaran</text>
+      <text x="650" y="862" font-size="17" fill="#7d8e8a">keamanan setahun</text>
+    </g>
+  </g>
+</svg>

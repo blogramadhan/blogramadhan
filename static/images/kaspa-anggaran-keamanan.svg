@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Grafik batang horizontal: nilai seluruh emisi Kaspa setahun, yaitu satu-satunya pendapatan penambang, bila harga diam di 0,037 dolar. September 2026 sebesar 25,5 juta dolar dari 688 juta KAS; 2027 sebesar 12,7 juta dolar; 2028 sebesar 6,4 juta dolar; 2029 sebesar 3,2 juta dolar; dan 2030 sebesar 1,6 juta dolar dari 43 juta KAS. Tiap batang separuh dari batang di atasnya karena emisi Kaspa halving tiap dua belas bulan, sementara Bitcoin butuh empat tahun untuk pemotongan yang sama.">
+  <rect width="1600" height="1000" fill="#0e1219"/>
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="60" y="100" font-size="50" font-weight="800" fill="#f2f4f8">Anggaran Keamanan Kaspa, Bila Harga Diam</text>
+    <text x="60" y="150" font-size="26" fill="#8a94a5">Nilai seluruh emisi setahun — satu-satunya pendapatan penambang. Separuh tiap dua belas bulan.</text>
+
+    <g font-size="23">
+      <rect x="420" y="196" width="26" height="26" rx="4" fill="#14a58f"/>
+      <text x="458" y="217" fill="#c9d1dc">Tercatat hari ini</text>
+      <rect x="700" y="196" width="26" height="26" rx="4" fill="#14a58f" fill-opacity="0.42"/>
+      <text x="738" y="217" fill="#c9d1dc">Proyeksi pada harga tetap $0,037</text>
+    </g>
+
+    <g stroke="#1e2634" stroke-width="2">
+      <line x1="608"  y1="270" x2="608"  y2="760"/>
+      <line x1="796"  y1="270" x2="796"  y2="760"/>
+      <line x1="985"  y1="270" x2="985"  y2="760"/>
+      <line x1="1173" y1="270" x2="1173" y2="760"/>
+      <line x1="1361" y1="270" x2="1361" y2="760"/>
+    </g>
+    <line x1="420" y1="270" x2="420" y2="760" stroke="#3a4557" stroke-width="2"/>
+
+    <rect x="420" y="290" width="960" height="60" rx="4" fill="#14a58f"/>
+    <rect x="420" y="390" width="478" height="60" rx="4" fill="#14a58f" fill-opacity="0.42"/>
+    <rect x="420" y="490" width="241" height="60" rx="4" fill="#14a58f" fill-opacity="0.42"/>
+    <rect x="420" y="590" width="120" height="60" rx="4" fill="#14a58f" fill-opacity="0.42"/>
+    <rect x="420" y="690" width="60"  height="60" rx="4" fill="#14a58f" fill-opacity="0.42"/>
+
+    <g font-size="29" font-weight="700" fill="#f2f4f8">
+      <text x="1400" y="330">$25,5 jt</text>
+      <text x="918"  y="430">$12,7 jt</text>
+      <text x="681"  y="530">$6,4 jt</text>
+      <text x="560"  y="630">$3,2 jt</text>
+      <text x="500"  y="730">$1,6 jt</text>
+    </g>
+
+    <g text-anchor="end">
+      <g font-size="27" font-weight="700" fill="#c9d1dc">
+        <text x="392" y="320">Sep 2026</text>
+        <text x="392" y="420">Sep 2027</text>
+        <text x="392" y="520">Sep 2028</text>
+        <text x="392" y="620">Sep 2029</text>
+        <text x="392" y="720">Sep 2030</text>
+      </g>
+      <g font-size="20" fill="#6f7b8c">
+        <text x="392" y="348">688 juta KAS</text>
+        <text x="392" y="448">344 juta KAS</text>
+        <text x="392" y="548">172 juta KAS</text>
+        <text x="392" y="648">86 juta KAS</text>
+        <text x="392" y="748">43 juta KAS</text>
+      </g>
+    </g>
+
+    <g font-size="22" fill="#6f7b8c" text-anchor="middle">
+      <text x="420"  y="798">$0</text>
+      <text x="608"  y="798">$5 jt</text>
+      <text x="796"  y="798">$10 jt</text>
+      <text x="985"  y="798">$15 jt</text>
+      <text x="1173" y="798">$20 jt</text>
+      <text x="1361" y="798">$25 jt</text>
+    </g>
+
+    <rect x="60" y="846" width="1480" height="112" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#243040" stroke-width="2"/>
+    <text x="88" y="892" font-size="24" fill="#c9d1dc">Bitcoin butuh <tspan font-weight="700" fill="#f2f4f8">empat tahun</tspan> untuk pemotongan yang Kaspa lakukan tiap <tspan font-weight="700" fill="#f2f4f8">dua belas bulan</tspan>.</text>
+    <text x="88" y="930" font-size="24" fill="#c9d1dc">Agar batang-batang ini rata, harga KAS harus <tspan font-weight="700" fill="#6fe0cd">berlipat dua tiap tahun</tspan> — hanya untuk bertahan di tempat.</text>
+  </g>
+</svg>
