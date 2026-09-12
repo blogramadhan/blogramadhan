@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Kabut asap Pontianak 12 September 2026: indeks kualitas udara 1770 di luar skala, PM2.5 963 mikrogram per meter kubik, kelembapan 41 persen">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#2b1510"/><stop offset="0.45" stop-color="#1a1210"/><stop offset="1" stop-color="#0d0f13"/>
+    </linearGradient>
+    <linearGradient id="ember" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5875f"/><stop offset="1" stop-color="#d9452f"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f2b48c"/><stop offset="0.5" stop-color="#e2563d"/><stop offset="1" stop-color="#8f2f1f"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e2563d" stop-opacity="0.34"/><stop offset="1" stop-color="#e2563d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="haze" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e8a678" stop-opacity="0"/><stop offset="0.5" stop-color="#e8a678" stop-opacity="0.15"/><stop offset="1" stop-color="#e8a678" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+
+  <!-- matahari tertutup asap -->
+  <ellipse cx="1215" cy="318" rx="430" ry="350" fill="url(#halo)"/>
+  <circle cx="1215" cy="318" r="104" fill="url(#sun)"/>
+  <g>
+    <rect x="840" y="244" width="740" height="24" rx="12" fill="url(#haze)"/>
+    <rect x="800" y="304" width="800" height="34" rx="17" fill="url(#haze)"/>
+    <rect x="860" y="374" width="700" height="22" rx="11" fill="url(#haze)"/>
+    <rect x="820" y="430" width="760" height="18" rx="9" fill="url(#haze)"/>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="322" font-size="23" font-weight="700" letter-spacing="6" fill="#f0864f">PONTIANAK · 12 SEPTEMBER 2026</text>
+    <text x="96" y="432" font-size="88" font-weight="800" letter-spacing="-2.5" fill="#f4f1ec">SKALA YANG</text>
+    <text x="96" y="530" font-size="88" font-weight="800" letter-spacing="-2.5" fill="url(#ember)">BERHENTI DI 500</text>
+    <rect x="100" y="568" width="120" height="5" rx="2.5" fill="#d9452f"/>
+    <text x="100" y="638" font-size="31" fill="#b3a79c">Indeksnya sudah kehabisan tabel.</text>
+    <text x="100" y="682" font-size="31" fill="#b3a79c">Asapnya belum kehabisan gambut.</text>
+
+    <g>
+      <rect x="100" y="748" width="270" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#4a352c" stroke-width="2"/>
+      <text x="126" y="800" font-size="40" font-weight="800" fill="#f5875f">1770</text>
+      <text x="126" y="832" font-size="17" fill="#9a8b80">US AQI⁺ — di luar skala</text>
+
+      <rect x="392" y="748" width="270" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#4a352c" stroke-width="2"/>
+      <text x="418" y="800" font-size="40" font-weight="800" fill="#f5875f">963</text>
+      <text x="418" y="832" font-size="17" fill="#9a8b80">µg/m³ PM2.5</text>
+
+      <rect x="684" y="748" width="270" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#4a352c" stroke-width="2"/>
+      <text x="710" y="800" font-size="40" font-weight="800" fill="#7fd4c1">41%</text>
+      <text x="710" y="832" font-size="17" fill="#9a8b80">kelembapan jam 10 pagi</text>
+    </g>
+  </g>
+</svg>

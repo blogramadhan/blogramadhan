@@ -23,7 +23,7 @@ summaryLength = 40
   # Teks intro di beranda
   intro = "Selamat datang. Ini ruang tempat saya menautkan pikiran, catatan teknis, dan karya yang sedang saya rawat."
   # Kontak / sosial (kosongkan bila tak dipakai)
-  email = "kramadhan@gmail.com"
+  email = "kurnia@ramadhan.me"
   github = "https://github.com/blogramadhan"
   linkedin = ""
   twitter = ""
