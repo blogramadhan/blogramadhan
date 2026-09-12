@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="DCA saham AS lewat token xStocks: SPYX dan QQQX dengan porsi 60 banding 40 di Pintu, September 2026. Diagram menunjukkan lingkaran Nasdaq-100 berisi 105 perusahaan berada hampir seluruhnya di dalam lingkaran S&amp;P 500 yang berisi 505 perusahaan, sehingga campuran itu bukan menyebar risiko melainkan memusatkannya. Konsentrasi sepuluh besar naik 3,2 poin, dan 28 persen pembelian jatuh di akhir pekan saat bursa AS tutup.">
+  <defs>
+    <linearGradient id="xbg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#0a1626"/><stop offset="0.5" stop-color="#0c131c"/><stop offset="1" stop-color="#0b0e14"/>
+    </linearGradient>
+    <linearGradient id="xblue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fb2e8"/><stop offset="1" stop-color="#3987e5"/>
+    </linearGradient>
+    <radialGradient id="xglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3987e5" stop-opacity="0.20"/><stop offset="1" stop-color="#3987e5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#xbg)"/>
+  <ellipse cx="1230" cy="420" rx="400" ry="380" fill="url(#xglow)"/>
+
+  <!-- Venn: QQQ hampir seluruhnya berada di dalam SPY -->
+  <g>
+    <circle cx="1230" cy="400" r="212" fill="#3987e5" fill-opacity="0.09" stroke="#3987e5" stroke-width="3" stroke-opacity="0.75"/>
+    <circle cx="1292" cy="422" r="116" fill="#c98500" fill-opacity="0.16" stroke="#c98500" stroke-width="3"/>
+
+    <g font-family="system-ui,-apple-system,Segoe UI,sans-serif" text-anchor="middle">
+      <text x="1112" y="258" font-size="26" font-weight="700" fill="#7fb2e8">SPY</text>
+      <text x="1112" y="286" font-size="18" fill="#6f7b8c">505 perusahaan</text>
+
+      <text x="1292" y="416" font-size="24" font-weight="700" fill="#e0a92b">QQQ</text>
+      <text x="1292" y="444" font-size="18" fill="#8e857a">105 perusahaan</text>
+    </g>
+
+    <!-- porsi 60:40 -->
+    <g>
+      <rect x="1018" y="672" width="254" height="20" rx="6" fill="#3987e5"/>
+      <rect x="1280" y="672" width="170" height="20" rx="6" fill="#c98500"/>
+      <g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="19">
+        <text x="1018" y="726" fill="#7fb2e8" font-weight="700">60% SPYX</text>
+        <text x="1280" y="726" fill="#e0a92b" font-weight="700">40% QQQX</text>
+      </g>
+    </g>
+    <text x="1018" y="776" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="19" fill="#6f7b8c">nyaris seluruh QQQ sudah ada di dalam SPY</text>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="316" font-size="23" font-weight="700" letter-spacing="6" fill="#6fa3dd">SPYX + QQQX · PINTU · SEPTEMBER 2026</text>
+    <text x="96" y="434" font-size="90" font-weight="800" letter-spacing="-3" fill="#f2f4f8">DCA SAHAM AS</text>
+    <text x="96" y="536" font-size="90" font-weight="800" letter-spacing="-3" fill="url(#xblue)">LEWAT TOKEN</text>
+    <rect x="100" y="574" width="120" height="5" rx="2.5" fill="#3987e5"/>
+    <text x="100" y="644" font-size="31" fill="#8d97a5">Enam puluh banding empat puluh.</text>
+    <text x="100" y="688" font-size="31" fill="#8d97a5">Ternyata bukan menyebar, tapi memusatkan.</text>
+
+    <g>
+      <rect x="100" y="756" width="240" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#25405e" stroke-width="2"/>
+      <text x="126" y="808" font-size="40" font-weight="800" fill="#f2f4f8">+3,2</text>
+      <text x="126" y="840" font-size="17" fill="#7d899a">poin konsentrasi 10 besar</text>
+
+      <rect x="362" y="756" width="240" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#25405e" stroke-width="2"/>
+      <text x="388" y="808" font-size="40" font-weight="800" fill="#f2f4f8">0,36%</text>
+      <text x="388" y="840" font-size="17" fill="#7d899a">gerusan tiap tahun</text>
+
+      <rect x="624" y="756" width="264" height="138" rx="16" fill="#3987e5" fill-opacity="0.12" stroke="#3987e5" stroke-width="2.5"/>
+      <text x="650" y="808" font-size="40" font-weight="800" fill="#7fb2e8">28%</text>
+      <text x="650" y="840" font-size="17" fill="#7d899a">pembelian jatuh saat</text>
+      <text x="650" y="862" font-size="17" fill="#7d899a">bursa AS tutup</text>
+    </g>
+  </g>
+</svg>

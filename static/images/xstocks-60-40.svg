@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Grafik batang menyamping dua arah: perubahan bobot tiap perusahaan ketika 40 persen QQQX dicampur ke dalam SPYX, dibanding memegang SPYX saja. Bobot naik untuk Micron 1,21 poin, AMD 0,90 poin, Tesla 0,52 poin, Meta 0,35 poin, dan Nvidia 0,32 poin. Bobot turun untuk ExxonMobil 0,41 poin, Berkshire 0,55 poin, JPMorgan 0,58 poin, dan Eli Lilly 0,61 poin. Yang bertambah semuanya semikonduktor dan teknologi yang sudah berbobot besar, sementara yang berkurang adalah energi, keuangan, dan farmasi.">
+  <rect width="1600" height="1000" fill="#0e1219"/>
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="60" y="100" font-size="50" font-weight="800" fill="#f2f4f8">Apa yang Sebenarnya Dilakukan 40% QQQX</text>
+    <text x="60" y="150" font-size="26" fill="#8a94a5">Perubahan bobot tiap perusahaan dibanding memegang SPYX saja, dalam poin persentase.</text>
+
+    <g font-size="23">
+      <rect x="640" y="196" width="26" height="26" rx="4" fill="#3987e5"/>
+      <text x="678" y="217" fill="#c9d1dc">Bobot naik</text>
+      <rect x="900" y="196" width="26" height="26" rx="4" fill="#c98500"/>
+      <text x="938" y="217" fill="#c9d1dc">Bobot turun</text>
+    </g>
+
+    <g stroke="#1e2634" stroke-width="2">
+      <line x1="565"  y1="262" x2="565"  y2="822"/>
+      <line x1="995"  y1="262" x2="995"  y2="822"/>
+      <line x1="1210" y1="262" x2="1210" y2="822"/>
+    </g>
+    <line x1="780" y1="262" x2="780" y2="822" stroke="#5a6779" stroke-width="3"/>
+
+    <!-- bobot naik -->
+    <rect x="780" y="269" width="520" height="42" rx="4" fill="#3987e5"/>
+    <rect x="780" y="331" width="387" height="42" rx="4" fill="#3987e5"/>
+    <rect x="780" y="393" width="224" height="42" rx="4" fill="#3987e5"/>
+    <rect x="780" y="455" width="151" height="42" rx="4" fill="#3987e5"/>
+    <rect x="780" y="517" width="138" height="42" rx="4" fill="#3987e5"/>
+    <!-- bobot turun -->
+    <rect x="604" y="579" width="176" height="42" rx="4" fill="#c98500"/>
+    <rect x="543" y="641" width="237" height="42" rx="4" fill="#c98500"/>
+    <rect x="531" y="703" width="249" height="42" rx="4" fill="#c98500"/>
+    <rect x="518" y="765" width="262" height="42" rx="4" fill="#c98500"/>
+
+    <g font-size="27" font-weight="700" fill="#f2f4f8">
+      <text x="1314" y="299">+1,21</text>
+      <text x="1181" y="361">+0,90</text>
+      <text x="1018" y="423">+0,52</text>
+      <text x="945"  y="485">+0,35</text>
+      <text x="932"  y="547">+0,32</text>
+    </g>
+    <g font-size="27" font-weight="700" fill="#f2f4f8" text-anchor="end">
+      <text x="590" y="609">−0,41</text>
+      <text x="529" y="671">−0,55</text>
+      <text x="517" y="733">−0,58</text>
+      <text x="504" y="795">−0,61</text>
+    </g>
+
+    <g text-anchor="end">
+      <g font-size="26" font-weight="700" fill="#c9d1dc">
+        <text x="400" y="292">Micron</text>
+        <text x="400" y="354">AMD</text>
+        <text x="400" y="416">Tesla</text>
+        <text x="400" y="478">Meta</text>
+        <text x="400" y="540">Nvidia</text>
+        <text x="400" y="602">ExxonMobil</text>
+        <text x="400" y="664">Berkshire</text>
+        <text x="400" y="726">JPMorgan</text>
+        <text x="400" y="788">Eli Lilly</text>
+      </g>
+      <g font-size="19" fill="#6f7b8c">
+        <text x="400" y="318">semikonduktor</text>
+        <text x="400" y="380">semikonduktor</text>
+        <text x="400" y="442">otomotif</text>
+        <text x="400" y="504">teknologi</text>
+        <text x="400" y="566">semikonduktor</text>
+        <text x="400" y="628">energi</text>
+        <text x="400" y="690">konglomerat</text>
+        <text x="400" y="752">perbankan</text>
+        <text x="400" y="814">farmasi</text>
+      </g>
+    </g>
+
+    <g font-size="22" fill="#6f7b8c" text-anchor="middle">
+      <text x="565"  y="858">−0,5</text>
+      <text x="780"  y="858">0</text>
+      <text x="995"  y="858">+0,5</text>
+      <text x="1210" y="858">+1,0</text>
+    </g>
+
+    <rect x="60" y="888" width="1480" height="76" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#243040" stroke-width="2"/>
+    <text x="88" y="936" font-size="24" fill="#c9d1dc">Konsentrasi sepuluh besar naik dari <tspan font-weight="700" fill="#f2f4f8">37,26%</tspan> jadi <tspan font-weight="700" fill="#7fb2e8">40,48%</tspan>. Uangnya pindah dari energi, bank, dan farmasi — ke cip yang sudah dipegang banyak.</text>
+  </g>
+</svg>
