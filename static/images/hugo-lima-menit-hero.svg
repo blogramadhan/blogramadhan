@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Tutorial Memahami Hugo dalam Lima Menit: berkas Markdown diubah menjadi situs statis. Tiga folder inti, dua perintah, tanpa basis data.">
+  <defs>
+    <linearGradient id="hbg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#0b1a2e"/><stop offset="0.5" stop-color="#0a1320"/><stop offset="1" stop-color="#080d14"/>
+    </linearGradient>
+    <linearGradient id="hblue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ad6fb"/><stop offset="1" stop-color="#2a6fbd"/>
+    </linearGradient>
+    <radialGradient id="hglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3987e5" stop-opacity="0.22"/><stop offset="1" stop-color="#3987e5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#hbg)"/>
+  <ellipse cx="1250" cy="410" rx="390" ry="330" fill="url(#hglow)"/>
+
+  <!-- tumpukan berkas markdown -->
+  <g>
+    <rect x="1016" y="292" width="98" height="124" rx="10" fill="#132840" stroke="#2a4b6b" stroke-width="2"/>
+    <rect x="1036" y="316" width="98" height="124" rx="10" fill="#16304d" stroke="#2f5779" stroke-width="2"/>
+    <rect x="1056" y="340" width="98" height="124" rx="10" fill="#1b3a5c" stroke="#3987e5" stroke-width="2.5"/>
+    <text x="1072" y="374" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" font-weight="700" fill="#8ad6fb">.md</text>
+    <g stroke="#4f7fa8" stroke-width="3" stroke-linecap="round">
+      <line x1="1072" y1="398" x2="1138" y2="398"/>
+      <line x1="1072" y1="416" x2="1126" y2="416"/>
+      <line x1="1072" y1="434" x2="1134" y2="434"/>
+    </g>
+  </g>
+
+  <!-- panah -->
+  <g stroke="#6ab8f4" stroke-width="4" stroke-linecap="round" fill="none">
+    <line x1="1184" y1="402" x2="1246" y2="402"/>
+    <polyline points="1230,388 1246,402 1230,416"/>
+  </g>
+
+  <!-- jendela browser -->
+  <g>
+    <rect x="1280" y="292" width="256" height="220" rx="12" fill="#0f2338" stroke="#3987e5" stroke-width="2.5"/>
+    <rect x="1280" y="292" width="256" height="34" rx="12" fill="#17304a"/>
+    <rect x="1280" y="314" width="256" height="12" fill="#17304a"/>
+    <g fill="#4f7fa8"><circle cx="1302" cy="309" r="5"/><circle cx="1320" cy="309" r="5"/><circle cx="1338" cy="309" r="5"/></g>
+    <rect x="1304" y="352" width="140" height="16" rx="5" fill="#8ad6fb"/>
+    <g stroke="#3d6a91" stroke-width="3" stroke-linecap="round">
+      <line x1="1304" y1="392" x2="1510" y2="392"/>
+      <line x1="1304" y1="412" x2="1480" y2="412"/>
+      <line x1="1304" y1="432" x2="1502" y2="432"/>
+      <line x1="1304" y1="452" x2="1440" y2="452"/>
+      <line x1="1304" y1="472" x2="1494" y2="472"/>
+    </g>
+  </g>
+  <text x="1188" y="560" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="21" fill="#5d7f9e" text-anchor="middle">tanpa basis data</text>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="308" font-size="23" font-weight="700" letter-spacing="6" fill="#6ab8f4">TUTORIAL · HUGO</text>
+    <text x="96" y="418" font-size="82" font-weight="800" letter-spacing="-3" fill="#f1f5f9">MEMAHAMI HUGO</text>
+    <text x="96" y="510" font-size="82" font-weight="800" letter-spacing="-3" fill="url(#hblue)">DALAM LIMA MENIT</text>
+    <rect x="100" y="548" width="120" height="5" rx="2.5" fill="#2a6fbd"/>
+    <text x="100" y="620" font-size="31" fill="#8496a8">Peta ringkas cara berkas Markdown</text>
+    <text x="100" y="664" font-size="31" fill="#8496a8">berubah jadi situs yang cepat.</text>
+
+    <g>
+      <rect x="100" y="740" width="230" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#23425c" stroke-width="2"/>
+      <text x="126" y="792" font-size="40" font-weight="800" fill="#f1f5f9">3</text>
+      <text x="126" y="824" font-size="17" fill="#7b8b9a">folder inti</text>
+
+      <rect x="352" y="740" width="230" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#23425c" stroke-width="2"/>
+      <text x="378" y="792" font-size="40" font-weight="800" fill="#f1f5f9">2</text>
+      <text x="378" y="824" font-size="17" fill="#7b8b9a">perintah saja</text>
+
+      <rect x="604" y="740" width="230" height="118" rx="16" fill="#3987e5" fill-opacity="0.12" stroke="#3987e5" stroke-width="2.5"/>
+      <text x="630" y="792" font-size="40" font-weight="800" fill="#8ad6fb">0</text>
+      <text x="630" y="824" font-size="17" fill="#7b8b9a">basis data</text>
+    </g>
+  </g>
+</svg>

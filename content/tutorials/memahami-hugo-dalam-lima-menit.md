@@ -5,7 +5,9 @@ draft = false
 description = "Peta ringkas cara kerja Hugo: dari berkas Markdown menjadi situs statis yang cepat."
 tags = ["hugo", "web", "tutorial"]
 categories = ["Teknis"]
+featured_image = "/images/hugo-lima-menit-hero.svg"
 toc = true
+aliases = ["/posts/memahami-hugo-dalam-lima-menit/"]
 +++
 
 Hugo itu *static site generator*, alat yang mengubah tumpukan berkas teks jadi situs web utuh

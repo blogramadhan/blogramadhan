@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Seri tutorial Belajar Python Dasar: 15 bagian, tanpa prasyarat, bermuara pada mengolah berkas CSV dan Excel">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#0b1a2e"/><stop offset="0.5" stop-color="#0a1320"/><stop offset="1" stop-color="#080d14"/>
+    </linearGradient>
+    <linearGradient id="pblue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ad6fb"/><stop offset="1" stop-color="#2a6fbd"/>
+    </linearGradient>
+    <radialGradient id="pglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3987e5" stop-opacity="0.24"/><stop offset="1" stop-color="#3987e5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#pbg)"/>
+  <ellipse cx="1230" cy="470" rx="400" ry="380" fill="url(#pglow)"/>
+
+  <!-- tangga indentasi: lima tahap, makin dalam makin terang -->
+  <g>
+    <rect x="1000" y="250"  width="380" height="30" rx="8" fill="#2a6fbd"/>
+    <rect x="1044" y="316"  width="336" height="30" rx="8" fill="#3987e5"/>
+    <rect x="1088" y="382"  width="292" height="30" rx="8" fill="#4f9bec"/>
+    <rect x="1132" y="448"  width="248" height="30" rx="8" fill="#6ab8f4"/>
+    <rect x="1176" y="514"  width="204" height="30" rx="8" fill="#8ad6fb"/>
+    <!-- garis indentasi -->
+    <g stroke="#2a4b6b" stroke-width="2" stroke-dasharray="4 7">
+      <line x1="1010" y1="292" x2="1010" y2="590"/>
+      <line x1="1054" y1="358" x2="1054" y2="590"/>
+      <line x1="1098" y1="424" x2="1098" y2="590"/>
+      <line x1="1142" y1="490" x2="1142" y2="590"/>
+    </g>
+    <!-- kursor -->
+    <rect x="1176" y="580" width="16" height="30" rx="3" fill="#8ad6fb" fill-opacity="0.8"/>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="308" font-size="23" font-weight="700" letter-spacing="6" fill="#6ab8f4">SERI TUTORIAL · 15 BAGIAN</text>
+    <text x="96" y="422" font-size="90" font-weight="800" letter-spacing="-3" fill="#f1f5f9">BELAJAR PYTHON</text>
+    <text x="96" y="520" font-size="90" font-weight="800" letter-spacing="-3" fill="url(#pblue)">DASAR</text>
+    <rect x="100" y="558" width="120" height="5" rx="2.5" fill="#2a6fbd"/>
+    <text x="100" y="630" font-size="31" fill="#8496a8">Dari nol sampai bisa merapikan</text>
+    <text x="100" y="674" font-size="31" fill="#8496a8">data kantor Anda sendiri.</text>
+
+    <g>
+      <rect x="100" y="748" width="230" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#23425c" stroke-width="2"/>
+      <text x="126" y="800" font-size="40" font-weight="800" fill="#f1f5f9">15</text>
+      <text x="126" y="832" font-size="17" fill="#7b8b9a">bagian, berurutan</text>
+
+      <rect x="352" y="748" width="230" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#23425c" stroke-width="2"/>
+      <text x="378" y="800" font-size="40" font-weight="800" fill="#f1f5f9">0</text>
+      <text x="378" y="832" font-size="17" fill="#7b8b9a">prasyarat coding</text>
+
+      <rect x="604" y="748" width="276" height="118" rx="16" fill="#3987e5" fill-opacity="0.12" stroke="#3987e5" stroke-width="2.5"/>
+      <text x="630" y="800" font-size="36" font-weight="800" fill="#8ad6fb">CSV · XLSX</text>
+      <text x="630" y="832" font-size="17" fill="#7b8b9a">muara serinya</text>
+    </g>
+  </g>
+</svg>

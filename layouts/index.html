@@ -15,20 +15,15 @@
   <hr class="rule-ornament" aria-hidden="true">
 </div>
 
-{{ $posts := where site.RegularPages "Section" "posts" }}
-{{ if $posts }}
+{{/* Sorotan lintas-kategori: artikel terbaru dari blog maupun tutorial. */}}
+{{ $articles := where site.RegularPages "Section" "in" (slice "posts" "tutorials") }}
+{{ $featured := "" }}
+{{ with first 1 $articles }}{{ $featured = index . 0 }}{{ end }}
+
+{{ with $featured }}
+{{ $p := . }}
 <section class="home-section">
   <div class="wrap">
-    <header class="section-head">
-      <h2 class="section-title">Tulisan Terbaru</h2>
-      <a class="section-link" href="{{ "/posts" | relURL }}">Semua tulisan →</a>
-    </header>
-
-    {{ $featured := first 1 $posts }}
-    {{ range $featured }}
-    {{/* Tanpa gambar sampul, grid dua kolom menyisakan kolom kanan kosong. */}}
-    {{/* `with` mengganti konteks, jadi halamannya diikat dulu — `$` menunjuk beranda. */}}
-    {{ $p := . }}
     <article class="feature{{ if not .Params.featured_image }} feature--noimg{{ end }}">
       {{ with .Params.featured_image }}
       <a class="feature-media" href="{{ $p.RelPermalink }}" tabindex="-1" aria-hidden="true">
@@ -38,28 +33,55 @@
       <div class="feature-body">
         <span class="feature-badge">Sorotan</span>
         {{ partial "post-meta.html" . }}
-        <h3 class="feature-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <h2 class="feature-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         <p class="feature-excerpt">{{ .Summary | plainify | truncate 240 }}</p>
-        <a class="card-more" href="{{ .RelPermalink }}">Baca selengkapnya <span aria-hidden="true">→</span></a>
+        <a class="card-more" href="{{ .RelPermalink }}">Baca selengkapnya <span aria-hidden="true">&rarr;</span></a>
       </div>
     </article>
-    {{ end }}
+  </div>
+</section>
+{{ end }}
 
-    {{ $rest := after 1 $posts }}
-    {{ if $rest }}
+{{/* Blok per kategori — melewati apa pun yang sudah tampil sebagai sorotan. */}}
+{{ $posts := where site.RegularPages "Section" "posts" }}
+{{ with $featured }}{{ $posts = where $posts "RelPermalink" "!=" .RelPermalink }}{{ end }}
+{{ if $posts }}
+<section class="home-section">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 class="section-title">Tulisan Terbaru</h2>
+      <a class="section-link" href="{{ "/posts" | relURL }}">Semua tulisan &rarr;</a>
+    </header>
     <div class="card-grid">
-      {{ range first 4 $rest }}
+      {{ range first 4 $posts }}
         {{ partial "post-card.html" . }}
       {{ end }}
     </div>
-    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ $tutorials := where site.RegularPages "Section" "tutorials" }}
+{{ with $featured }}{{ $tutorials = where $tutorials "RelPermalink" "!=" .RelPermalink }}{{ end }}
+{{ if $tutorials }}
+<section class="home-section home-section--alt">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 class="section-title">Tutorial Terbaru</h2>
+      <a class="section-link" href="{{ "/tutorials" | relURL }}">Semua tutorial &rarr;</a>
+    </header>
+    <div class="card-grid">
+      {{ range first 3 $tutorials }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
+    </div>
   </div>
 </section>
 {{ end }}
 
 {{ $projects := where site.RegularPages "Section" "projects" }}
 {{ if $projects }}
-<section class="home-section home-section--alt">
+<section class="home-section">
   <div class="wrap">
     <header class="section-head">
       <h2 class="section-title">Karya Pilihan</h2>
