@@ -64,7 +64,7 @@ memakai apa yang dibangun sebelumnya.
 
 | Bagian | Isinya |
 |---|---|
-| **01** · Kenapa Python, dan Kapan Bukan | Apa yang Python kerjakan dengan baik, dan kapan Excel atau alat lain sebenarnya pilihan yang lebih waras. Supaya Anda tidak memakai obeng untuk memaku. |
+| **01** · [Kenapa Python, dan Kapan Bukan](/tutorials/python-dasar-01-kenapa-python/) ✅ | Apa yang Python kerjakan dengan baik, dan kapan Excel atau alat lain sebenarnya pilihan yang lebih waras. Supaya Anda tidak memakai obeng untuk memaku. |
 | **02** · Menyiapkan Alat: Colab atau Komputer Sendiri | Dua jalur. **Google Colab** cukup browser, cocok kalau laptop kantor terkunci dan tidak bisa memasang aplikasi. **Python + VS Code** di komputer sendiri untuk yang bisa. Termasuk cara memilih di antara keduanya. |
 
 ### Tahap II — Dasar Bahasa
@@ -136,11 +136,11 @@ Supaya jelas batasnya sejak awal:
 ## Kapan terbitnya
 
 Saya menulisnya bertahap, sesuai prinsip yang saya pegang di blog ini: pelan, tapi tidak
-berhenti. Daftar di atas belum bertaut ke mana-mana karena bagian-bagiannya memang belum
-terbit — **tautan akan saya isi di halaman ini setiap kali satu bagian selesai**, jadi halaman
-ini bisa Anda simpan sebagai titik masuk.
+berhenti. Bagian yang sudah terbit ditandai ✅ dan judulnya bisa diklik. **Tautan lain saya
+isi di halaman ini setiap kali satu bagian selesai**, jadi halaman ini bisa Anda simpan
+sebagai titik masuk.
 
 Kalau ada bagian yang menurut Anda kurang, atau ada kasus di pekerjaan Anda yang cocok
 dijadikan contoh, saya senang mendengarnya lewat kolom komentar di bawah.
 
-Sampai jumpa di Bagian 01.
+Silakan mulai dari **[Bagian 01: Kenapa Python, dan Kapan Bukan](/tutorials/python-dasar-01-kenapa-python/)**.

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Python Dasar bagian 01: memilih antara Python dan Excel sesuai pekerjaannya">
+  <defs>
+    <linearGradient id="p1bg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#0b1a2e"/><stop offset="0.5" stop-color="#0a1320"/><stop offset="1" stop-color="#080d14"/>
+    </linearGradient>
+    <linearGradient id="p1blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ad6fb"/><stop offset="1" stop-color="#2a6fbd"/>
+    </linearGradient>
+    <radialGradient id="p1glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3987e5" stop-opacity="0.20"/><stop offset="1" stop-color="#3987e5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#p1bg)"/>
+  <ellipse cx="1250" cy="410" rx="370" ry="300" fill="url(#p1glow)"/>
+
+  <!-- percabangan: satu pekerjaan, dua jalan -->
+  <g>
+    <rect x="982" y="368" width="128" height="72" rx="12" fill="#152a42" stroke="#4f7fa8" stroke-width="2.5"/>
+    <text x="1046" y="400" font-family="system-ui,sans-serif" font-size="19" fill="#9fb6cc" text-anchor="middle">pekerjaan</text>
+    <text x="1046" y="424" font-family="system-ui,sans-serif" font-size="19" fill="#9fb6cc" text-anchor="middle">Anda</text>
+
+    <g fill="none" stroke="#3d6a91" stroke-width="3">
+      <path d="M1110 392 C 1160 392, 1170 318, 1216 318"/>
+      <path d="M1110 416 C 1160 416, 1170 490, 1216 490"/>
+    </g>
+
+    <rect x="1216" y="278" width="250" height="80" rx="12" fill="#0f2c1f" stroke="#2f9e6b" stroke-width="2.5"/>
+    <text x="1341" y="312" font-family="system-ui,sans-serif" font-size="27" font-weight="800" fill="#5fd3a0" text-anchor="middle">PYTHON</text>
+    <text x="1341" y="338" font-family="system-ui,sans-serif" font-size="17" fill="#6f9585" text-anchor="middle">kalau berulang</text>
+
+    <rect x="1216" y="450" width="250" height="80" rx="12" fill="#13294a" stroke="#3987e5" stroke-width="2.5"/>
+    <text x="1341" y="484" font-family="system-ui,sans-serif" font-size="27" font-weight="800" fill="#7fb2e8" text-anchor="middle">EXCEL</text>
+    <text x="1341" y="510" font-family="system-ui,sans-serif" font-size="17" fill="#6a8399" text-anchor="middle">kalau sekali jalan</text>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="308" font-size="23" font-weight="700" letter-spacing="6" fill="#6ab8f4">BELAJAR PYTHON DASAR · BAGIAN 01</text>
+    <text x="96" y="424" font-size="77" font-weight="800" letter-spacing="-2.5" fill="#f1f5f9">KENAPA PYTHON,</text>
+    <text x="96" y="510" font-size="77" font-weight="800" letter-spacing="-2.5" fill="url(#p1blue)">DAN KAPAN BUKAN</text>
+    <rect x="100" y="552" width="120" height="5" rx="2.5" fill="#2a6fbd"/>
+    <text x="100" y="624" font-size="31" fill="#8496a8">Supaya Anda tidak memakai obeng</text>
+    <text x="100" y="668" font-size="31" fill="#8496a8">untuk memaku.</text>
+
+    <g>
+      <rect x="100" y="744" width="222" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#23425c" stroke-width="2"/>
+      <text x="126" y="796" font-size="38" font-weight="800" fill="#f1f5f9">01/15</text>
+      <text x="126" y="828" font-size="17" fill="#7b8b9a">bagian pertama</text>
+
+      <rect x="344" y="744" width="300" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#23425c" stroke-width="2"/>
+      <text x="370" y="796" font-size="38" font-weight="800" fill="#7fb2e8">1.048.576</text>
+      <text x="370" y="828" font-size="17" fill="#7b8b9a">batas baris Excel</text>
+
+      <rect x="666" y="744" width="222" height="118" rx="16" fill="#3987e5" fill-opacity="0.12" stroke="#3987e5" stroke-width="2.5"/>
+      <text x="692" y="796" font-size="38" font-weight="800" fill="#8ad6fb">0</text>
+      <text x="692" y="828" font-size="17" fill="#7b8b9a">kode diketik hari ini</text>
+    </g>
+  </g>
+</svg>
