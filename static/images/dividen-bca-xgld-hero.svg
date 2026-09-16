@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Dividen interim BBCA Rp25 per saham yang cair 16 September 2026, dibelikan ETF emas XGLD">
+  <defs>
+    <linearGradient id="dbg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#0d1726"/><stop offset="0.55" stop-color="#11131a"/><stop offset="1" stop-color="#0b0e14"/>
+    </linearGradient>
+    <linearGradient id="dgold2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7d26b"/><stop offset="1" stop-color="#c98500"/>
+    </linearGradient>
+    <linearGradient id="dflow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3987e5"/><stop offset="1" stop-color="#c98500"/>
+    </linearGradient>
+    <radialGradient id="dg2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c98500" stop-opacity="0.20"/><stop offset="1" stop-color="#c98500" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#dbg)"/>
+  <ellipse cx="1290" cy="430" rx="330" ry="300" fill="url(#dg2)"/>
+
+  <!-- kotak saham -->
+  <g>
+    <rect x="1000" y="352" width="150" height="112" rx="14" fill="#13294a" stroke="#3987e5" stroke-width="2.5"/>
+    <text x="1075" y="398" font-family="system-ui,sans-serif" font-size="27" font-weight="800" fill="#7fb2e8" text-anchor="middle">BBCA</text>
+    <text x="1075" y="432" font-family="system-ui,sans-serif" font-size="18" fill="#5d82a8" text-anchor="middle">dividen</text>
+  </g>
+
+  <!-- aliran -->
+  <g>
+    <rect x="1166" y="401" width="118" height="6" rx="3" fill="url(#dflow)"/>
+    <polyline points="1272,391 1290,404 1272,417" fill="none" stroke="#c98500" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#7fb2e8"><circle cx="1188" cy="404" r="5"/></g>
+    <g fill="#d9a63a"><circle cx="1228" cy="404" r="5"/></g>
+    <g fill="#f7d26b"><circle cx="1262" cy="404" r="5"/></g>
+  </g>
+
+  <!-- tumpukan emas -->
+  <g>
+    <rect x="1306" y="352" width="168" height="112" rx="14" fill="#2a1f08" stroke="#c98500" stroke-width="2.5"/>
+    <text x="1390" y="398" font-family="system-ui,sans-serif" font-size="27" font-weight="800" fill="#f7d26b" text-anchor="middle">XGLD</text>
+    <text x="1390" y="432" font-family="system-ui,sans-serif" font-size="18" fill="#9a8253" text-anchor="middle">ETF emas</text>
+    <g fill="url(#dgold2)">
+      <rect x="1316" y="500" width="148" height="22" rx="6" fill-opacity="0.5"/>
+      <rect x="1328" y="530" width="124" height="22" rx="6" fill-opacity="0.72"/>
+      <rect x="1340" y="560" width="100" height="22" rx="6"/>
+    </g>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="312" font-size="23" font-weight="700" letter-spacing="6" fill="#e0a92b">16 SEPTEMBER 2026 · TERMIN II</text>
+    <text x="96" y="424" font-size="88" font-weight="800" letter-spacing="-3" fill="#f4f2ec">DIVIDEN CAIR,</text>
+    <text x="96" y="520" font-size="88" font-weight="800" letter-spacing="-3" fill="url(#dgold2)">BELI EMAS</text>
+    <rect x="100" y="558" width="120" height="5" rx="2.5" fill="#c98500"/>
+    <text x="100" y="630" font-size="31" fill="#9a9288">Bukan karena ragu sama BCA.</text>
+    <text x="100" y="674" font-size="31" fill="#9a9288">Cuma ingin punya penyeimbang.</text>
+
+    <g>
+      <rect x="100" y="748" width="238" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#4a3f28" stroke-width="2"/>
+      <text x="126" y="800" font-size="40" font-weight="800" fill="#f4f2ec">Rp25</text>
+      <text x="126" y="832" font-size="17" fill="#8e857a">per saham</text>
+
+      <rect x="360" y="748" width="238" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#4a3f28" stroke-width="2"/>
+      <text x="386" y="800" font-size="40" font-weight="800" fill="#7fb2e8">Rp20</text>
+      <text x="386" y="832" font-size="17" fill="#8e857a">termin I, Juni lalu</text>
+
+      <rect x="620" y="748" width="262" height="118" rx="16" fill="#c98500" fill-opacity="0.12" stroke="#c98500" stroke-width="2.5"/>
+      <text x="646" y="800" font-size="36" font-weight="800" fill="#f7d26b">kuartalan</text>
+      <text x="646" y="832" font-size="17" fill="#8e857a">jadwal barunya</text>
+    </g>
+  </g>
+</svg>
