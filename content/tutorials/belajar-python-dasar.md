@@ -65,7 +65,7 @@ memakai apa yang dibangun sebelumnya.
 | Bagian | Isinya |
 |---|---|
 | **01** · [Kenapa Python, dan Kapan Bukan](/tutorials/python-dasar-01-kenapa-python/) ✅ | Apa yang Python kerjakan dengan baik, dan kapan Excel atau alat lain sebenarnya pilihan yang lebih waras. Supaya Anda tidak memakai obeng untuk memaku. |
-| **02** · Menyiapkan Alat: Colab atau Komputer Sendiri | Dua jalur. **Google Colab** cukup browser, cocok kalau laptop kantor terkunci dan tidak bisa memasang aplikasi. **Python + VS Code** di komputer sendiri untuk yang bisa. Termasuk cara memilih di antara keduanya. |
+| **02** · [Menyiapkan Alat: Colab atau Komputer Sendiri](/tutorials/python-dasar-02-menyiapkan-alat/) ✅ | Dua jalur. **Google Colab** cukup browser, cocok kalau laptop kantor terkunci dan tidak bisa memasang aplikasi. **Python + VS Code** di komputer sendiri untuk yang bisa. Termasuk cara memilih di antara keduanya. |
 
 ### Tahap II — Dasar Bahasa
 

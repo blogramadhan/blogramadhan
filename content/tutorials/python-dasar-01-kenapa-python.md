@@ -149,9 +149,7 @@ baru. Skrip kedua Anda jauh lebih cepat jadinya.
 Python untuk pekerjaan yang berulang, jumlahnya banyak, dan harus sama persis tiap kali.
 Excel untuk yang sekali jalan, perlu dilihat langsung, dan harus diserahkan ke orang.
 
-Kalau ternyata pekerjaan Anda memang berulang, lanjut ke Bagian 02. Di sana kita siapkan
-alatnya: Google Colab kalau laptop kantor Anda terkunci, atau pasang Python langsung di
-komputer kalau memang bisa.
-
-Bagian itu belum terbit waktu tulisan ini naik. Saya menulisnya berurutan, dan tautannya
-muncul di [halaman silabus](/tutorials/belajar-python-dasar/) begitu selesai.
+Kalau ternyata pekerjaan Anda memang berulang, lanjut ke
+**[Bagian 02: Menyiapkan Alat](/tutorials/python-dasar-02-menyiapkan-alat/)**. Di sana kita
+siapkan alatnya: Google Colab kalau laptop kantor Anda terkunci, atau pasang Python langsung
+di komputer kalau memang bisa.

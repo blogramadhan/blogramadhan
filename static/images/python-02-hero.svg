@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Python Dasar bagian 02: menyiapkan alat, lewat Google Colab di browser atau memasang Python di komputer sendiri">
+  <defs>
+    <linearGradient id="p2bg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#0b1a2e"/><stop offset="0.5" stop-color="#0a1320"/><stop offset="1" stop-color="#080d14"/>
+    </linearGradient>
+    <linearGradient id="p2blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ad6fb"/><stop offset="1" stop-color="#2a6fbd"/>
+    </linearGradient>
+    <radialGradient id="p2glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3987e5" stop-opacity="0.20"/><stop offset="1" stop-color="#3987e5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#p2bg)"/>
+  <ellipse cx="1250" cy="400" rx="370" ry="290" fill="url(#p2glow)"/>
+
+  <!-- jalur A: browser (Colab) -->
+  <g>
+    <rect x="1002" y="268" width="228" height="176" rx="12" fill="#0f2338" stroke="#f0a94a" stroke-width="2.5"/>
+    <rect x="1002" y="268" width="228" height="30" rx="12" fill="#1a3350"/>
+    <rect x="1002" y="288" width="228" height="10" fill="#1a3350"/>
+    <g fill="#4f7fa8"><circle cx="1021" cy="284" r="4.5"/><circle cx="1037" cy="284" r="4.5"/><circle cx="1053" cy="284" r="4.5"/></g>
+    <rect x="1022" y="320" width="188" height="34" rx="7" fill="#17304a" stroke="#2f5779" stroke-width="1.5"/>
+    <polygon points="1036,330 1036,344 1048,337" fill="#f0a94a"/>
+    <g stroke="#3d6a91" stroke-width="3" stroke-linecap="round">
+      <line x1="1060" y1="337" x2="1196" y2="337"/>
+      <line x1="1022" y1="378" x2="1178" y2="378"/>
+      <line x1="1022" y1="400" x2="1140" y2="400"/>
+    </g>
+    <text x="1116" y="484" font-family="system-ui,sans-serif" font-size="24" font-weight="800" fill="#f0a94a" text-anchor="middle">COLAB</text>
+    <text x="1116" y="512" font-family="system-ui,sans-serif" font-size="17" fill="#8a7a5e" text-anchor="middle">cukup browser</text>
+  </g>
+
+
+  <!-- jalur B: komputer sendiri -->
+  <g>
+    <rect x="1282" y="268" width="228" height="176" rx="12" fill="#0f2338" stroke="#5fd3a0" stroke-width="2.5"/>
+    <rect x="1282" y="268" width="228" height="30" rx="12" fill="#1a3350"/>
+    <rect x="1282" y="288" width="228" height="10" fill="#1a3350"/>
+    <rect x="1282" y="298" width="56" height="146" fill="#122b42"/>
+    <g stroke="#375f80" stroke-width="3" stroke-linecap="round">
+      <line x1="1296" y1="318" x2="1326" y2="318"/>
+      <line x1="1296" y1="336" x2="1320" y2="336"/>
+      <line x1="1296" y1="354" x2="1328" y2="354"/>
+    </g>
+    <g stroke="#3d6a91" stroke-width="3" stroke-linecap="round">
+      <line x1="1354" y1="322" x2="1470" y2="322"/>
+      <line x1="1354" y1="346" x2="1440" y2="346"/>
+      <line x1="1354" y1="370" x2="1486" y2="370"/>
+      <line x1="1354" y1="394" x2="1424" y2="394"/>
+    </g>
+    <text x="1396" y="484" font-family="system-ui,sans-serif" font-size="24" font-weight="800" fill="#5fd3a0" text-anchor="middle">DI KOMPUTER</text>
+    <text x="1396" y="512" font-family="system-ui,sans-serif" font-size="17" fill="#6f9585" text-anchor="middle">Python + VS Code</text>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="308" font-size="23" font-weight="700" letter-spacing="6" fill="#6ab8f4">BELAJAR PYTHON DASAR · BAGIAN 02</text>
+    <text x="96" y="424" font-size="77" font-weight="800" letter-spacing="-2.5" fill="#f1f5f9">MENYIAPKAN</text>
+    <text x="96" y="510" font-size="77" font-weight="800" letter-spacing="-2.5" fill="url(#p2blue)">ALATNYA</text>
+    <rect x="100" y="548" width="120" height="5" rx="2.5" fill="#2a6fbd"/>
+    <text x="100" y="620" font-size="31" fill="#8496a8">Dua jalur. Pilih satu, jangan</text>
+    <text x="100" y="664" font-size="31" fill="#8496a8">dua-duanya sekaligus.</text>
+
+    <g>
+      <rect x="100" y="744" width="222" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#23425c" stroke-width="2"/>
+      <text x="126" y="796" font-size="38" font-weight="800" fill="#f1f5f9">02/15</text>
+      <text x="126" y="828" font-size="17" fill="#7b8b9a">bagian kedua</text>
+
+      <rect x="344" y="744" width="222" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#23425c" stroke-width="2"/>
+      <text x="370" y="796" font-size="38" font-weight="800" fill="#7fb2e8">2</text>
+      <text x="370" y="828" font-size="17" fill="#7b8b9a">jalur, pilih satu</text>
+
+      <rect x="588" y="744" width="260" height="118" rx="16" fill="#3987e5" fill-opacity="0.12" stroke="#3987e5" stroke-width="2.5"/>
+      <text x="614" y="794" font-family="ui-monospace,Menlo,monospace" font-size="32" font-weight="800" fill="#8ad6fb">print()</text>
+      <text x="614" y="828" font-size="17" fill="#7b8b9a">perintah pertama Anda</text>
+    </g>
+  </g>
+</svg>

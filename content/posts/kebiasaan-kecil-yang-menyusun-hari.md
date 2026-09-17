@@ -5,6 +5,7 @@ draft = false
 description = "Kenapa rencana besar saya selalu berhenti di minggu kedua, dan kenapa yang konyol-konyol kecil justru bertahan."
 tags = ["kebiasaan", "refleksi"]
 categories = ["Jurnal"]
+featured_image = "/images/kebiasaan-kecil-hero.svg"
 +++
 
 Saya tidak pernah benar-benar berhasil dengan perubahan besar.
