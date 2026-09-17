@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Empat ambang nilai dalam Perlem LKPP 2 Tahun 2026: Rp50 juta batas Toko Daring, Rp100 juta batas HPS dan Referensi Harga, Rp200 juta peralihan pelaksana dan jaminan pelaksanaan, Rp1 miliar ambang khusus wilayah Papua">
+  <rect width="1600" height="1000" fill="#12171f"/>
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="70" y="104" font-size="50" font-weight="800" fill="#f2f4f8">Empat Ambang, Empat Akibat</text>
+    <text x="70" y="152" font-size="25" fill="#8a94a5">Garis nilai yang menentukan dokumen apa yang disiapkan dan siapa yang menjalankan.</text>
+    <rect x="70" y="180" width="96" height="4" rx="2" fill="#3987e5"/>
+
+    <!-- sumbu -->
+    <line x1="130" y1="520" x2="1510" y2="520" stroke="#2a3340" stroke-width="3"/>
+
+    <!-- 1. Rp50 juta -->
+    <text x="280" y="438" text-anchor="middle" font-size="42" font-weight="800" fill="#6fb0f5">Rp50 juta</text>
+    <line x1="280" y1="470" x2="280" y2="506" stroke="#3987e5" stroke-width="3"/>
+    <circle cx="280" cy="520" r="11" fill="#3987e5" stroke="#12171f" stroke-width="4"/>
+    <rect x="130" y="560" width="300" height="272" rx="16" fill="#ffffff" fill-opacity="0.04" stroke="#232c3a" stroke-width="2"/>
+    <text x="158" y="612" font-size="20" fill="#c9d1dc">Batas transaksi Toko</text>
+    <text x="158" y="646" font-size="20" fill="#c9d1dc">Daring.</text>
+    <text x="158" y="700" font-size="20" fill="#c9d1dc">Batas pembelian langsung</text>
+    <text x="158" y="734" font-size="20" fill="#c9d1dc">pada kategori biasa.</text>
+    <text x="158" y="788" font-size="20" fill="#8a94a5">Oleh Pejabat Pengadaan.</text>
+
+    <!-- 2. Rp100 juta -->
+    <text x="640" y="438" text-anchor="middle" font-size="42" font-weight="800" fill="#6fb0f5">Rp100 juta</text>
+    <line x1="640" y1="470" x2="640" y2="506" stroke="#3987e5" stroke-width="3"/>
+    <circle cx="640" cy="520" r="11" fill="#3987e5" stroke="#12171f" stroke-width="4"/>
+    <rect x="490" y="560" width="300" height="272" rx="16" fill="#ffffff" fill-opacity="0.04" stroke="#232c3a" stroke-width="2"/>
+    <text x="518" y="612" font-size="20" fill="#c9d1dc">Di bawah: PPK menyiapkan</text>
+    <text x="518" y="646" font-size="20" fill="#c9d1dc">Referensi Harga.</text>
+    <text x="518" y="700" font-size="20" fill="#c9d1dc">Di atas: PPK menetapkan</text>
+    <text x="518" y="734" font-size="20" fill="#c9d1dc">HPS.</text>
+    <text x="518" y="788" font-size="20" fill="#8a94a5">Pasal 13.</text>
+
+    <!-- 3. Rp200 juta -->
+    <text x="1000" y="438" text-anchor="middle" font-size="42" font-weight="800" fill="#6fb0f5">Rp200 juta</text>
+    <line x1="1000" y1="470" x2="1000" y2="506" stroke="#3987e5" stroke-width="3"/>
+    <circle cx="1000" cy="520" r="11" fill="#3987e5" stroke="#12171f" stroke-width="4"/>
+    <rect x="850" y="560" width="300" height="272" rx="16" fill="#ffffff" fill-opacity="0.04" stroke="#232c3a" stroke-width="2"/>
+    <text x="878" y="612" font-size="20" fill="#c9d1dc">Pejabat Pengadaan beralih</text>
+    <text x="878" y="646" font-size="20" fill="#c9d1dc">ke PPK atau Pokja.</text>
+    <text x="878" y="700" font-size="20" fill="#c9d1dc">Jaminan pelaksanaan</text>
+    <text x="878" y="734" font-size="20" fill="#c9d1dc">mulai berlaku.</text>
+    <text x="878" y="788" font-size="20" fill="#8a94a5">Pasal 15–17, 20.</text>
+
+    <!-- 4. Rp1 miliar -->
+    <text x="1360" y="438" text-anchor="middle" font-size="42" font-weight="800" fill="#e8a05a">Rp1 miliar</text>
+    <line x1="1360" y1="470" x2="1360" y2="506" stroke="#c98500" stroke-width="3"/>
+    <circle cx="1360" cy="520" r="11" fill="#c98500" stroke="#12171f" stroke-width="4"/>
+    <rect x="1210" y="560" width="300" height="272" rx="16" fill="#ffffff" fill-opacity="0.04" stroke="#4a3d2c" stroke-width="2"/>
+    <text x="1238" y="612" font-size="20" fill="#c9d1dc">Ambang khusus paket di</text>
+    <text x="1238" y="646" font-size="20" fill="#c9d1dc">wilayah Papua.</text>
+    <text x="1238" y="700" font-size="20" fill="#c9d1dc">Menggantikan angka</text>
+    <text x="1238" y="734" font-size="20" fill="#c9d1dc">Rp200 juta.</text>
+    <text x="1238" y="788" font-size="20" fill="#8a94a5">Pasal 15–17.</text>
+
+    <text x="70" y="906" font-size="18" fill="#66707f">Keempatnya disusun menurut urutan nilai, bukan menurut skala — jarak antarambang tidak proporsional.</text>
+    <text x="70" y="936" font-size="18" fill="#66707f">Pembelian langsung pada kategori/koleksi produk berharga tetap tidak punya plafon nilai; ambang Rp200 juta di sana hanya menentukan pelaksananya.</text>
+    <text x="70" y="966" font-size="18" fill="#66707f">Ringkasan Pasal 11, 13, 15, 16, 17, dan 20 Perlem LKPP 2/2026. Bukan pengganti teks pasal.</text>
+  </g>
+</svg>

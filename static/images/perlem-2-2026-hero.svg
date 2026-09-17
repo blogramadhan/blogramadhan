@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Peraturan LKPP Nomor 2 Tahun 2026 tentang Katalog Elektronik: 25 pasal, ambang Rp100 juta untuk HPS, dan batas penyesuaian sistem 1 September 2027">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#132238"/><stop offset="0.45" stop-color="#101825"/><stop offset="1" stop-color="#0d0f13"/>
+    </linearGradient>
+    <linearGradient id="azure" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6fb0f5"/><stop offset="1" stop-color="#3987e5"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3987e5" stop-opacity="0.30"/><stop offset="1" stop-color="#3987e5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+
+  <!-- kisi dokumen -->
+  <ellipse cx="1210" cy="330" rx="420" ry="350" fill="url(#halo)"/>
+  <g stroke="#3987e5" stroke-opacity="0.30" stroke-width="3" stroke-linecap="round">
+    <line x1="1000" y1="196" x2="1404" y2="196"/>
+    <line x1="1000" y1="248" x2="1332" y2="248"/>
+    <line x1="1000" y1="300" x2="1420" y2="300"/>
+    <line x1="1000" y1="352" x2="1268" y2="352"/>
+    <line x1="1000" y1="404" x2="1388" y2="404"/>
+    <line x1="1000" y1="456" x2="1180" y2="456"/>
+  </g>
+  <g stroke="#6fb0f5" stroke-opacity="0.55" stroke-width="5" stroke-linecap="round">
+    <line x1="1000" y1="300" x2="1420" y2="300"/>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="322" font-size="23" font-weight="700" letter-spacing="6" fill="#6fb0f5">PERLEM LKPP 2/2026 · BERLAKU 1 SEPTEMBER</text>
+    <text x="96" y="432" font-size="86" font-weight="800" letter-spacing="-2.5" fill="#f2f4f8">KATALOG ELEKTRONIK</text>
+    <text x="96" y="530" font-size="86" font-weight="800" letter-spacing="-2.5" fill="url(#azure)">SETELAH 1 SEPTEMBER</text>
+    <rect x="100" y="568" width="120" height="5" rx="2.5" fill="#3987e5"/>
+    <text x="100" y="638" font-size="31" fill="#a3aebd">Perlem 9/2021 dicabut. Toko Daring</text>
+    <text x="100" y="682" font-size="31" fill="#a3aebd">turun jadi modul katalog.</text>
+
+    <g>
+      <rect x="100" y="748" width="270" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#2c3e57" stroke-width="2"/>
+      <text x="126" y="800" font-size="40" font-weight="800" fill="#6fb0f5">25</text>
+      <text x="126" y="832" font-size="17" fill="#8794a6">pasal, empat bab</text>
+
+      <rect x="392" y="748" width="290" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#2c3e57" stroke-width="2"/>
+      <text x="418" y="800" font-size="38" font-weight="800" fill="#6fb0f5">Rp100 jt</text>
+      <text x="418" y="832" font-size="17" fill="#8794a6">batas HPS dan Referensi Harga</text>
+
+      <rect x="704" y="748" width="300" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#2c3e57" stroke-width="2"/>
+      <text x="730" y="800" font-size="38" font-weight="800" fill="#7fd4c1">1 Sep 2027</text>
+      <text x="730" y="832" font-size="17" fill="#8794a6">batas penyesuaian sistem</text>
+    </g>
+  </g>
+</svg>
