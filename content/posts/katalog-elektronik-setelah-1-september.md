@@ -2,186 +2,306 @@
 title = "Katalog Elektronik Setelah 1 September"
 date = 2026-09-17T21:00:00+07:00
 draft = false
-description = "Perlem LKPP 2/2026 mencabut Perlem 9/2021 dan menata ulang katalog elektronik. Catatan saya soal ambang nilai, Referensi Harga, Toko Daring yang turun jadi modul, dan dua pasal yang terpaksa saya baca berulang."
+description = "Perlem LKPP 2/2026 sudah berlaku dan mencabut Perlem 9/2021. Penjelasan sederhana: kapan HPS tidak lagi wajib, tiga cara belanja lewat katalog, siapa yang mengerjakan di tiap nilai paket, dan apa yang perlu disiapkan sekarang."
 tags = ["pbj", "pengadaan", "lkpp", "katalog-elektronik", "e-purchasing", "regulasi"]
 categories = ["Catatan"]
 featured_image = "/images/perlem-2-2026-hero.svg"
 toc = true
 +++
 
-Peraturan LKPP Nomor 2 Tahun 2026 tentang Katalog Elektronik ditetapkan 27 Agustus, diundangkan
-1 September, dan berlaku hari itu juga. Perlem 9/2021 dicabut.
+Sejak 1 September, aturan katalog elektronik sudah ganti. Peraturan LKPP Nomor 2 Tahun 2026 resmi
+berlaku, dan Perlem 9/2021 yang lama dicabut habis.
 
-Saya membacanya karena [Portal PBJ](/projects/portal-pbj/) menarik data dari sistem yang aturannya
-barusan diganti. Ternyata yang berubah lebih banyak dari yang saya kira, dan sebagiannya jenis
-perubahan yang tidak kelihatan kalau cuma baca siaran persnya.
+Isinya 25 pasal. Sebagian besar soal siapa mengurus apa di dalam sistem katalog — bagian yang
+jarang menyentuh pekerjaan harian. Tapi ada beberapa yang langsung mengubah cara kerja PPK dan
+Pejabat Pengadaan, dan itu yang akan saya dahulukan.
 
-Dua puluh lima pasal, empat bab. Ini catatan bacanya.
+Tulisan ini saya susun untuk dibaca sambil menyiapkan paket. Jadi bahasanya saya buat sesederhana
+mungkin, dan nomor pasalnya saya taruh di dalam kurung supaya tidak mengganggu.
 
-## Toko Daring turun jadi modul
+## Ringkasan cepat
 
-Judul peraturan lama: "Toko Daring **dan** Katalog Elektronik". Dua benda, sejajar. Judul yang
-baru cuma "Katalog Elektronik", dan di Pasal 1 angka 24 Toko Daring didefinisikan sebagai
-"modul/bagian dari sistem Katalog Elektronik".
+Kalau Anda sedang buru-buru, lima hal ini yang paling penting:
 
-Itu bukan perubahan kosmetik. Toko Daring sekarang salah satu cara melakukan E-purchasing, bukan
-jalur pengadaan yang berdiri sendiri. Batas transaksinya dikunci di Rp50 juta (Pasal 11 ayat 6),
-mitranya berupa *marketplace* (ayat 5), dan isinya produk dalam negeri serta produk usaha mikro,
-usaha kecil, dan koperasi — kecuali untuk kategori yang memang tidak bisa disediakan UMK dan
-koperasi (ayat 3 dan 4).
+1. **Paket sampai Rp100 juta tidak perlu HPS lagi.** Cukup Referensi Harga.
+2. **Ada tiga cara belanja** lewat katalog: pembelian langsung, negosiasi harga, dan mini kompetisi.
+3. **Siapa yang mengerjakan tergantung nilai paket.** Batas utamanya Rp200 juta. Khusus Papua,
+   Rp1 miliar.
+4. **Kontrak di atas Rp200 juta sekarang pakai jaminan pelaksanaan**, walau lewat katalog.
+5. **Kalau memilih tidak lewat katalog, PPK wajib bikin analisa pasar** dengan lima poin isian.
 
-## Lima lapis, dan lapis daerah yang paling sempit
+Sisanya penjelasan.
 
-Pasal 4 ayat (2) membagi pengelolaan katalog jadi lima: pusat, Nasional, Sektoral, Lokal, dan oleh
-Institusi Lainnya. Yang menarik buat saya adalah seberapa berbeda kewenangan tiap lapis.
+## Paket sampai Rp100 juta tidak perlu HPS lagi
 
-Katalog Sektoral (Pasal 7) mengurus dua-duanya: koleksi produk **dan** kategori produk, lengkap
-dengan kurasi penayangan, kurasi master produk, dan penetapan sanksi administratif — kalau
-kewenangan sanksi itu memang diberikan saat K/L ditetapkan sebagai pengelola sektoral.
+Ini perubahan yang paling cepat terasa.
 
-Katalog Lokal (Pasal 8) cuma dapat tiga: mengusulkan pembuatan koleksi produk, mengurasi koleksi
-produk, dan memberi dukungan kepada Pelaku Usaha lokal. Kuratornya satu jenis saja, kurator
-koleksi produk. Jadi Pemda menyusun etalase, tapi yang memutuskan sebuah produk boleh tayang atau
-tidak ada di lapis nasional atau sektoral.
+Dulu setiap paket butuh HPS — Harga Perkiraan Sendiri, dokumen perkiraan harga yang ditetapkan
+PPK. Sekarang aturannya dibagi dua di angka Rp100 juta (Pasal 13):
 
-Ada juga pemain baru di Pasal 1 angka 22: **Mitra Instansi Pengelola**, pihak yang diberi tugas
-mempercepat transformasi digital pengadaan. Kewenangannya besar — mendanai, membangun,
-mengoperasikan, dan memelihara sistem katalog beserta sistem transaksinya, sampai menetapkan
-manajer kategori produk (Pasal 5 ayat 6). Pasal 5 ayat (7) menyediakan jaring pengaman: kalau
-Mitra Instansi Pengelola tidak ada, kewenangan itu kembali ke LKPP.
+- **Di atas Rp100 juta** → PPK menetapkan HPS, seperti biasa.
+- **Sampai Rp100 juta** → PPK cukup menyiapkan Referensi Harga.
 
-## Referensi Harga, dan hilangnya HPS di bawah seratus juta
+Contohnya begini. Paket ATK senilai Rp80 juta lewat katalog: tidak perlu HPS, cukup Referensi
+Harga. Paket meubelair Rp150 juta: tetap pakai HPS.
 
-Ini bagian yang paling langsung terasa di meja kerja.
+Bagaimana kalau paketnya persis Rp100 juta? Masuk kelompok Referensi Harga. Naskahnya menulis
+"paling banyak Rp100.000.000,00" untuk Referensi Harga dan "paling sedikit di atas
+Rp100.000.000,00" untuk HPS. Angka bulatnya jatuh ke sisi yang lebih ringan.
 
-- Nilai **di atas Rp100 juta** — PPK *menetapkan* HPS (Pasal 13 ayat 1).
-- Nilai **paling banyak Rp100 juta** — PPK *menyiapkan* Referensi Harga (Pasal 13 ayat 2).
-- Pembelian langsung pada kategori atau koleksi produk berharga tetap — dua-duanya tidak perlu
-  (Pasal 13 ayat 3).
+### Apa itu Referensi Harga
 
-Referensi Harga itu istilah baru, didefinisikan di Pasal 1 angka 26 sebagai harga pembanding untuk
-menilai kewajaran harga satuan yang ditawarkan. Perhatikan kata kerjanya: HPS "ditetapkan",
-Referensi Harga "disiapkan". Peraturannya tidak merinci bentuk dokumennya, siapa yang
-menandatangani, atau berapa lama disimpan. Saya menduga itu akan muncul di panduan teknis
-berikutnya, tapi sampai itu terbit, bagian ini yang paling mungkin ditafsirkan berbeda-beda antar
-instansi.
+Istilah ini baru. Artinya harga pembanding, dipakai untuk menilai apakah harga yang ditawarkan
+penyedia masih wajar atau tidak (Pasal 1 angka 26).
 
-## Tiga metode dan garis-garis nilainya
+Bedanya dengan HPS ada di beban kerjanya. HPS "ditetapkan" — ada proses, ada penetapan. Referensi
+Harga cukup "disiapkan". Tidak ada kewajiban penetapan formal di pasal itu.
 
-Pasal 14 menetapkan tiga metode E-purchasing: pembelian langsung, negosiasi harga, dan mini
-kompetisi. Metodenya sendiri tidak rumit. Yang bikin bab ini padat adalah ambang nilai yang
-menentukan siapa boleh menjalankan apa.
+### Yang belum diatur, dan saran saya
+
+Naskahnya tidak menyebut bentuk dokumen Referensi Harga. Tidak menyebut berapa banyak harga
+pembanding yang dianggap cukup. Tidak menyebut berapa lama disimpan.
+
+Saran saya sederhana: simpan saja jejaknya. Tangkapan layar harga pembanding, tanggal
+pengambilannya, dan alasan Anda memilih produk itu — masukkan ke berkas persiapan pengadaan.
+
+Alasannya praktis. Di tahun pertama, APIP (pengawas internal di instansi Anda) akan menafsirkan
+aturan baru ini berbeda-beda. Yang punya arsip tidak akan repot menjelaskan.
+
+Satu pengecualian: kalau Anda membeli di kategori yang harganya sudah dikunci pemerintah, HPS
+maupun Referensi Harga sama-sama tidak diperlukan (Pasal 13 ayat 3). Tidak ada yang perlu dinilai
+kewajarannya kalau harganya memang sudah tetap.
+
+## Tiga cara belanja, dan siapa yang mengerjakan
+
+Ada tiga metode e-purchasing (Pasal 14). Metodenya sendiri tidak rumit. Yang sering bikin
+bingung adalah batas nilai yang menentukan siapa boleh mengerjakan.
 
 ![Empat ambang nilai dalam Perlem LKPP 2/2026 dan apa yang berubah di setiap ambang](/images/perlem-2-2026-ambang.svg)
 
-**Pembelian langsung** (Pasal 15) punya tiga pintu: nilai sampai Rp50 juta pada kategori yang
-ditetapkan dokumen penelaahan, nilai sampai Rp50 juta lewat Toko Daring untuk kebutuhan rutin
-berulang atau barang yang standar harganya sudah ditetapkan pemerintah, dan pembelian pada
-kategori atau koleksi produk yang menerapkan harga tetap. Pintu ketiga ini tidak punya plafon
-nilai — yang berubah cuma pelaksananya: Pejabat Pengadaan sampai Rp200 juta, PPK di atasnya.
+### 1. Pembelian langsung
 
-**Negosiasi harga** (Pasal 16) bisa dijalankan Pejabat Pengadaan sampai Rp200 juta, lalu PPK atau
-Pokja Pemilihan di atas itu. Di Toko Daring, negosiasi hanya mungkin kalau sistem PPMSE-nya
-menyediakan fiturnya, dan dibatasi Rp50 juta.
+Langsung beli, tanpa tawar-menawar. Ada tiga pintu masuk (Pasal 15):
 
-**Mini kompetisi** (Pasal 17) mensyaratkan minimal dua Penyedia Katalog dengan produk sama atau
-spesifikasi sama. Pejabat Pengadaan sampai Rp200 juta, Pokja Pemilihan di atasnya. Ayat (4)
-memberi kelonggaran: kalau Pokja belum bisa melaksanakan, PPK yang mengerjakan.
+- Paket **sampai Rp50 juta** di kategori yang sudah ditetapkan.
+- Paket **sampai Rp50 juta** lewat Toko Daring, untuk kebutuhan rutin atau barang yang standar
+  harganya sudah ditetapkan pemerintah.
+- Pembelian di kategori yang **harganya tetap** — pintu ini tidak dibatasi nilai.
 
-Untuk paket di wilayah Papua, angka Rp200 juta diganti Rp1 miliar di ketiga metode. Afirmasi yang
-jelas, dan satu-satunya pengecualian kewilayahan di peraturan ini.
+Dua pintu pertama dikerjakan Pejabat Pengadaan.
 
-Satu lagi yang gampang terlewat: **jaminan pelaksanaan** sekarang diberlakukan untuk E-purchasing
-barang, pekerjaan konstruksi, dan jasa lainnya dengan nilai kontrak di atas Rp200 juta (Pasal 20).
-Jasa konsultansi tidak disebut. Pengecualiannya satu, jasa lainnya yang asetnya dikuasai pengguna.
+Pintu ketiga yang sering terlewat. Nilai paketnya boleh berapa saja. Yang berubah cuma siapa yang
+mengerjakan: Pejabat Pengadaan sampai Rp200 juta, PPK di atas itu.
 
-## Wajib e-purchasing, dan pintu keluarnya
+Jadi kalau barang yang Anda butuhkan ada di kategori harga tetap, jangan memaksakan mini kompetisi
+hanya karena nilainya besar. Pembelian langsung tetap bisa.
 
-Pasal 12 ayat (2) mewajibkan K/L/Pemda memakai E-purchasing kalau barang/jasanya tersedia di
-katalog. Ayat (3) membuka dua pengecualian: katalog tidak memenuhi kebutuhan dari aspek volume,
-spesifikasi teknis, waktu, lokasi, atau layanan; atau ada pertimbangan metode lain lebih efisien
-dan efektif.
+### 2. Negosiasi harga
 
-Yang baru ada di syarat memakainya. Penilaian ada di PPK (ayat 4),
-dan PPK harus melakukan **analisa pasar** (ayat 5) yang paling sedikit memuat lima identifikasi
-(ayat 6): ketersediaan barang dan penyedia di katalog, pemenuhan volume dan spesifikasi teknis,
-kesanggupan penyedia soal waktu dan lokasi dan layanan, kesesuaian kategori, serta perbandingan
-harga katalog dengan barang sejenis di luar katalog.
+Menawar harga satuan, ongkos kirim, atau biaya lain (Pasal 16). Pelaksananya:
 
-Lima butir itu praktis berarti keluar dari katalog sekarang menyisakan jejak dokumen. Buat saya
-yang mengurus data pengadaan, ini bagian yang paling menarik — kalau analisa pasar ini benar-benar
-diarsipkan dan bisa diaudit, alasan instansi memilih tender ketimbang e-purchasing jadi sesuatu
-yang bisa diperiksa, bukan cuma diperdebatkan.
+- Pejabat Pengadaan, **sampai Rp200 juta**.
+- PPK atau Pokja Pemilihan, **di atas Rp200 juta**.
 
-## Katalog untuk swakelola, dan untuk yang bukan instansi
+Ada satu aturan yang mudah terlewat. Kalau yang menegosiasi PPK, pekerjaannya harus masuk salah
+satu dari tiga jenis ini (Pasal 16 ayat 2):
 
-Dua perluasan yang saya kira akan makan waktu paling lama untuk terasa.
+- barang/jasa hasil konsolidasi yang memang bisa dinegosiasikan,
+- barang/jasa yang praktik bisnisnya sudah mapan dan biasanya tidak dikompetisikan,
+- pekerjaan swakelola tipe I, II, atau III.
 
-Pertama, E-purchasing bisa dipakai untuk swakelola tipe I, II, dan III, dilaksanakan kepada calon
-pelaksana swakelola (Pasal 12 ayat 7 dan 8). Konsekuensinya ada di definisi: "Penyedia Katalog" di
-Pasal 1 angka 18 sekarang mencakup calon pelaksana swakelola, bukan cuma pelaku usaha. Surat/Bukti
-Pesanan untuk swakelola pun ditandatangani PPK dan pelaksana swakelola lewat sistem katalog
-(Pasal 19 ayat 1).
+Batasan itu tidak berlaku untuk Pejabat Pengadaan dan Pokja Pemilihan (ayat 3).
 
-Kedua, Pemerintah Desa, instansi lain, pelaku usaha, kelompok masyarakat, bahkan orang perseorangan
-di luar K/L/Pemda bisa melakukan E-purchasing dengan meminta akses ke pengelola katalog (Pasal 12
-ayat 9 dan 10).
+Menurut saya logikanya menjaga jarak peran. PPK adalah pemilik pekerjaan. Kalau PPK bebas menawar
+sendiri, batas antara yang menetapkan kebutuhan dan yang memilih penyedia jadi kabur.
 
-Tapi ayat (11) memasang rem: keduanya baru bisa jalan kalau sudah difasilitasi di sistem katalog.
-Jadi normanya sudah ada, sistemnya belum tentu. Saya tidak tahu kapan bagian ini benar-benar bisa
-dipakai.
+Praktisnya: paket Anda di atas Rp200 juta dan tidak masuk tiga jenis itu? Negosiasinya lewat Pokja
+Pemilihan. PPK tinggal menyampaikan permintaan ke UKPBJ, unit pengadaan di instansi Anda (Pasal 14
+ayat 3).
 
-## Dua pasal yang saya baca berulang-ulang
+### 3. Mini kompetisi
 
-Bukan untuk mencari-cari kesalahan — saya cuma tidak yakin salah baca atau tidak.
+Membandingkan penawaran dari beberapa penyedia di katalog. Pelaksananya Pejabat Pengadaan sampai
+Rp200 juta, Pokja Pemilihan di atas itu (Pasal 17).
 
-**Pasal 9 ayat (2)** mengatur pihak dalam pengelolaan Katalog Elektronik oleh Institusi Lainnya,
-tapi kalimatnya berbunyi "Pihak yang terlibat pada pengelolaan Katalog Elektronik **Sektoral**
-terdiri atas: a. Pimpinan Institusi Lainnya; b. Kurator koleksi produk." Isinya jelas soal
-Institusi Lainnya. Kata "Sektoral" di situ kelihatannya sisa salin-tempel dari Pasal 7.
+Syaratnya satu, dan ini yang sering menggagalkan rencana: harus ada **minimal dua penyedia** yang
+punya produk sama atau spesifikasi sama.
 
-**Pasal 17 ayat (3)** menetapkan mini kompetisi di Papua: Pejabat Pengadaan sampai Rp1 miliar,
-lalu **PPK** di atasnya. Padahal di ayat (2), untuk paket non-Papua di atas Rp200 juta, yang
-ditunjuk **Pokja Pemilihan**. Jadi aktor di atas ambangnya berbeda tergantung wilayah. Mungkin
-disengaja — Pokja Pemilihan memang tidak selalu ada dan siap di setiap daerah, dan ayat (4) juga
-mengizinkan PPK menggantikan Pokja. Mungkin juga tidak disengaja. Saya tidak punya cara
-memastikannya dari teks.
+Contohnya, Anda butuh laptop dengan spesifikasi tertentu, tapi di katalog cuma satu penyedia yang
+menjualnya. Mini kompetisi tidak bisa dipakai. Anda jatuh ke negosiasi harga.
 
-Keduanya tidak mengubah apa pun secara praktis. Saya catat karena kalau saya yang keliru membaca,
-saya lebih suka keliru secara terbuka.
+Makanya cek dulu ketersediaan penyedia di katalog, baru tentukan metodenya. Bukan sebaliknya.
 
-## Kapan harus siap
+Kalau Pokja Pemilihan belum siap mengerjakan, PPK boleh menggantikan (ayat 4).
 
-Pasal 22 memberi waktu **satu tahun sejak diundangkan** bagi sistem katalog yang sudah dibangun
-untuk menyesuaikan diri. Diundangkan 1 September 2026, jadi batasnya 1 September 2027.
+### Khusus Papua
 
-Pasal 23 mengatur yang sedang berjalan: dokumen penelaahan dan pengumuman lama tetap berlaku
-sepanjang tidak bertentangan, produk yang sudah tayang tetap tayang, E-purchasing yang sudah
-dimulai sebelum 1 September diselesaikan dengan aturan lama, dan Surat/Bukti Pesanan yang sudah
-diteken tetap berlaku sampai kontraknya habis.
+Untuk paket di wilayah Papua, angka Rp200 juta diganti **Rp1 miliar** di ketiga metode. Ini
+satu-satunya pengecualian wilayah di peraturan ini.
 
-Jadi tidak ada yang perlu dihentikan malam itu juga. Yang perlu disiapkan lebih ke arah dokumen
-dan kebiasaan: Referensi Harga untuk paket di bawah seratus juta, dan analisa pasar untuk setiap
-keputusan tidak memakai katalog.
+### Catatan soal angka bulat
 
-## Catatan asumsi
+Paket bernilai persis Rp200 juta masih dikerjakan Pejabat Pengadaan, belum pindah ke PPK atau
+Pokja. Naskahnya menulis "paling banyak Rp200.000.000,00" untuk Pejabat Pengadaan.
 
-- Ini catatan baca atas naskah Perlem LKPP 2/2026, bukan pendapat hukum. Saya ASN yang bekerja di
-  bidang data, bukan pengelola pengadaan dan bukan ahli hukum. Kalau ada yang menentukan keputusan
-  Anda, tanyakan ke UKPBJ atau LKPP, jangan ke blog.
-- Saya membaca naskah 2/2026 apa adanya dan **tidak** melakukan perbandingan pasal-per-pasal
-  dengan Perlem 9/2021. Jadi kalau saya menyebut sesuatu "baru", yang saya maksud baru di mata
-  saya, belum tentu baru secara normatif.
-- Nominal yang saya tulis adalah nominal di naskah per 17 September 2026. Peraturan pelaksana dan
-  panduan teknis bisa terbit menyusul dan memperjelas — atau mengubah — cara membacanya.
-- Dua kejanggalan redaksional di Pasal 9 dan Pasal 17 saya sampaikan sebagai pembacaan, bukan
-  koreksi resmi.
-- Grafik ambang nilai di atas adalah ringkasan, bukan pengganti teks pasal. Ambangnya berbeda per
-  metode, dan grafik itu menyusun urutannya, bukan skalanya.
+## Jaminan pelaksanaan: hal baru yang mudah terlewat
+
+Kontrak e-purchasing di atas Rp200 juta sekarang pakai jaminan pelaksanaan (Pasal 20). Berlaku
+untuk pengadaan barang, pekerjaan konstruksi, dan jasa lainnya.
+
+Tiga catatan untuk pasal yang pendek ini:
+
+- Jasa konsultansi tidak disebut.
+- Kontrak persis Rp200 juta belum kena.
+- Pengecualiannya cuma satu: jasa lainnya yang asetnya dikuasai pengguna.
+
+Kalau SOP e-purchasing di instansi Anda selama ini tidak mengenal jaminan pelaksanaan, ini yang
+paling perlu diperbarui duluan. Termasuk menyiapkan cara menerima dan menyimpannya.
+
+## Kalau Anda memilih tidak lewat katalog
+
+Aturannya tetap: kalau barang yang dibutuhkan tersedia di katalog, instansi wajib memakai
+e-purchasing (Pasal 12 ayat 2).
+
+Boleh keluar dari kewajiban itu, dengan dua alasan (ayat 3):
+
+- Katalog tidak bisa memenuhi kebutuhan dari sisi volume, spesifikasi teknis, waktu, lokasi, atau
+  layanan.
+- Ada pertimbangan bahwa cara lain lebih hemat atau lebih efektif.
+
+Yang baru bukan alasannya, tapi caranya. Sekarang PPK yang menilai (ayat 4), dan penilaian itu
+harus berdasarkan **analisa pasar** (ayat 5).
+
+Analisa pasar minimal berisi lima hal (ayat 6):
+
+1. Apakah barangnya ada di katalog, dan siapa penyedianya.
+2. Apakah volume dan spesifikasi teknisnya cocok.
+3. Apakah penyedianya sanggup soal waktu, lokasi, dan layanan.
+4. Apakah barangnya sesuai kategori yang ditentukan.
+5. Bagaimana harga di katalog dibanding harga barang sejenis di luar katalog.
+
+Lima poin itu sebenarnya sudah berbentuk formulir. Saran saya: bikin formulirnya sekarang,
+jadikan bagian tetap dari berkas persiapan pengadaan, dan isi setiap kali memutuskan tidak lewat
+katalog.
+
+Dengan begitu, keputusan memilih tender ketimbang katalog meninggalkan jejak yang bisa diperiksa.
+Memang itu tujuannya.
+
+## Toko Daring sekarang bagian dari katalog
+
+Dulu namanya sejajar. Judul peraturan lama berbunyi "Toko Daring **dan** Katalog Elektronik" —
+dua hal terpisah. Sekarang judulnya cuma "Katalog Elektronik", dan Toko Daring didefinisikan
+sebagai bagian di dalamnya (Pasal 1 angka 24).
+
+Praktisnya, Toko Daring jadi salah satu cara belanja lewat katalog, dengan aturan sendiri:
+
+- Batas transaksinya **Rp50 juta** (Pasal 11 ayat 6).
+- Mitranya berupa *marketplace* (ayat 5).
+- Isinya produk dalam negeri dan produk UMK serta koperasi. Boleh dikecualikan untuk barang yang
+  memang tidak bisa disediakan UMK dan koperasi (ayat 3 dan 4).
+- Menawar harga hanya bisa kalau sistem marketplace-nya punya fitur itu, dan tetap dibatasi Rp50
+  juta (Pasal 16 ayat 1 huruf b). Yang mengerjakan Pejabat Pengadaan.
+
+## Siapa mengurus katalog yang mana
+
+Pengelolaan katalog dibagi lima lapis (Pasal 4): pusat, Nasional, Sektoral, Lokal, dan oleh
+Institusi Lainnya. Kewenangannya berbeda-beda, dan buat rekan-rekan di daerah perbedaan ini perlu
+diketahui.
+
+**Katalog Sektoral** dikelola kementerian atau lembaga (Pasal 7). Kewenangannya paling lengkap:
+mengurus kategori produk, mengurasi produk yang mau tayang, sampai menjatuhkan sanksi kepada
+penyedia — kalau kewenangan sanksi itu memang diberikan waktu ditetapkan sebagai pengelola.
+
+**Katalog Lokal** dikelola Pemerintah Daerah (Pasal 8), dan cakupannya lebih sempit. Pemda bisa
+mengusulkan koleksi produk, mengurasi koleksi produk, dan mendampingi pelaku usaha lokal supaya
+produknya tayang. Itu saja.
+
+Artinya keputusan apakah sebuah produk boleh tayang atau tidak ada di lapis nasional atau
+sektoral, bukan di daerah.
+
+Jadi kalau target Anda memperbanyak penyedia lokal di katalog, kerjanya di pendampingan onboarding
+(Pasal 8 ayat 1 huruf c), bukan di kurasi. Untuk pekerjaan konstruksi, pelaku usaha lokal juga
+diutamakan (Pasal 18).
+
+Ada satu pihak baru yang layak dicatat: **Mitra Instansi Pengelola** (Pasal 1 angka 22). Tugasnya
+mempercepat digitalisasi pengadaan, dan kewenangannya luas — mendanai, membangun, dan memelihara
+sistem katalog. Kalau pihak ini belum ada, kewenangannya kembali ke LKPP (Pasal 5 ayat 7).
+
+## Dua hal baru yang belum tentu bisa dipakai sekarang
+
+**Pertama, katalog untuk swakelola.** E-purchasing kini bisa dipakai untuk swakelola tipe I, II,
+dan III (Pasal 12 ayat 7 dan 8). Ini perubahan yang cukup besar. Istilah "Penyedia Katalog"
+sekarang juga mencakup calon pelaksana swakelola, bukan cuma pelaku usaha (Pasal 1 angka 18).
+
+**Kedua, pengguna di luar instansi.** Pemerintah Desa, kelompok masyarakat, bahkan orang
+perseorangan boleh ikut belanja lewat katalog, dengan meminta akses ke pengelola (Pasal 12 ayat 9
+dan 10).
+
+Sebelum Anda merencanakan keduanya untuk tahun anggaran ini, baca ayat (11): keduanya baru bisa
+jalan kalau fiturnya sudah tersedia di sistem katalog. Aturannya sudah ada, sistemnya menyusul.
+Peraturan ini tidak menyebut kapan.
+
+## Dua pasal yang bikin bingung
+
+Ada dua bagian yang kemungkinan besar akan ditanyakan peserta bimtek. Lebih baik Anda sudah tahu
+duluan.
+
+**Pasal 9 ayat (2)** seharusnya mengatur Katalog Elektronik oleh Institusi Lainnya. Tapi
+kalimatnya menulis "Katalog Elektronik **Sektoral**", padahal isi hurufnya jelas soal Institusi
+Lainnya, dan judul pasalnya juga begitu. Kelihatannya sisa salin-tempel dari Pasal 7. Baca pasal
+itu sesuai judul dan isinya.
+
+**Pasal 17 ayat (3)** soal mini kompetisi di Papua: sampai Rp1 miliar oleh Pejabat Pengadaan, di
+atasnya oleh **PPK**. Padahal untuk paket di luar Papua, di atas Rp200 juta yang ditunjuk **Pokja
+Pemilihan**.
+
+Jadi pelaksananya beda tergantung wilayah. Bisa jadi memang disengaja, karena Pokja Pemilihan
+tidak selalu tersedia di setiap daerah, dan ayat (4) sudah membolehkan PPK menggantikan Pokja.
+Bisa juga salah tulis. Dari naskahnya sendiri tidak ada cara memastikan.
+
+Kalau instansi Anda memproses paket Papua di atas Rp1 miliar, tanyakan dulu ke LKPP sebelum
+menetapkan pelaksananya.
+
+## Yang perlu disiapkan sekarang
+
+Kabar baiknya, tidak ada yang harus dihentikan. Pasal 23 mengatur yang sedang berjalan:
+
+- Dokumen penelaahan dan pengumuman lama tetap berlaku, sepanjang tidak bertentangan.
+- Produk yang sudah tayang tetap tayang.
+- E-purchasing yang dimulai sebelum 1 September diselesaikan dengan aturan lama.
+- Surat/Bukti Pesanan yang sudah diteken berlaku sampai kontraknya habis.
+
+Sistem katalog sendiri punya waktu satu tahun untuk menyesuaikan diri, jadi sampai 1 September
+2027 (Pasal 22). Itu urusan pengelola sistem, bukan satuan kerja.
+
+Yang jadi pekerjaan kita lebih ke soal dokumen dan kebiasaan:
+
+- Siapkan format Referensi Harga untuk paket sampai Rp100 juta. Sepakati isinya dengan APIP sejak
+  awal.
+- Bikin formulir analisa pasar dengan lima poin tadi. Pakai setiap kali memutuskan tidak lewat
+  katalog.
+- Perbarui SOP e-purchasing untuk jaminan pelaksanaan di atas Rp200 juta.
+- Periksa ulang tabel kewenangan Pejabat Pengadaan, PPK, dan Pokja Pemilihan terhadap batas Rp50
+  juta, Rp200 juta, dan Rp1 miliar untuk Papua.
+- Kalau Anda di UKPBJ daerah, mulai petakan pelaku usaha lokal yang layak didorong tayang di
+  katalog.
+
+## Catatan
+
+- Tulisan ini menjelaskan isi naskah Perlem LKPP 2/2026. Ini bukan penafsiran yang mengikat. Untuk
+  keputusan yang berkonsekuensi, rujuk LKPP atau UKPBJ instansi Anda.
+- Beberapa bagian saya tandai sebagai pendapat — misalnya soal alasan di balik pembatasan
+  negosiasi oleh PPK. Bedakan itu dari kutipan pasal.
+- Saya membaca naskah 2/2026 apa adanya, tanpa membandingkan pasal per pasal dengan Perlem 9/2021.
+  Jadi "baru" di sini berarti baru menurut naskah ini, belum tentu berbeda dari aturan sebelumnya.
+- Semua angka mengikuti naskah per 17 September 2026. Panduan teknis bisa terbit menyusul dan
+  memperjelas bagian yang sekarang masih terbuka.
+- Grafik di atas ringkasan, bukan pengganti teks pasal. Batasnya berbeda-beda per metode, dan
+  grafik itu menyusun urutan nilainya, bukan skalanya.
 
 ## Sumber
 
-- [Peraturan Lembaga Nomor 2 Tahun 2026 tentang Katalog Elektronik dalam Pengadaan Barang/Jasa Pemerintah](https://jdih.lkpp.go.id/regulation/peraturan-lkpp/peraturan-lkpp-nomor-2-tahun-2026) — JDIH LKPP (naskah utama yang saya baca)
+- [Peraturan Lembaga Nomor 2 Tahun 2026 tentang Katalog Elektronik dalam Pengadaan Barang/Jasa Pemerintah](https://jdih.lkpp.go.id/regulation/peraturan-lkpp/peraturan-lkpp-nomor-2-tahun-2026) — JDIH LKPP
 - [Unduhan naskah lengkap](https://jdih.lkpp.go.id/regulation/download/peraturan-lkpp-nomor-2-tahun-2026/1) — JDIH LKPP
 - [Peraturan LKPP No. 2 Tahun 2026](https://peraturan.go.id/id/peraturan-lkpp-no-2-tahun-2026) — peraturan.go.id
 - [Peraturan Lembaga Nomor 2 Tahun 2026: Penguatan Katalog Elektronik](https://pengadaan.jogjakota.go.id/detail/index/51841) — Bagian PBJ Kota Yogyakarta
