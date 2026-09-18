@@ -603,7 +603,9 @@ h1, h2, h3, h4 {
 .about-portrait {
   max-width: 9rem; margin: 2rem auto; padding: 0;
 }
-.about-portrait img { border-radius: 50%; border: 1px solid var(--line); aspect-ratio: 1; object-fit: cover; }
+/* Potret sumbernya berformat pasfoto (2:3), sementara bingkainya lingkaran 1:1.
+   Tanpa object-position, potongan tengah jatuh di dada dan memangkas ubun-ubun. */
+.about-portrait img { border-radius: 50%; border: 1px solid var(--line); aspect-ratio: 1; object-fit: cover; object-position: center top; }
 .about-contact {
   margin-top: 3rem; text-align: center; padding-top: 2rem;
   border-top: 1px solid var(--line);
