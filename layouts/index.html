@@ -71,7 +71,7 @@
       <a class="section-link" href="{{ "/investasi" | relURL }}">Semua catatan &rarr;</a>
     </header>
     <div class="card-grid">
-      {{ range first 3 $investasi }}
+      {{ range first 4 $investasi }}
         {{ partial "post-card.html" . }}
       {{ end }}
     </div>
@@ -89,7 +89,7 @@
       <a class="section-link" href="{{ "/tutorials" | relURL }}">Semua tutorial &rarr;</a>
     </header>
     <div class="card-grid">
-      {{ range first 3 $tutorials }}
+      {{ range first 4 $tutorials }}
         {{ partial "post-card.html" . }}
       {{ end }}
     </div>
