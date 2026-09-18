@@ -288,6 +288,7 @@
         <label>Jenis</label>
         <div class="seg" id="seg">
           <button data-sec="posts" class="on">Blog</button>
+          <button data-sec="investasi">Investasi</button>
           <button data-sec="projects">Portofolio</button>
         </div>
       </div>
@@ -393,7 +394,7 @@ function renderList(){
   const filtered = items.filter(i => i.title.toLowerCase().includes(q));
   const groups = {};
   filtered.forEach(i => { (groups[i.section] = groups[i.section]||[]).push(i); });
-  const label = { posts:'Blog', projects:'Portofolio', halaman:'Halaman' };
+  const label = { posts:'Blog', investasi:'Investasi', projects:'Portofolio', halaman:'Halaman' };
 
   // Entri tetap: teks beranda & identitas yang tinggal di hugo.toml, bukan di content/.
   let html = '';

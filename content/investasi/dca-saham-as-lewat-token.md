@@ -4,9 +4,10 @@ date = 2026-09-12T07:30:00+07:00
 draft = false
 description = "Tiap hari saya beli SPYX dan QQQX dengan porsi 60:40. Setelah dihitung, porsi itu bukan diversifikasi seperti yang saya kira, dan sepertiga pembelian saya jatuh di jam yang salah."
 tags = ["investasi", "kripto", "xstocks", "spyx", "qqqx", "tokenisasi", "keuangan", "dca", "pintu"]
-categories = ["Catatan"]
+categories = ["Investasi"]
 featured_image = "/images/xstocks-hero.svg"
 toc = true
+aliases = ["/posts/dca-saham-as-lewat-token/"]
 +++
 
 Beberapa bulan terakhir saya nambah satu kebiasaan harian lagi. Tiap hari, nominal rupiah yang
@@ -16,7 +17,7 @@ SPYX itu S&P 500, QQQX itu Nasdaq-100. Dua-duanya bukan ETF beneran, tapi token 
 mengikuti ETF aslinya. Orang menyebutnya **xStocks**.
 
 Satu hal yang saya senang: kali ini yang saya kunci rupiahnya, bukan jumlah unitnya. Itu
-pelajaran yang saya dapat dengan agak malu di [catatan DCA emas](/posts/dca-etf-emas/), waktu
+pelajaran yang saya dapat dengan agak malu di [catatan DCA emas](/investasi/dca-etf-emas/), waktu
 saya berbulan-bulan beli satu lot tiap hari dan baru sadar belakangan bahwa itu bukan DCA yang
 sebenarnya.
 
@@ -34,7 +35,7 @@ lalu mencetak token satu banding satu di blockchain Solana.
 
 Jadi rantainya ada tiga lapis: saya pegang token, token itu klaim atas lembar saham, lembar
 sahamnya dititip di kustodian. Emas ETF di BEI strukturnya mirip, cuma di sana lapisannya
-[diawasi OJK dan KSEI](/posts/etf-emas-indonesia/), sementara di sini pengawasnya regulator
+[diawasi OJK dan KSEI](/investasi/etf-emas-indonesia/), sementara di sini pengawasnya regulator
 Swiss dan Liechtenstein.
 
 Konsekuensinya ada tiga, dan semuanya nyata:
@@ -197,7 +198,7 @@ di mana-mana, dan aturan barang baru cenderung mengeras belakangan.
 
 **Ada risiko kurs yang menumpuk di atas semuanya.** Harga SPYX dalam dolar. Hasil rupiah saya
 adalah dua gerakan sekaligus, seperti yang sudah saya tulis waktu membahas
-[ETF emas](/posts/etf-emas-indonesia/).
+[ETF emas](/investasi/etf-emas-indonesia/).
 
 ## Jadi saya ubah apa
 

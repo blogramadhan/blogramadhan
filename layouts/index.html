@@ -15,8 +15,8 @@
   <hr class="rule-ornament" aria-hidden="true">
 </div>
 
-{{/* Sorotan lintas-kategori: artikel terbaru dari blog maupun tutorial. */}}
-{{ $articles := where site.RegularPages "Section" "in" (slice "posts" "tutorials") }}
+{{/* Sorotan lintas-kategori: artikel terbaru dari blog, investasi, maupun tutorial. */}}
+{{ $articles := where site.RegularPages "Section" "in" (slice "posts" "investasi" "tutorials") }}
 {{ $featured := "" }}
 {{ with first 1 $articles }}{{ $featured = index . 0 }}{{ end }}
 
@@ -61,10 +61,28 @@
 </section>
 {{ end }}
 
+{{ $investasi := where site.RegularPages "Section" "investasi" }}
+{{ with $featured }}{{ $investasi = where $investasi "RelPermalink" "!=" .RelPermalink }}{{ end }}
+{{ if $investasi }}
+<section class="home-section home-section--alt">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 class="section-title">Catatan Investasi</h2>
+      <a class="section-link" href="{{ "/investasi" | relURL }}">Semua catatan &rarr;</a>
+    </header>
+    <div class="card-grid">
+      {{ range first 3 $investasi }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
 {{ $tutorials := where site.RegularPages "Section" "tutorials" }}
 {{ with $featured }}{{ $tutorials = where $tutorials "RelPermalink" "!=" .RelPermalink }}{{ end }}
 {{ if $tutorials }}
-<section class="home-section home-section--alt">
+<section class="home-section">
   <div class="wrap">
     <header class="section-head">
       <h2 class="section-title">Tutorial Terbaru</h2>
@@ -81,7 +99,7 @@
 
 {{ $projects := where site.RegularPages "Section" "projects" }}
 {{ if $projects }}
-<section class="home-section">
+<section class="home-section home-section--alt">
   <div class="wrap">
     <header class="section-head">
       <h2 class="section-title">Karya Pilihan</h2>

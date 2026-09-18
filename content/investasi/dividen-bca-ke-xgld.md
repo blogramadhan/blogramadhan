@@ -4,8 +4,9 @@ date = 2026-09-16T09:30:00+07:00
 draft = false
 description = "Dividen interim BCA termin kedua cair hari ini. Uangnya tidak saya belikan sahamnya lagi, tapi saya pindahkan ke ETF emas."
 tags = ["investasi", "saham", "dividen", "bbca", "emas", "etf", "xgld"]
-categories = ["Catatan"]
+categories = ["Investasi"]
 featured_image = "/images/dividen-bca-xgld-hero.svg"
+aliases = ["/posts/dividen-bca-ke-xgld/"]
 +++
 
 Pagi ini saya buka aplikasi sekuritas dan saldo RDN saya bertambah sendiri. Dividen BCA
@@ -38,7 +39,7 @@ Itu saja isi kepala saya pagi ini. Tidak ada analisis panjang.
 ## Sebenarnya tidak ada yang perlu diputuskan
 
 Beberapa minggu terakhir saya sudah rutin membeli emas tiap hari bursa. Sudah saya tulis
-[di catatan sebelumnya](/posts/dca-etf-emas/), termasuk hitungan ongkosnya.
+[di catatan sebelumnya](/investasi/dca-etf-emas/), termasuk hitungan ongkosnya.
 
 Jadi dividen ini tinggal ikut jalur yang sudah ada. Uang masuk, dibelikan emas, selesai.
 Tidak ada pertimbangan baru, tidak ada yang perlu ditimbang ulang.

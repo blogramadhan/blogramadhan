@@ -4,9 +4,10 @@ date = 2026-08-28T09:30:00+07:00
 draft = false
 description = "Sejak 10 Agustus 2026, emas bisa dibeli lewat aplikasi saham. Catatan panjang tentang cara kerja ETF emas, lima produk perdananya, biaya, pajak, dan risikonya."
 tags = ["investasi", "emas", "pasar-modal", "etf", "keuangan"]
-categories = ["Catatan"]
+categories = ["Investasi"]
 featured_image = "/images/etf-emas-hero.svg"
 toc = true
+aliases = ["/posts/etf-emas-indonesia/"]
 +++
 
 Selama ini memiliki emas selalu berarti satu dari dua hal: menyimpan logamnya sendiri, atau

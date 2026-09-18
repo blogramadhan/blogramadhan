@@ -4,13 +4,14 @@ date = 2026-09-10T21:30:00+07:00
 draft = false
 description = "Saya beli KAS sekali, lalu saya diamkan. Waktu hitungannya saya buka lagi, ternyata hal yang paling sering dipuji dari Kaspa dan hal yang paling membuat saya waswas itu angka yang sama."
 tags = ["kripto", "kaspa", "kas", "proof-of-work", "investasi", "keuangan", "blockdag"]
-categories = ["Catatan"]
+categories = ["Investasi"]
 featured_image = "/images/kaspa-hero.svg"
 toc = true
+aliases = ["/posts/kaspa-tiga-persen-terakhir/"]
 +++
 
 KAS saya beli sekali, lewat Bitget, lalu saya diamkan. Tidak seperti
-[ETF emas yang saya cicil tiap hari bursa](/posts/dca-etf-emas/), di sini tidak ada jadwal apa
+[ETF emas yang saya cicil tiap hari bursa](/investasi/dca-etf-emas/), di sini tidak ada jadwal apa
 pun. Beli, sudah, tutup aplikasi.
 
 Malam ini saya buka lagi hitungannya, sebetulnya cuma karena penasaran apakah mendiamkannya

@@ -159,6 +159,15 @@ hugo new posts/judul-tulisan-anda.md
 
 Lalu buka berkasnya, ubah `draft = true` menjadi `draft = false` bila sudah siap terbit.
 
+## Menambah catatan investasi
+
+```bash
+hugo new investasi/judul-catatan.md
+```
+
+Tulisan di `content/investasi/` punya halaman daftarnya sendiri di `/investasi/` —
+sejajar dengan Tutorial dan Portofolio, bukan sub-kategori Blog.
+
 ## Menambah proyek portofolio
 
 ```bash
@@ -175,6 +184,8 @@ Isi front matter dengan `year`, `role`, `tech`, dan opsional `repo` / `demo`.
 ├── content/
 │   ├── about/           # Halaman "Tentang"
 │   ├── posts/           # Tulisan blog
+│   ├── investasi/       # Catatan investasi
+│   ├── tutorials/       # Tutorial teknis
 │   └── projects/        # Portofolio
 ├── layouts/             # Template HTML (tema custom)
 │   ├── _default/

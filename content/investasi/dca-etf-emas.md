@@ -4,12 +4,13 @@ date = 2026-09-10T07:45:00+07:00
 draft = false
 description = "Saya membeli satu lot XGLD dan satu lot XTRA tiap hari bursa. Setelah dihitung, ternyata yang saya lakukan bukan DCA — dan selisihnya lima kali lebih besar daripada soal frekuensi."
 tags = ["investasi", "emas", "etf", "dca", "keuangan", "xgld", "xtra", "stockbit"]
-categories = ["Catatan"]
+categories = ["Investasi"]
 featured_image = "/images/dca-emas-hero.svg"
 toc = true
+aliases = ["/posts/dca-etf-emas/"]
 +++
 
-Sejak menulis [catatan tentang ETF emas](/posts/etf-emas-indonesia/) bulan lalu, saya
+Sejak menulis [catatan tentang ETF emas](/investasi/etf-emas-indonesia/) bulan lalu, saya
 menjalankan kebiasaan kecil: **tiap hari bursa, beli satu lot XGLD dan satu lot XTRA.**
 
 Dua produk itu saya pilih karena denominasi unitnya paling kecil di antara lima ETF emas
@@ -212,7 +213,7 @@ Yang saya asumsikan: harga awal Rp256 (XGLD) dan Rp248 (XTRA) per unit, fee beli
 setengah-spread 0,25%, volatilitas tahunan 15%, 245 hari bursa, tanpa arah naik atau turun
 yang diasumsikan. Semuanya bisa berbeda di kasus Anda. Perhitungan ini juga belum memasukkan
 **biaya pengelolaan tahunan ETF** (sekitar 0,3–0,5%) maupun perlakuan pajaknya, yang
-[masih abu-abu](/posts/etf-emas-indonesia/).
+[masih abu-abu](/investasi/etf-emas-indonesia/).
 
 Tarif Stockbit yang saya kutip adalah yang tercantum di
 [halaman biaya resminya](https://help.stockbit.com/id/article/transaksi-saham-berapa-biaya-trading-di-stockbit-sekuritas-1lbkyq9/)

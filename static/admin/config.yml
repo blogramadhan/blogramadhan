@@ -60,6 +60,29 @@ collections:
       - { label: "Aktifkan komentar", name: "comments", widget: "boolean", default: true, required: false }
       - { label: "Isi", name: "body", widget: "markdown" }
 
+  - name: "investasi"
+    label: "Catatan Investasi"
+    label_singular: "Catatan"
+    folder: "content/investasi"
+    create: true
+    delete: false     # lihat catatan di koleksi "posts" di atas
+    slug: "{{slug}}"
+    format: "toml-frontmatter"
+    summary: "{{title}} — {{year}}/{{month}}/{{day}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Judul", name: "title", widget: "string" }
+      - { label: "Tanggal", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm" }
+      - { label: "Draf", name: "draft", widget: "boolean", default: false }
+      - { label: "Deskripsi", name: "description", widget: "text", required: false }
+      - { label: "Tag", name: "tags", widget: "list", required: false, default: ["investasi"] }
+      - { label: "Kategori", name: "categories", widget: "list", required: false, default: ["Investasi"] }
+      - { label: "Gambar sampul", name: "featured_image", widget: "image", required: false }
+      - { label: "Tampilkan daftar isi", name: "toc", widget: "boolean", default: true, required: false }
+      - { label: "Aktifkan komentar", name: "comments", widget: "boolean", default: true, required: false }
+      - { label: "Alias URL lama", name: "aliases", widget: "list", required: false }
+      - { label: "Isi", name: "body", widget: "markdown" }
+
   - name: "projects"
     label: "Portofolio"
     label_singular: "Proyek"
@@ -107,6 +130,16 @@ collections:
         fields:
           - { label: "Judul halaman", name: "title", widget: "string",
               hint: "Judul besar di /posts/. Mis. \"Blog\"." }
+          - { label: "Teks pembuka", name: "description", widget: "text", required: false,
+              hint: "Kalimat pengantar di bawah judul." }
+
+      - name: "investasi_index"
+        label: "Halaman Daftar Investasi"
+        file: "content/investasi/_index.md"
+        format: "toml-frontmatter"
+        fields:
+          - { label: "Judul halaman", name: "title", widget: "string",
+              hint: "Judul besar di /investasi/. Mis. \"Investasi\"." }
           - { label: "Teks pembuka", name: "description", widget: "text", required: false,
               hint: "Kalimat pengantar di bawah judul." }
 
