@@ -133,6 +133,13 @@ h1, h2, h3, h4 {
   font-size: .78rem; font-weight: 700; letter-spacing: .02em;
 }
 :root[data-theme="dark"] .brand-mark { color: #0b0d11; }
+/* Varian foto: gambar mengisi penuh kotaknya, jadi latar aksen tak perlu lagi.
+   Sumbernya pasfoto 2:3 — tanpa object-position, potongan 1:1 memangkas kepala. */
+.brand-mark--photo { background: none; padding: 0; overflow: hidden; }
+.brand-mark--photo img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+}
 
 .site-nav { margin-left: auto; }
 .site-nav ul { list-style: none; display: flex; gap: .3rem; margin: 0; padding: 0; }

@@ -1,7 +1,12 @@
-{{- /* Monogram dari inisial nama penulis, mis. "Kurnia Ramadhan" → "KR". */ -}}
+{{- /* Tanda merek di header: foto penulis bila params.avatar diisi, selain itu
+       monogram dari inisial nama, mis. "Kurnia Ramadhan" → "KR". */ -}}
+{{- with site.Params.avatar -}}
+<span class="brand-mark brand-mark--photo" aria-hidden="true"><img src="{{ . | relURL }}" alt="" width="28" height="28" loading="eager" decoding="async"></span>
+{{- else -}}
 {{- $name := site.Params.author | default site.Title -}}
 {{- $initials := "" -}}
 {{- range first 2 (split $name " ") -}}
   {{- with . }}{{ $initials = printf "%s%s" $initials (upper (substr . 0 1)) }}{{ end -}}
 {{- end -}}
 <span class="brand-mark" aria-hidden="true">{{ $initials | default "•" }}</span>
+{{- end -}}

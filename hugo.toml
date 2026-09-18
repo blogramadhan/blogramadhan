@@ -25,6 +25,8 @@ summaryLength = 40
   # Kontak / sosial (kosongkan bila tak dipakai)
   email = "kurnia@ramadhan.me"
   github = "https://github.com/blogramadhan"
+  # Tanda merek di header. Dikosongkan = kembali ke monogram inisial ("KR").
+  avatar = "/images/kurnia_ramadhan-avatar.png"
   linkedin = ""
   twitter = ""
   # Fitur
