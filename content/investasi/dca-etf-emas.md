@@ -3,7 +3,7 @@ title = "DCA ETF Emas"
 date = 2026-09-10T07:45:00+07:00
 draft = false
 description = "Saya membeli satu lot XGLD dan satu lot XTRA tiap hari bursa. Setelah dihitung, ternyata yang saya lakukan bukan DCA — dan selisihnya lima kali lebih besar daripada soal frekuensi."
-tags = ["investasi", "emas", "etf", "dca", "keuangan", "xgld", "xtra", "stockbit"]
+tags = ["investasi", "emas", "etf", "dca", "keuangan", "xgld", "xtra", "stockbit", "ipot", "power-fund-series"]
 categories = ["Investasi"]
 featured_image = "/images/dca-emas-hero.svg"
 toc = true
@@ -21,6 +21,9 @@ rata-ratanya jatuh di sekitar **Rp50.400**.
 Tulisan ini catatan sewaktu saya memeriksa apakah kebiasaan itu masuk akal. Jawabannya: dua
 dari tiga bagiannya sudah benar, dan satu bagian ternyata keliru — bagian yang paling tidak
 saya duga.
+
+*Sembilan hari setelah tulisan ini terbit, kompromi yang saya pilih di bawah jadi tidak
+perlu. Lihat [pembaruannya](#pembaruan-jalan-yang-lebih-lurus).*
 
 ## Berapa sebenarnya ongkosnya
 
@@ -184,6 +187,63 @@ Itu tidak menangkap seluruh 0,37%, dan saya tahu itu. Tapi ia menangkap sebagian
 membuat kebiasaannya jadi pekerjaan — dan kebiasaan yang terasa seperti pekerjaan biasanya
 berhenti dalam tiga bulan.
 
+## Pembaruan: jalan yang lebih lurus
+
+Sembilan hari setelah tulisan ini terbit, kompromi di atas jadi tidak perlu.
+
+XGLD ternyata juga bisa dibeli lewat **IPOT Fund**, di fitur bernama Power Fund Series. Saya
+sudah mencobanya. Satu hal yang berbeda di sana persis hal yang saya keluhkan di seksi
+sebelumnya: pesanannya berdenominasi rupiah.
+
+Berita-berita yang mengabarkannya memakai angka "mulai 0,1 miligram" atau "mulai Rp250".
+Itu lantai minimumnya, dan bukan bagian yang penting buat saya. Yang penting ada di tabel
+perbandingan di dalam aplikasinya sendiri, di baris **Simple value in Rp** — bertanda centang
+untuk Power Fund Series, bertanda silang untuk ETF biasa.
+
+Kenapa satu baris itu membereskan seluruh seksi "Yang ternyata keliru" di atas: soalnya ada
+di ukuran langkah.
+
+Satu lot XGLD menebus sekitar Rp25.400. Anggaran harian saya untuk XGLD, dari Rp50.000 yang
+saya bagi dua produk, juga sekitar Rp25.400. Jadi waktu saya menulis "kalau harga sedang
+turun cukup jauh, satu lot saya jadikan dua", yang sebenarnya tersedia buat saya cuma dua
+angka: Rp25.400 atau Rp50.800. Tidak ada apa pun di antaranya.
+
+Instrumennya punya resolusi selebar seluruh belanja harian saya. Itu sebabnya kompromi tadi
+terasa kasar waktu saya menuliskannya — tidak ada angka di antara dua pilihan itu untuk
+dihitung.
+
+Lewat jalur rupiah, sisa yang tidak terpakai paling banyak seharga satu unit — sekitar Rp254.
+Sebelumnya paling banyak seharga satu lot. Seratus kali lebih rapat, persis sebesar ukuran
+lotnya sendiri.
+
+### Yang belum saya pastikan
+
+Saya belum bisa bilang cara ini lebih murah.
+
+Di hitungan di atas, yang paling mahal bukan komisi broker. Spread memakan Rp30.876, hampir
+dua kali lipat komisi Rp18.525. Jadi pertanyaan yang menentukan bukan berapa biaya belinya,
+tapi apakah saya masih menyeberangi bid-ask.
+
+Tabel yang sama menyebut Power Fund Series menarik likuiditas dari empat sumber sekaligus —
+manajer investasi, saham di portofolio, pasar sekunder BEI, dan dealer partisipan — sementara
+ETF biasa cuma dua. Barisnya untuk harga juga mencentang Live NAV, bukan cuma harga
+orderbook.
+
+Kalau itu berarti transaksinya benar-benar terjadi di NAV, komponen biaya terbesar saya
+berubah. Kalau ternyata tetap menyeberangi buku order, ia tidak berubah sama sekali.
+
+Saya belum tahu yang mana. Tabel itu materi pemasaran, dan materi pemasaran bukan nota
+transaksi. Tarif belinya pun belum saya cocokkan dengan yang benar-benar tercatat — sumber
+publik yang saya temukan malah saling bertabrakan soal angkanya. Sampai saya punya beberapa
+bulan nota, seksi ini menggantung.
+
+Mekanismenya saya uraikan lebih panjang di
+[catatan tersendiri](/investasi/beli-xgld-tanpa-menghitung-lot/).
+
+Satu hal lagi dari tabel yang sama, yang tidak ada hubungannya dengan DCA tapi sebaiknya
+disebut: Power Fund Series mengizinkan posisi dengan leverage. Membeli emas dengan utang
+persoalan yang lain sama sekali, dan tidak ada di tulisan ini yang berlaku untuk itu.
+
 ## Kenapa dua produk
 
 Satu pertanyaan yang belum saya jawab: kenapa XGLD **dan** XTRA, bukan salah satu saja?
@@ -219,6 +279,12 @@ Tarif Stockbit yang saya kutip adalah yang tercantum di
 [halaman biaya resminya](https://help.stockbit.com/id/article/transaksi-saham-berapa-biaya-trading-di-stockbit-sekuritas-1lbkyq9/)
 per September 2026. Lembar biaya bisa berubah kapan saja — jangan percaya angka di blog
 orang, termasuk blog ini.
+
+Seksi pembaruan ditambahkan 19 September 2026. Keterangan mekanisme Power Fund Series di
+sana saya ambil dari tabel perbandingan di dalam aplikasi IPOT dan dari
+[keterangan Indo Premier](https://www.indopremier.com/ipotnews/newsDetail.php?jdl=Bagaimana_Cara_Membeli_Unit_Penyertaan_Reksa_Dana_Exchange_Traded_Fund_&news_id=92050&group_news=IPOTNEWS&taging_subtype=MUTUALFUNDEDUCATION);
+angka biaya dan perilaku spread-nya belum saya verifikasi dari nota transaksi sendiri.
+Hitungan di badan tulisan tidak saya ubah — ia rekaman apa yang saya tahu pada 10 September.
 
 Ini catatan pribadi, bukan rekomendasi investasi. Emas bisa turun, dan sudah pernah turun
 lama.

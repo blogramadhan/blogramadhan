@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="XGLD lewat Power Fund Series di IPOT Fund: satuan pesanan berupa rupiah, bukan lot. Satu lot menebus Rp25.400 sementara satu unit Rp254 atau setara 0,1 miligram emas">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#0d1726"/><stop offset="0.55" stop-color="#11131a"/><stop offset="1" stop-color="#0b0e14"/>
+    </linearGradient>
+    <linearGradient id="pgold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7d26b"/><stop offset="1" stop-color="#c98500"/>
+    </linearGradient>
+    <radialGradient id="pglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c98500" stop-opacity="0.18"/><stop offset="1" stop-color="#c98500" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#pbg)"/>
+  <ellipse cx="1270" cy="450" rx="340" ry="320" fill="url(#pglow)"/>
+
+  <!-- satu lot: satu blok utuh -->
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="1020" y="252" font-size="19" font-weight="700" letter-spacing="3" fill="#5d82a8">LEWAT BURSA</text>
+    <rect x="1020" y="274" width="460" height="104" rx="14" fill="#13294a" stroke="#3987e5" stroke-width="2.5"/>
+    <text x="1250" y="328" font-size="30" font-weight="800" fill="#7fb2e8" text-anchor="middle">1 LOT = 100 UNIT</text>
+    <text x="1250" y="360" font-size="19" fill="#5d82a8" text-anchor="middle">Rp25.400 — tidak bisa dipecah</text>
+  </g>
+
+  <!-- satu unit: seratus kotak kecil -->
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="1020" y="452" font-size="19" font-weight="700" letter-spacing="3" fill="#9a8253">LEWAT POWER FUND SERIES</text>
+    <rect x="1020" y="474" width="460" height="192" rx="14" fill="#2a1f08" stroke="#c98500" stroke-width="2.5"/>
+    <g fill="url(#pgold)">
+      <rect x="1044" y="498" width="28" height="18" rx="4"/><rect x="1080" y="498" width="28" height="18" rx="4"/><rect x="1116" y="498" width="28" height="18" rx="4"/><rect x="1152" y="498" width="28" height="18" rx="4"/><rect x="1188" y="498" width="28" height="18" rx="4"/><rect x="1224" y="498" width="28" height="18" rx="4"/><rect x="1260" y="498" width="28" height="18" rx="4"/><rect x="1296" y="498" width="28" height="18" rx="4"/><rect x="1332" y="498" width="28" height="18" rx="4"/><rect x="1368" y="498" width="28" height="18" rx="4"/><rect x="1404" y="498" width="28" height="18" rx="4"/><rect x="1440" y="498" width="28" height="18" rx="4"/>
+      <rect x="1044" y="524" width="28" height="18" rx="4"/><rect x="1080" y="524" width="28" height="18" rx="4"/><rect x="1116" y="524" width="28" height="18" rx="4"/><rect x="1152" y="524" width="28" height="18" rx="4"/><rect x="1188" y="524" width="28" height="18" rx="4"/><rect x="1224" y="524" width="28" height="18" rx="4"/><rect x="1260" y="524" width="28" height="18" rx="4"/><rect x="1296" y="524" width="28" height="18" rx="4"/><rect x="1332" y="524" width="28" height="18" rx="4"/><rect x="1368" y="524" width="28" height="18" rx="4"/><rect x="1404" y="524" width="28" height="18" rx="4"/><rect x="1440" y="524" width="28" height="18" rx="4"/>
+      <rect x="1044" y="550" width="28" height="18" rx="4"/><rect x="1080" y="550" width="28" height="18" rx="4"/><rect x="1116" y="550" width="28" height="18" rx="4"/><rect x="1152" y="550" width="28" height="18" rx="4"/><rect x="1188" y="550" width="28" height="18" rx="4"/><rect x="1224" y="550" width="28" height="18" rx="4"/><rect x="1260" y="550" width="28" height="18" rx="4"/><rect x="1296" y="550" width="28" height="18" rx="4"/><rect x="1332" y="550" width="28" height="18" rx="4"/><rect x="1368" y="550" width="28" height="18" rx="4"/><rect x="1404" y="550" width="28" height="18" rx="4"/><rect x="1440" y="550" width="28" height="18" rx="4"/>
+      <rect x="1044" y="576" width="28" height="18" rx="4"/><rect x="1080" y="576" width="28" height="18" rx="4"/><rect x="1116" y="576" width="28" height="18" rx="4"/><rect x="1152" y="576" width="28" height="18" rx="4"/><rect x="1188" y="576" width="28" height="18" rx="4"/><rect x="1224" y="576" width="28" height="18" rx="4"/><rect x="1260" y="576" width="28" height="18" rx="4"/><rect x="1296" y="576" width="28" height="18" rx="4"/><rect x="1332" y="576" width="28" height="18" rx="4"/><rect x="1368" y="576" width="28" height="18" rx="4"/><rect x="1404" y="576" width="28" height="18" rx="4"/><rect x="1440" y="576" width="28" height="18" rx="4"/>
+    </g>
+    <text x="1250" y="638" font-size="19" fill="#9a8253" text-anchor="middle">Rp254 per unit — atau ketik rupiahnya langsung</text>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="312" font-size="23" font-weight="700" letter-spacing="6" fill="#e0a92b">IPOT FUND · POWER FUND SERIES</text>
+    <text x="96" y="424" font-size="88" font-weight="800" letter-spacing="-3" fill="#f4f2ec">BELI EMAS</text>
+    <text x="96" y="520" font-size="88" font-weight="800" letter-spacing="-3" fill="url(#pgold)">TANPA LOT</text>
+    <rect x="100" y="558" width="120" height="5" rx="2.5" fill="#c98500"/>
+    <text x="100" y="630" font-size="31" fill="#9a9288">Satuan pesanannya rupiah.</text>
+    <text x="100" y="674" font-size="31" fill="#9a9288">Jumlah unitnya urusan belakangan.</text>
+
+    <g>
+      <rect x="100" y="748" width="238" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#4a3f28" stroke-width="2"/>
+      <text x="126" y="800" font-size="40" font-weight="800" fill="#f4f2ec">0,1 mg</text>
+      <text x="126" y="832" font-size="17" fill="#8e857a">isi satu unit</text>
+
+      <rect x="360" y="748" width="238" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#4a3f28" stroke-width="2"/>
+      <text x="386" y="800" font-size="40" font-weight="800" fill="#7fb2e8">Rp254</text>
+      <text x="386" y="832" font-size="17" fill="#8e857a">harga satu unit</text>
+
+      <rect x="620" y="748" width="262" height="118" rx="16" fill="#c98500" fill-opacity="0.12" stroke="#c98500" stroke-width="2.5"/>
+      <text x="646" y="800" font-size="40" font-weight="800" fill="#f7d26b">100&#215;</text>
+      <text x="646" y="832" font-size="17" fill="#8e857a">langkah jadi lebih rapat</text>
+    </g>
+  </g>
+</svg>
