@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Mole, alat bersih-bersih Mac lewat Terminal: 53 GB dibebaskan dari 9.825 berkas dalam sepuluh sesi sejak Maret 2026">
+  <defs>
+    <linearGradient id="mbg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#0d1f1c"/><stop offset="0.55" stop-color="#11141a"/><stop offset="1" stop-color="#0b0e14"/>
+    </linearGradient>
+    <linearGradient id="mgreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6fe0b4"/><stop offset="1" stop-color="#2fa37a"/>
+    </linearGradient>
+    <radialGradient id="mglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#2fa37a" stop-opacity="0.20"/><stop offset="1" stop-color="#2fa37a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#mbg)"/>
+  <ellipse cx="1270" cy="440" rx="330" ry="310" fill="url(#mglow)"/>
+
+  <!-- jendela terminal -->
+  <g>
+    <rect x="1000" y="268" width="478" height="330" rx="16" fill="#0a1512" stroke="#2fa37a" stroke-width="2.5"/>
+    <rect x="1000" y="268" width="478" height="44" rx="16" fill="#123029"/>
+    <rect x="1000" y="296" width="478" height="16" fill="#123029"/>
+    <circle cx="1028" cy="290" r="7" fill="#e05c5c"/><circle cx="1052" cy="290" r="7" fill="#e0b64c"/><circle cx="1076" cy="290" r="7" fill="#5cc97a"/>
+    <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="23">
+      <text x="1026" y="366" fill="#6fe0b4">$ mo clean --dry-run</text>
+      <text x="1026" y="408" fill="#7e8b92">memindai cache, log, sisa aplikasi…</text>
+      <text x="1026" y="462" fill="#6fe0b4">$ mo clean</text>
+      <text x="1026" y="504" fill="#c9d1dc">2.344 berkas</text>
+      <text x="1026" y="546" fill="#f2f4f8" font-size="34" font-weight="700">12,4 GB dibebaskan</text>
+    </g>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="312" font-size="23" font-weight="700" letter-spacing="6" fill="#4cc79a">TERMINAL · GRATIS · SUMBER TERBUKA</text>
+    <text x="96" y="424" font-size="88" font-weight="800" letter-spacing="-3" fill="#f4f2ec">BERSIH-BERSIH</text>
+    <text x="96" y="520" font-size="88" font-weight="800" letter-spacing="-3" fill="url(#mgreen)">MAC PAKAI MOLE</text>
+    <rect x="100" y="558" width="120" height="5" rx="2.5" fill="#2fa37a"/>
+    <text x="100" y="630" font-size="31" fill="#94a09a">Satu perintah, dan komputer saya</text>
+    <text x="100" y="674" font-size="31" fill="#94a09a">lega puluhan gigabyte.</text>
+
+    <g>
+      <rect x="100" y="748" width="238" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#2c4a42" stroke-width="2"/>
+      <text x="126" y="800" font-size="40" font-weight="800" fill="#f4f2ec">53 GB</text>
+      <text x="126" y="832" font-size="17" fill="#7e8b86">sejak Maret</text>
+
+      <rect x="360" y="748" width="238" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#2c4a42" stroke-width="2"/>
+      <text x="386" y="800" font-size="40" font-weight="800" fill="#6fe0b4">9.825</text>
+      <text x="386" y="832" font-size="17" fill="#7e8b86">berkas disapu</text>
+
+      <rect x="620" y="748" width="262" height="118" rx="16" fill="#2fa37a" fill-opacity="0.12" stroke="#2fa37a" stroke-width="2.5"/>
+      <text x="646" y="800" font-size="40" font-weight="800" fill="#6fe0b4">3,3 GB</text>
+      <text x="646" y="832" font-size="17" fill="#7e8b86">tumbuh lagi tiap bulan</text>
+    </g>
+  </g>
+</svg>

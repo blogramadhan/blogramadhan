@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Python Dasar bagian 03: variabel dan tipe data, dengan empat tipe dasar yaitu teks, bilangan bulat, desimal, dan benar atau salah">
+  <defs>
+    <linearGradient id="p3bg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#0b1a2e"/><stop offset="0.5" stop-color="#0a1320"/><stop offset="1" stop-color="#080d14"/>
+    </linearGradient>
+    <linearGradient id="p3blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ad6fb"/><stop offset="1" stop-color="#2a6fbd"/>
+    </linearGradient>
+    <radialGradient id="p3glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3987e5" stop-opacity="0.20"/><stop offset="1" stop-color="#3987e5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#p3bg)"/>
+  <ellipse cx="1250" cy="400" rx="370" ry="300" fill="url(#p3glow)"/>
+
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace">
+    <!-- teks -->
+    <rect x="1002" y="256" width="246" height="130" rx="12" fill="#0f2338" stroke="#f0a94a" stroke-width="2.5"/>
+    <text x="1024" y="296" font-family="system-ui,sans-serif" font-size="17" font-weight="700" fill="#8a7a5e">TEKS</text>
+    <text x="1024" y="334" font-size="25" fill="#f0a94a">str</text>
+    <text x="1024" y="368" font-size="19" fill="#6f7f92">"Pontianak"</text>
+
+    <!-- bilangan bulat -->
+    <rect x="1266" y="256" width="246" height="130" rx="12" fill="#0f2338" stroke="#5fd3a0" stroke-width="2.5"/>
+    <text x="1288" y="296" font-family="system-ui,sans-serif" font-size="17" font-weight="700" fill="#6f9585">BILANGAN BULAT</text>
+    <text x="1288" y="334" font-size="25" fill="#5fd3a0">int</text>
+    <text x="1288" y="368" font-size="19" fill="#6f7f92">42</text>
+
+    <!-- desimal -->
+    <rect x="1002" y="404" width="246" height="130" rx="12" fill="#0f2338" stroke="#8ad6fb" stroke-width="2.5"/>
+    <text x="1024" y="444" font-family="system-ui,sans-serif" font-size="17" font-weight="700" fill="#5f8ba8">DESIMAL</text>
+    <text x="1024" y="482" font-size="25" fill="#8ad6fb">float</text>
+    <text x="1024" y="516" font-size="19" fill="#6f7f92">12.5</text>
+
+    <!-- benar/salah -->
+    <rect x="1266" y="404" width="246" height="130" rx="12" fill="#0f2338" stroke="#c99ae0" stroke-width="2.5"/>
+    <text x="1288" y="444" font-family="system-ui,sans-serif" font-size="17" font-weight="700" fill="#917a9e">BENAR / SALAH</text>
+    <text x="1288" y="482" font-size="25" fill="#c99ae0">bool</text>
+    <text x="1288" y="516" font-size="19" fill="#6f7f92">True</text>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="308" font-size="23" font-weight="700" letter-spacing="6" fill="#6ab8f4">BELAJAR PYTHON DASAR · BAGIAN 03</text>
+    <text x="96" y="424" font-size="77" font-weight="800" letter-spacing="-2.5" fill="#f1f5f9">VARIABEL DAN</text>
+    <text x="96" y="510" font-size="77" font-weight="800" letter-spacing="-2.5" fill="url(#p3blue)">TIPE DATA</text>
+    <rect x="100" y="548" width="120" height="5" rx="2.5" fill="#2a6fbd"/>
+    <text x="100" y="620" font-size="31" fill="#8496a8">Kenapa 10 + 5 jadi 15, tapi</text>
+    <text x="100" y="664" font-size="31" fill="#8496a8">"10" + "5" jadi 105.</text>
+
+    <g>
+      <rect x="100" y="744" width="222" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#23425c" stroke-width="2"/>
+      <text x="126" y="796" font-size="38" font-weight="800" fill="#f1f5f9">03/15</text>
+      <text x="126" y="828" font-size="17" fill="#7b8b9a">bagian ketiga</text>
+
+      <rect x="344" y="744" width="222" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#23425c" stroke-width="2"/>
+      <text x="370" y="796" font-size="38" font-weight="800" fill="#7fb2e8">4</text>
+      <text x="370" y="828" font-size="17" fill="#7b8b9a">tipe dasar</text>
+
+      <rect x="588" y="744" width="260" height="118" rx="16" fill="#3987e5" fill-opacity="0.12" stroke="#3987e5" stroke-width="2.5"/>
+      <text x="614" y="794" font-family="ui-monospace,Menlo,monospace" font-size="32" font-weight="800" fill="#8ad6fb">type()</text>
+      <text x="614" y="828" font-size="17" fill="#7b8b9a">cara mengeceknya</text>
+    </g>
+  </g>
+</svg>

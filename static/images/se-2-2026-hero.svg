@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Surat Edaran Kepala LKPP Nomor 2 Tahun 2026 tentang percepatan pemenuhan Pengelola Pengadaan Barang/Jasa: keterisian baru 58,86 persen dari kebutuhan 19.064 orang, dan daftar dasar hukumnya tidak memuat satu pun aturan keuangan daerah">
+  <defs>
+    <linearGradient id="sbg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#132238"/><stop offset="0.55" stop-color="#101825"/><stop offset="1" stop-color="#0d0f13"/>
+    </linearGradient>
+    <linearGradient id="sblue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6fb0f5"/><stop offset="1" stop-color="#3987e5"/>
+    </linearGradient>
+    <radialGradient id="sglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3987e5" stop-opacity="0.18"/><stop offset="1" stop-color="#3987e5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sbg)"/>
+  <ellipse cx="1260" cy="430" rx="330" ry="310" fill="url(#sglow)"/>
+
+  <!-- dua kolom aturan: yang dirujuk vs yang tidak -->
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="1010" y="248" font-size="19" font-weight="700" letter-spacing="3" fill="#6fb0f5">DIRUJUK SE</text>
+    <g fill="#16283f" stroke="#3987e5" stroke-width="2">
+      <rect x="1010" y="268" width="216" height="52" rx="10"/>
+      <rect x="1010" y="330" width="216" height="52" rx="10"/>
+      <rect x="1010" y="392" width="216" height="52" rx="10"/>
+      <rect x="1010" y="454" width="216" height="52" rx="10"/>
+    </g>
+    <g font-size="18" fill="#a3aebd">
+      <text x="1030" y="300">Perpres 106/2007</text>
+      <text x="1030" y="362">Perpres 16/2018 jo. 46/2025</text>
+      <text x="1030" y="424">PermenPANRB 6/2026</text>
+      <text x="1030" y="486">Perlem LKPP 2/2023</text>
+    </g>
+
+    <text x="1272" y="248" font-size="19" font-weight="700" letter-spacing="3" fill="#d98a8a">TIDAK DIRUJUK</text>
+    <g fill="#2e1a1a" stroke="#a45555" stroke-width="2" stroke-dasharray="7 5">
+      <rect x="1272" y="268" width="216" height="52" rx="10"/>
+      <rect x="1272" y="330" width="216" height="52" rx="10"/>
+    </g>
+    <g font-size="18" fill="#c99a9a">
+      <text x="1292" y="300">PP 12/2019</text>
+      <text x="1292" y="362">Permendagri 77/2020</text>
+    </g>
+    <text x="1272" y="418" font-size="17" fill="#8794a6">Dua aturan inilah yang</text>
+    <text x="1272" y="444" font-size="17" fill="#8794a6">menentukan siapa PPK</text>
+    <text x="1272" y="470" font-size="17" fill="#8794a6">di belanja APBD.</text>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="312" font-size="23" font-weight="700" letter-spacing="6" fill="#6fb0f5">SE KEPALA LKPP 2/2026 · 23 SEPTEMBER</text>
+    <text x="96" y="424" font-size="84" font-weight="800" letter-spacing="-3" fill="#f2f4f8">SURAT EDARAN</text>
+    <text x="96" y="516" font-size="84" font-weight="800" letter-spacing="-3" fill="url(#sblue)">YANG MELEWATI</text>
+    <rect x="100" y="554" width="120" height="5" rx="2.5" fill="#3987e5"/>
+    <text x="100" y="626" font-size="30" fill="#8794a6">Mendorong Pengelola PBJ jadi PPK,</text>
+    <text x="100" y="668" font-size="30" fill="#8794a6">tanpa menyebut aturan yang mengaturnya.</text>
+
+    <g>
+      <rect x="100" y="748" width="238" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#2c3a4e" stroke-width="2"/>
+      <text x="126" y="800" font-size="38" font-weight="800" fill="#f2f4f8">58,86%</text>
+      <text x="126" y="832" font-size="17" fill="#8794a6">keterisian, Juni 2026</text>
+
+      <rect x="360" y="748" width="238" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#2c3a4e" stroke-width="2"/>
+      <text x="386" y="800" font-size="38" font-weight="800" fill="#6fb0f5">19.064</text>
+      <text x="386" y="832" font-size="17" fill="#8794a6">kebutuhan nasional</text>
+
+      <rect x="620" y="748" width="262" height="118" rx="16" fill="#a45555" fill-opacity="0.14" stroke="#a45555" stroke-width="2.5"/>
+      <text x="646" y="800" font-size="38" font-weight="800" fill="#e0a0a0">4 dari 4</text>
+      <text x="646" y="832" font-size="17" fill="#8794a6">dasar hukum, nol keuangan daerah</text>
+    </g>
+  </g>
+</svg>

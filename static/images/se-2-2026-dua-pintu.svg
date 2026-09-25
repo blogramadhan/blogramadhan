@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 940" width="1600" height="940" role="img" aria-label="Perpres 46/2025 Pasal 74A membuka dua jalur bagi Pengelola PBJ: ditugaskan sebagai PPK, yang bentrok dengan Permendagri 77/2020 di belanja APBD, dan membantu tugas PA/KPA, yang justru cocok dengan frasa dapat dibantu di Permendagri">
+  <defs>
+    <linearGradient id="dbg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101825"/><stop offset="1" stop-color="#0d0f13"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="940" fill="url(#dbg2)"/>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="92" font-size="22" font-weight="700" letter-spacing="5" fill="#6fb0f5">DUA ATURAN, DUA PINTU</text>
+    <text x="100" y="146" font-size="36" font-weight="800" fill="#f2f4f8">Satu bentrok, satu cocok</text>
+  </g>
+
+  <!-- panel kiri: Perpres -->
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <rect x="100" y="196" width="660" height="236" rx="16" fill="#16283f" stroke="#3987e5" stroke-width="2.5"/>
+    <text x="130" y="240" font-size="21" font-weight="800" fill="#6fb0f5">PERPRES 46/2025 — Pasal 74A ayat (3)</text>
+    <text x="130" y="288" font-size="23" fill="#dfe5ee">Pengelola PBJ dapat:</text>
+    <text x="130" y="330" font-size="23" fill="#f2f4f8">• ditugaskan sebagai PP dan/atau <tspan font-weight="800">PPK</tspan></text>
+    <text x="130" y="372" font-size="23" fill="#f2f4f8">• <tspan font-weight="800">membantu tugas PA/KPA</tspan> dalam perencanaan,</text>
+    <text x="152" y="406" font-size="23" fill="#f2f4f8">pengelolaan kontrak, dan serah terima</text>
+  </g>
+
+  <!-- panel kanan: Permendagri -->
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <rect x="840" y="196" width="660" height="236" rx="16" fill="#2a2418" stroke="#c98500" stroke-width="2.5"/>
+    <text x="870" y="240" font-size="21" font-weight="800" fill="#e0b64c">PERMENDAGRI 77/2020 — Lampiran</text>
+    <text x="870" y="288" font-size="23" fill="#f2f4f8">• PA <tspan font-weight="800">bertindak sebagai</tspan> PPK</text>
+    <text x="870" y="330" font-size="23" fill="#f2f4f8">• KPA <tspan font-weight="800">merangkap sebagai</tspan> PPK</text>
+    <text x="870" y="372" font-size="23" fill="#f2f4f8">• keduanya <tspan font-weight="800">dapat dibantu</tspan> pegawai</text>
+    <text x="892" y="406" font-size="23" fill="#f2f4f8">yang berkompeten</text>
+  </g>
+
+  <!-- pintu bentrok -->
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <path d="M 430 440 L 430 500 L 430 528" fill="none" stroke="#a45555" stroke-width="3" stroke-dasharray="8 6"/>
+    <rect x="100" y="534" width="660" height="230" rx="16" fill="#2e1a1a" stroke="#a45555" stroke-width="2.5"/>
+    <text x="130" y="584" font-size="46" fill="#e0a0a0">&#10007;</text>
+    <text x="190" y="584" font-size="26" font-weight="800" fill="#e0a0a0">Pintu yang bentrok</text>
+    <text x="130" y="640" font-size="23" fill="#dfe5ee">Mengangkat Pengelola PBJ sebagai PPK</text>
+    <text x="130" y="678" font-size="23" fill="#dfe5ee">di paket APBD.</text>
+    <text x="130" y="726" font-size="21" fill="#a3aebd">Permendagri menaruh peran itu pada PA/KPA.</text>
+  </g>
+
+  <!-- pintu cocok -->
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <path d="M 1170 440 L 1170 500 L 1170 528" fill="none" stroke="#5aab86" stroke-width="3" stroke-dasharray="8 6"/>
+    <rect x="840" y="534" width="660" height="230" rx="16" fill="#172b23" stroke="#5aab86" stroke-width="2.5"/>
+    <text x="870" y="584" font-size="46" fill="#7fd4c1">&#10003;</text>
+    <text x="930" y="584" font-size="26" font-weight="800" fill="#7fd4c1">Pintu yang cocok</text>
+    <text x="870" y="640" font-size="23" fill="#dfe5ee">Pengelola PBJ membantu PA/KPA yang</text>
+    <text x="870" y="678" font-size="23" fill="#dfe5ee">tetap menjadi PPK.</text>
+    <text x="870" y="726" font-size="21" fill="#a3aebd">Frasanya ada di kedua aturan sekaligus.</text>
+  </g>
+
+  <text x="100" y="856" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="22" fill="#8794a6">SE LKPP 2/2026 huruf e mendorong pintu kiri, dan tidak menyebut pintu kanan.</text>
+</svg>

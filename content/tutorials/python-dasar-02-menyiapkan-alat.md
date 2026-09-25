@@ -197,8 +197,6 @@ sudah kenal duluan.
 
 ## Berikutnya
 
-Di **Bagian 03** kita mulai menyimpan nilai ke dalam variabel, dan berkenalan dengan tipe
-data. Di situ Python mulai terasa seperti alat kerja, bukan cuma layar yang menampilkan
-tulisan.
-
-Tautannya muncul di [halaman silabus](/tutorials/belajar-python-dasar/) begitu terbit.
+Di **[Bagian 03](/tutorials/python-dasar-03-variabel-dan-tipe-data/)** kita mulai menyimpan
+nilai ke dalam variabel, dan berkenalan dengan tipe data. Di situ Python mulai terasa seperti
+alat kerja, bukan cuma layar yang menampilkan tulisan.
