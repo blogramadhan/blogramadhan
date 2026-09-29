@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Konfigurasi zram dan swap di Ubuntu: zram menyimpan data yang dipadatkan di dalam RAM, swap file menitipkannya ke disk, dan keduanya bisa dipasang berlapis">
+  <defs>
+    <linearGradient id="zbg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#2a1610"/><stop offset="0.5" stop-color="#15100d"/><stop offset="1" stop-color="#0b0d10"/>
+    </linearGradient>
+    <linearGradient id="zorange" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7a072"/><stop offset="1" stop-color="#e95420"/>
+    </linearGradient>
+    <radialGradient id="zglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e95420" stop-opacity="0.18"/><stop offset="1" stop-color="#e95420" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#zbg)"/>
+  <ellipse cx="1250" cy="420" rx="350" ry="310" fill="url(#zglow)"/>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <!-- RAM -->
+    <text x="1002" y="262" font-size="18" font-weight="700" letter-spacing="3" fill="#7e8b92">RAM</text>
+    <rect x="1002" y="278" width="488" height="66" rx="10" fill="#1b2b33" stroke="#4a7f96" stroke-width="2.5"/>
+    <g fill="#4a7f96">
+      <rect x="1020" y="296" width="82" height="30" rx="5"/><rect x="1112" y="296" width="82" height="30" rx="5"/>
+      <rect x="1204" y="296" width="82" height="30" rx="5"/><rect x="1296" y="296" width="82" height="30" rx="5"/>
+    </g>
+    <text x="1400" y="318" font-size="20" fill="#6f7f86">penuh</text>
+
+    <!-- panah -->
+    <path d="M 1246 352 L 1246 386" fill="none" stroke="#e95420" stroke-width="3"/>
+    <polygon points="1238,382 1254,382 1246,398" fill="#e95420"/>
+
+    <!-- ZRAM -->
+    <text x="1002" y="432" font-size="18" font-weight="700" letter-spacing="3" fill="#f0a072">ZRAM — DI DALAM RAM, DIPADATKAN</text>
+    <rect x="1002" y="448" width="488" height="66" rx="10" fill="#33180f" stroke="#e95420" stroke-width="2.5"/>
+    <g fill="url(#zorange)">
+      <rect x="1020" y="466" width="40" height="30" rx="5"/><rect x="1066" y="466" width="40" height="30" rx="5"/>
+      <rect x="1112" y="466" width="40" height="30" rx="5"/><rect x="1158" y="466" width="40" height="30" rx="5"/>
+    </g>
+    <text x="1216" y="488" font-size="20" fill="#9a7a66">cepat · prioritas 100</text>
+
+    <path d="M 1246 522 L 1246 556" fill="none" stroke="#5a6a72" stroke-width="3" stroke-dasharray="7 5"/>
+    <polygon points="1238,552 1254,552 1246,568" fill="#5a6a72"/>
+
+    <!-- SWAP -->
+    <text x="1002" y="602" font-size="18" font-weight="700" letter-spacing="3" fill="#7e8b92">SWAP FILE — DI DISK</text>
+    <rect x="1002" y="618" width="488" height="66" rx="10" fill="#161b1f" stroke="#4a545c" stroke-width="2.5"/>
+    <g fill="#3d464d">
+      <rect x="1020" y="636" width="130" height="30" rx="5"/><rect x="1158" y="636" width="130" height="30" rx="5"/>
+    </g>
+    <text x="1302" y="658" font-size="20" fill="#6f7f86">lambat · cadangan</text>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="308" font-size="23" font-weight="700" letter-spacing="6" fill="#f0a072">UBUNTU · MEMORI DAN SWAP</text>
+    <text x="96" y="424" font-size="80" font-weight="800" letter-spacing="-2.5" fill="#f4f2ec">ZRAM DAN SWAP</text>
+    <text x="96" y="512" font-size="80" font-weight="800" letter-spacing="-2.5" fill="url(#zorange)">DI UBUNTU</text>
+    <rect x="100" y="550" width="120" height="5" rx="2.5" fill="#e95420"/>
+    <text x="100" y="622" font-size="31" fill="#99908a">Napas tambahan waktu RAM</text>
+    <text x="100" y="666" font-size="31" fill="#99908a">mulai sesak, dua lapis.</text>
+
+    <g>
+      <rect x="100" y="746" width="230" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#4a3a30" stroke-width="2"/>
+      <text x="126" y="798" font-family="ui-monospace,Menlo,monospace" font-size="32" font-weight="800" fill="#f4f2ec">ram / 2</text>
+      <text x="126" y="830" font-size="17" fill="#8a7f78">ukuran zram lazim</text>
+
+      <rect x="352" y="746" width="230" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#4a3a30" stroke-width="2"/>
+      <text x="378" y="798" font-size="38" font-weight="800" fill="#f7a072">180</text>
+      <text x="378" y="830" font-size="17" fill="#8a7f78">swappiness untuk zram</text>
+
+      <rect x="604" y="746" width="250" height="118" rx="16" fill="#e95420" fill-opacity="0.12" stroke="#e95420" stroke-width="2.5"/>
+      <text x="630" y="798" font-size="38" font-weight="800" fill="#f7a072">2 lapis</text>
+      <text x="630" y="830" font-size="17" fill="#8a7f78">zram dulu, disk belakangan</text>
+    </g>
+  </g>
+</svg>
