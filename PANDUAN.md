@@ -1,4 +1,4 @@
-# Rizko — Jurnal & Karya
+# Kurnia Ramadhan — Jurnal & Karya
 
 Blog pribadi bergaya editorial klasik, dibangun dengan [Hugo](https://gohugo.io)
 dan tema custom (tanpa tema pihak ketiga).
