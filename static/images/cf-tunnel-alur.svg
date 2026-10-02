@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 760" width="1600" height="760" role="img" aria-label="Perjalanan satu permintaan: dari pengunjung ke jaringan Cloudflare, diperiksa Access, lewat terowongan ke cloudflared di server, lalu ke aplikasi di localhost. Tanpa Access, langkah pemeriksaan hilang dan siapa pun bisa masuk">
+  <rect width="1600" height="760" fill="#0e1014"/>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="92" font-size="22" font-weight="700" letter-spacing="5" fill="#fbad41">PERJALANAN SATU PERMINTAAN</text>
+    <text x="100" y="146" font-size="34" font-weight="800" fill="#f4f2ec">Terowongan membuka pintu. Access yang menjaganya.</text>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <!-- 1 pengunjung -->
+    <rect x="100" y="232" width="250" height="110" rx="12" fill="#16202c" stroke="#5f82a8" stroke-width="2.5"/>
+    <text x="225" y="278" font-size="22" font-weight="700" fill="#9ec0e0" text-anchor="middle">1 · Pengunjung</text>
+    <text x="225" y="310" font-family="ui-monospace,Menlo,monospace" font-size="17" fill="#6f8599" text-anchor="middle">app.domain.anda</text>
+
+    <path d="M 358 287 L 400 287" stroke="#4a545c" stroke-width="3"/>
+    <polygon points="396,279 396,295 412,287" fill="#4a545c"/>
+
+    <!-- 2 access -->
+    <rect x="420" y="232" width="280" height="110" rx="12" fill="#33240f" stroke="#f6821f" stroke-width="2.5"/>
+    <text x="560" y="278" font-size="22" font-weight="700" fill="#fbad41" text-anchor="middle">2 · Access bertanya</text>
+    <text x="560" y="310" font-size="17" fill="#9a8360" text-anchor="middle">siapa Anda, bolehkah masuk</text>
+
+    <path d="M 708 287 L 750 287" stroke="#4a545c" stroke-width="3"/>
+    <polygon points="746,279 746,295 762,287" fill="#4a545c"/>
+
+    <!-- 3 terowongan -->
+    <rect x="770" y="232" width="250" height="110" rx="12" fill="#1d1a26" stroke="#8a7bb0" stroke-width="2.5"/>
+    <text x="895" y="278" font-size="22" font-weight="700" fill="#b9a8e0" text-anchor="middle">3 · Terowongan</text>
+    <text x="895" y="310" font-size="17" fill="#7d7490" text-anchor="middle">jalur yang sudah dibuka</text>
+
+    <path d="M 1028 287 L 1070 287" stroke="#4a545c" stroke-width="3"/>
+    <polygon points="1066,279 1066,295 1082,287" fill="#4a545c"/>
+
+    <!-- 4 cloudflared + aplikasi -->
+    <rect x="1090" y="212" width="410" height="150" rx="14" fill="#141a20" stroke="#4a545c" stroke-width="2.5"/>
+    <text x="1114" y="250" font-size="17" font-weight="700" letter-spacing="3" fill="#7e8b92">SERVER ANDA</text>
+    <rect x="1114" y="268" width="170" height="70" rx="10" fill="#1b2630" stroke="#5f82a8" stroke-width="2"/>
+    <text x="1199" y="310" font-size="19" font-weight="700" fill="#9ec0e0" text-anchor="middle">cloudflared</text>
+    <rect x="1304" y="268" width="172" height="70" rx="10" fill="#1b2630" stroke="#4a545c" stroke-width="2"/>
+    <text x="1390" y="310" font-family="ui-monospace,Menlo,monospace" font-size="17" fill="#c9d1dc" text-anchor="middle">localhost:3000</text>
+  </g>
+
+  <!-- catatan arah koneksi -->
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <rect x="100" y="430" width="1400" height="86" rx="14" fill="#1b2630" stroke="#5f82a8" stroke-width="2"/>
+    <text x="128" y="470" font-size="22" font-weight="700" fill="#9ec0e0">Arah koneksinya terbalik dari dugaan</text>
+    <text x="128" y="502" font-size="20" fill="#8a94a5">Cloudflare tidak pernah menghubungi server Anda. Justru cloudflared yang menelepon keluar ke Cloudflare, lalu jalur itu dipakai bolak-balik.</text>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <rect x="100" y="546" width="1400" height="86" rx="14" fill="#2e1a1a" stroke="#a45555" stroke-width="2"/>
+    <text x="128" y="586" font-size="22" font-weight="700" fill="#e0a0a0">Kalau langkah 2 dilewati</text>
+    <text x="128" y="618" font-size="20" fill="#8a94a5">Terowongan tetap jalan, dan aplikasi Anda terbuka untuk seluruh internet. Memasang tunnel tanpa Access sama dengan membuka port, cuma lebih rapi caranya.</text>
+  </g>
+</svg>

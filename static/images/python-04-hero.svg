@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Python Dasar bagian 04: merapikan teks. Lima cara menulis nama unit kerja yang berbeda-beda disatukan menjadi satu bentuk yang seragam">
+  <defs>
+    <linearGradient id="p4bg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#0b1a2e"/><stop offset="0.5" stop-color="#0a1320"/><stop offset="1" stop-color="#080d14"/>
+    </linearGradient>
+    <linearGradient id="p4blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ad6fb"/><stop offset="1" stop-color="#2a6fbd"/>
+    </linearGradient>
+    <radialGradient id="p4glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3987e5" stop-opacity="0.20"/><stop offset="1" stop-color="#3987e5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#p4bg)"/>
+  <ellipse cx="1250" cy="430" rx="360" ry="310" fill="url(#p4glow)"/>
+
+  <!-- lima masukan berantakan -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="19">
+    <rect x="990" y="242" width="300" height="38" rx="8" fill="#15202e" stroke="#3a4a5c" stroke-width="1.8"/>
+    <text x="1008" y="268" fill="#8a97a8">"  dinas pendidikan  "</text>
+    <rect x="990" y="290" width="300" height="38" rx="8" fill="#15202e" stroke="#3a4a5c" stroke-width="1.8"/>
+    <text x="1008" y="316" fill="#8a97a8">"DINAS PENDIDIKAN"</text>
+    <rect x="990" y="338" width="300" height="38" rx="8" fill="#15202e" stroke="#3a4a5c" stroke-width="1.8"/>
+    <text x="1008" y="364" fill="#8a97a8">"Dinas  Pendidikan"</text>
+    <rect x="990" y="386" width="300" height="38" rx="8" fill="#15202e" stroke="#3a4a5c" stroke-width="1.8"/>
+    <text x="1008" y="412" fill="#8a97a8">"dinas Pendidikan "</text>
+    <rect x="990" y="434" width="300" height="38" rx="8" fill="#15202e" stroke="#3a4a5c" stroke-width="1.8"/>
+    <text x="1008" y="460" fill="#8a97a8">"Dinas Pendidikan"</text>
+  </g>
+
+  <!-- corong -->
+  <g>
+    <path d="M 1310 258 L 1380 340 L 1380 376 L 1310 458" fill="none" stroke="#2a6fbd" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M 1380 358 L 1440 358" stroke="#8ad6fb" stroke-width="3"/>
+    <polygon points="1436,350 1436,366 1452,358" fill="#8ad6fb"/>
+  </g>
+
+  <!-- keluaran tunggal -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace">
+    <rect x="1060" y="540" width="420" height="76" rx="12" fill="#10263c" stroke="#8ad6fb" stroke-width="2.5"/>
+    <text x="1270" y="588" font-size="25" fill="#8ad6fb" text-anchor="middle">"Dinas Pendidikan"</text>
+    <text x="1270" y="648" font-family="system-ui,sans-serif" font-size="19" fill="#6f8599" text-anchor="middle">satu bentuk, lima masukan</text>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="308" font-size="23" font-weight="700" letter-spacing="6" fill="#6ab8f4">BELAJAR PYTHON DASAR · BAGIAN 04</text>
+    <text x="96" y="424" font-size="77" font-weight="800" letter-spacing="-2.5" fill="#f1f5f9">MERAPIKAN</text>
+    <text x="96" y="510" font-size="77" font-weight="800" letter-spacing="-2.5" fill="url(#p4blue)">TEKS</text>
+    <rect x="100" y="548" width="120" height="5" rx="2.5" fill="#2a6fbd"/>
+    <text x="100" y="620" font-size="31" fill="#8496a8">Lima orang menulis satu nama</text>
+    <text x="100" y="664" font-size="31" fill="#8496a8">dengan lima cara berbeda.</text>
+
+    <g>
+      <rect x="100" y="744" width="222" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#23425c" stroke-width="2"/>
+      <text x="126" y="796" font-size="38" font-weight="800" fill="#f1f5f9">04/15</text>
+      <text x="126" y="828" font-size="17" fill="#7b8b9a">bagian keempat</text>
+
+      <rect x="344" y="744" width="222" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#23425c" stroke-width="2"/>
+      <text x="370" y="794" font-family="ui-monospace,Menlo,monospace" font-size="28" font-weight="800" fill="#7fb2e8">f"..."</text>
+      <text x="370" y="828" font-size="17" fill="#7b8b9a">cara menggabung</text>
+
+      <rect x="588" y="744" width="260" height="118" rx="16" fill="#3987e5" fill-opacity="0.12" stroke="#3987e5" stroke-width="2.5"/>
+      <text x="614" y="794" font-family="ui-monospace,Menlo,monospace" font-size="26" font-weight="800" fill="#8ad6fb">.strip()</text>
+      <text x="614" y="828" font-size="17" fill="#7b8b9a">buang spasi siluman</text>
+    </g>
+  </g>
+</svg>

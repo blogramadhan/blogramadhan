@@ -338,8 +338,7 @@ jauh lebih enak daripada bertemu pertama kali saat sedang dikejar laporan.
 
 ## Berikutnya
 
-Di **Bagian 04** kita menggarap `str` lebih dalam: memotong, menggabung, mengubah huruf, dan
-membuang spasi berlebih. Latihannya menyeragamkan nama unit kerja yang ditulis lima orang
-dengan lima gaya berbeda — pekerjaan yang mungkin sudah pernah Anda lakukan manual.
-
-Tautannya muncul di [halaman silabus](/tutorials/belajar-python-dasar/) begitu terbit.
+Di **[Bagian 04](/tutorials/python-dasar-04-string-merapikan-teks/)** kita menggarap `str`
+lebih dalam: memotong, menggabung, mengubah huruf, dan membuang spasi berlebih. Latihannya
+menyeragamkan nama unit kerja yang ditulis lima orang dengan lima gaya berbeda — pekerjaan
+yang mungkin sudah pernah Anda lakukan manual.
