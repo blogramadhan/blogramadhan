@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Memindahkan blog Hugo dari Netlify ke Cloudflare Workers: enam langkah, satu build yang gagal, dan tiga hal yang tidak otomatis seperti di Netlify">
+  <defs>
+    <linearGradient id="nbg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#2a1d0c"/><stop offset="0.5" stop-color="#14120f"/><stop offset="1" stop-color="#0b0d10"/>
+    </linearGradient>
+    <linearGradient id="norange" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbad41"/><stop offset="1" stop-color="#f6821f"/>
+    </linearGradient>
+    <radialGradient id="nglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f6821f" stop-opacity="0.16"/><stop offset="1" stop-color="#f6821f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#nbg)"/>
+  <ellipse cx="1250" cy="420" rx="340" ry="300" fill="url(#nglow)"/>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <!-- asal -->
+    <rect x="990" y="256" width="210" height="96" rx="12" fill="#14272b" stroke="#3a8f93" stroke-width="2.5"/>
+    <text x="1095" y="298" font-size="22" font-weight="700" fill="#6fd0d4" text-anchor="middle">Netlify</text>
+    <text x="1095" y="326" font-size="17" fill="#5f8488" text-anchor="middle">netlify.toml</text>
+
+    <path d="M 1214 304 L 1266 304" stroke="#f6821f" stroke-width="3"/>
+    <polygon points="1262,296 1262,312 1278,304" fill="#f6821f"/>
+
+    <!-- tujuan -->
+    <rect x="1290" y="256" width="210" height="96" rx="12" fill="#33240f" stroke="#f6821f" stroke-width="2.5"/>
+    <text x="1395" y="298" font-size="22" font-weight="700" fill="#fbad41" text-anchor="middle">Workers</text>
+    <text x="1395" y="326" font-size="17" fill="#9a8360" text-anchor="middle">wrangler.jsonc</text>
+
+    <!-- yang tidak ikut otomatis -->
+    <text x="990" y="418" font-size="18" font-weight="700" letter-spacing="3" fill="#c99a9a">YANG TIDAK IKUT PINDAH SENDIRI</text>
+    <g font-size="20" fill="#c9d1dc">
+      <rect x="990" y="436" width="510" height="54" rx="10" fill="#2e1a1a" stroke="#a45555" stroke-width="2"/>
+      <text x="1012" y="470">Pengalihan HTTP ke HTTPS</text>
+      <rect x="990" y="500" width="510" height="54" rx="10" fill="#2e1a1a" stroke="#a45555" stroke-width="2"/>
+      <text x="1012" y="534">Alamat www</text>
+      <rect x="990" y="564" width="510" height="54" rx="10" fill="#2e1a1a" stroke="#a45555" stroke-width="2"/>
+      <text x="1012" y="598">Login panel admin CMS</text>
+    </g>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="308" font-size="23" font-weight="700" letter-spacing="6" fill="#fbad41">HUGO · PINDAH HOSTING</text>
+    <text x="96" y="424" font-size="74" font-weight="800" letter-spacing="-2.5" fill="#f4f2ec">NETLIFY KE</text>
+    <text x="96" y="512" font-size="74" font-weight="800" letter-spacing="-2.5" fill="url(#norange)">CLOUDFLARE</text>
+    <rect x="100" y="550" width="120" height="5" rx="2.5" fill="#f6821f"/>
+    <text x="100" y="622" font-size="30" fill="#998f84">Pindahnya sebentar. Yang lama</text>
+    <text x="100" y="664" font-size="30" fill="#998f84">justru membereskan sisanya.</text>
+
+    <g>
+      <rect x="100" y="746" width="230" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#4a3f30" stroke-width="2"/>
+      <text x="126" y="798" font-size="38" font-weight="800" fill="#f4f2ec">1</text>
+      <text x="126" y="830" font-size="17" fill="#8a8178">berkas wajib di repo</text>
+
+      <rect x="352" y="746" width="230" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#4a3f30" stroke-width="2"/>
+      <text x="378" y="798" font-size="38" font-weight="800" fill="#fbad41">3</text>
+      <text x="378" y="830" font-size="17" fill="#8a8178">hal yang perlu disetel manual</text>
+
+      <rect x="604" y="746" width="250" height="118" rx="16" fill="#f6821f" fill-opacity="0.12" stroke="#f6821f" stroke-width="2.5"/>
+      <text x="630" y="798" font-size="38" font-weight="800" fill="#fbad41">0</text>
+      <text x="630" y="830" font-size="17" fill="#8a8178">menit situs mati</text>
+    </g>
+  </g>
+</svg>
