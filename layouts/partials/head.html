@@ -54,3 +54,10 @@
 {{ with .OutputFormats.Get "rss" }}
 <link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }}">
 {{ end }}
+
+{{/* Cloudflare Web Analytics — hanya dipasang bila tokennya diisi di hugo.toml
+     dan sedang build produksi, supaya kunjungan saat `hugo server` tidak terhitung.
+     Dibiarkan kosong bila memakai automatic setup dari dasbor. */}}
+{{ if hugo.IsProduction }}{{ with site.Params.cloudflareAnalyticsToken }}
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ . }}"}'></script>
+{{ end }}{{ end }}

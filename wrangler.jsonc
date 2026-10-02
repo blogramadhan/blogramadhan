@@ -4,6 +4,15 @@
   "name": "blogramadhan",
   "compatibility_date": "2026-10-02",
 
+  // Workers Logs: simpan catatan permintaan supaya bisa ditelusuri di dasbor.
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true,
+      "persist": true
+    }
+  },
+
   "assets": {
     // Keluaran build Hugo. Dibangun oleh Workers Builds, tidak ikut masuk Git.
     "directory": "./public",

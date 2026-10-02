@@ -34,6 +34,11 @@ summaryLength = 40
   dateFormat = "2 January 2006"
   # Copyright
   copyrightYear = 2026
+  # Cloudflare Web Analytics.
+  # Kosongkan bila memakai automatic setup dari dasbor Cloudflare — skripnya
+  # disisipkan Cloudflare sendiri dan baris di bawah tidak perlu diisi.
+  # Isi dengan token beacon hanya bila memilih "Enable with JS Snippet".
+  cloudflareAnalyticsToken = ""
 
 # Komentar Giscus (GitHub Discussions).
 # categoryId masih kosong — ambil dari https://giscus.app setelah Discussions
