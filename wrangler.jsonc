@@ -1,0 +1,18 @@
+{
+  // Situs statis Hugo yang disajikan Workers static assets.
+  // Tidak ada "main": tanpa berkas skrip, Worker ini murni menyajikan berkas.
+  "name": "blogramadhan",
+  "compatibility_date": "2026-10-02",
+
+  "assets": {
+    // Keluaran build Hugo. Dibangun oleh Workers Builds, tidak ikut masuk Git.
+    "directory": "./public",
+
+    // Kalau alamatnya tidak ada, sajikan public/404.html bila tersedia.
+    // Selama layouts/404.html belum dibuat, ini jatuh ke 404 polos.
+    "not_found_handling": "404-page"
+
+    // "html_handling" dibiarkan bawaan ("auto-trailing-slash"), yang cocok
+    // dengan URL Hugo berbentuk /posts/judul/.
+  }
+}

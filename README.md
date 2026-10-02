@@ -19,11 +19,7 @@ hugo --gc --minify
 # Hasil ada di folder public/
 ```
 
-## Dashboard admin (menulis lewat antarmuka)
-
-Tersedia dua cara mengelola tulisan tanpa menyunting Markdown secara manual.
-
-### 1. Dashboard lokal (untuk dipakai sekarang)
+## Dashboard lokal (menulis lewat antarmuka)
 
 Aplikasi kecil yang berjalan di komputer Anda dan menyunting berkas `content/` langsung —
 daftar tulisan, form buat baru, editor dengan pratinjau Markdown instan.
@@ -105,52 +101,6 @@ Di situs, tiap blok kode otomatis mendapat kepala berisi label bahasa dan tombol
 Tips: jalankan `hugo server -D` di terminal lain agar tombol "↗ Situs" pada dashboard
 membuka pratinjau tema aslinya. Pintasan **Ctrl/Cmd+S** untuk menyimpan.
 
-### 2. Decap CMS di `/admin` (untuk setelah deploy)
-
-Panel admin berbasis web yang menyatu dengan situs, menyimpan lewat Git. Editornya
-sudah WYSIWYG bawaan (widget `markdown` Decap = rich text dengan toggle Markdown).
-Berkas konfigurasinya sudah disiapkan di `static/admin/`.
-
-Situs di-deploy di **Netlify**, dan login `/admin` memakai **GitHub OAuth** yang
-dijembatani layanan OAuth bawaan Netlify — jadi tidak perlu server tambahan.
-Sekali atur, lewat tiga langkah berikut:
-
-**1. Buat GitHub OAuth App**
-
-Buka <https://github.com/settings/developers> → **OAuth Apps** → **New OAuth App**:
-
-- **Application name:** bebas (mis. "Blog CMS")
-- **Homepage URL:** URL situs Netlify Anda (mis. `https://ramadhan.me`)
-- **Authorization callback URL:** `https://api.netlify.com/auth/done` ← wajib persis ini
-
-Klik **Register**, catat **Client ID**, lalu **Generate a new client secret** dan catat
-**Client Secret** (hanya tampil sekali).
-
-**2. Daftarkan ke Netlify**
-
-Di dashboard Netlify, klik proyek/situs Anda lebih dulu (bukan menu tim/akun), lalu:
-
-**Project configuration** → **Access & security** → **OAuth** → bagian
-**Authentication Providers** → **Install Provider**:
-
-- **Provider:** GitHub
-- **Client ID** & **Client Secret:** isi dari langkah 1 → simpan
-
-> Dashboard versi lama menamai menu ini **Site configuration** → **Access control**.
-> Isinya sama, hanya beda penamaan.
-
-**3. Pakai**
-
-Buka `https://<situs-anda>/admin/` → **Login with GitHub** → izinkan akses. Setiap kali
-menyimpan di CMS, Decap membuat commit ke repo `blogramadhan/blogramadhan`, dan Netlify
-otomatis rebuild situs.
-
-> Akun GitHub yang dipakai login harus punya akses tulis ke repo tersebut.
-
-**Uji lokal (opsional):** jalankan `npx decap-server` di terminal terpisah lalu buka
-`http://localhost:1313/admin/` saat `hugo server` aktif (memakai `local_backend: true`,
-tanpa perlu login GitHub).
-
 ## Menulis tulisan baru
 
 ```bash
@@ -199,10 +149,38 @@ Isi front matter dengan `year`, `role`, `tech`, dan opsional `repo` / `demo`.
 │   ├── main.css         # Tema modern-profesional + mode gelap
 │   └── syntax.css       # Pewarnaan sintaks (dibangkitkan, jangan disunting)
 ├── static/
-│   ├── admin/           # Decap CMS (panel /admin setelah deploy)
-│   └── images/          # Gambar unggahan (dashboard & Decap)
-├── tools/dashboard/     # Dashboard admin lokal (Go, pustaka standar saja)
+│   ├── images/          # Gambar unggahan
+│   └── _headers         # Header HTTP untuk Cloudflare
+├── tools/dashboard/     # Dashboard lokal (Go, pustaka standar saja)
+├── wrangler.jsonc       # Konfigurasi Cloudflare Workers
 └── dashboard.sh         # Peluncur dashboard lokal
+```
+
+## Deploy ke Cloudflare
+
+Situs disajikan **Cloudflare Workers static assets**, dibangun otomatis dari repo ini
+lewat Workers Builds.
+
+Pengaturan build di dasbor Cloudflare:
+
+| Kolom | Isi |
+|---|---|
+| Build command | `hugo --gc --minify` |
+| Deploy command | `npx wrangler deploy` |
+| Build output directory | `public` |
+| Variabel `HUGO_VERSION` | `0.166.0` |
+
+Konfigurasi Worker-nya ada di `wrangler.jsonc`. Tidak ada berkas skrip — Worker ini murni
+menyajikan isi `public/`.
+
+Header HTTP diatur lewat `static/_headers`, yang disalin Hugo ke `public/_headers` saat
+build.
+
+Deploy manual dari komputer, kalau sewaktu-waktu perlu:
+
+```bash
+hugo --gc --minify
+npx wrangler deploy
 ```
 
 ## Kustomisasi cepat
