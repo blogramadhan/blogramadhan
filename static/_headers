@@ -1,6 +1,5 @@
-# Header untuk Cloudflare Workers static assets.
+# Header HTTP untuk Cloudflare Workers static assets.
 # Hugo menyalin berkas ini dari static/ ke public/ saat build.
-# Isinya memindahkan blok [[headers]] yang sebelumnya ada di netlify.toml.
 
 /*
   X-Content-Type-Options: nosniff
