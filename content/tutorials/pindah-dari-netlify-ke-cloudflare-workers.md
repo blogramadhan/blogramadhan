@@ -2,7 +2,7 @@
 title = "Pindah dari Netlify ke Cloudflare Workers"
 date = 2026-10-02T21:00:00+07:00
 draft = false
-description = "Catatan memindahkan blog Hugo ini dari Netlify ke Cloudflare Workers: langkah-langkahnya, satu build yang gagal beserta sebabnya, dan tiga hal yang di Netlify otomatis tapi di Cloudflare harus disetel sendiri."
+description = "Catatan memindahkan blog Hugo ini dari Netlify ke Cloudflare Workers: langkah-langkahnya, satu build yang gagal beserta sebabnya, dan dua hal yang di Netlify otomatis tapi di Cloudflare harus disetel sendiri."
 tags = ["tutorial", "cloudflare", "netlify", "hugo", "workers", "hosting", "migrasi"]
 categories = ["Teknis"]
 featured_image = "/images/netlify-ke-cloudflare-hero.svg"
@@ -143,12 +143,12 @@ Satu baris itu akan menghemat waktu Anda kalau mengalami hal yang sama.
 Saya sempat mencari opsi untuk mematikan auto-config lewat `wrangler deploy --help`, dan tidak
 ada. Memang satu-satunya cara mencegahnya dengan menyediakan konfigurasinya di repo.
 
-## Tiga hal yang di Netlify otomatis
+## Dua hal yang di Netlify otomatis
 
 Setelah build berhasil dan situsnya tampil di URL `*.workers.dev`, saya pindahkan domainnya
 lewat **Settings → Domains & Routes → Add custom domain**. Situsnya langsung hidup.
 
-Lalu saya periksa satu per satu, dan menemukan tiga hal yang ternyata tidak ikut pindah.
+Lalu saya periksa satu per satu, dan menemukan dua hal yang ternyata tidak ikut pindah.
 
 ### 1. HTTP tidak dialihkan ke HTTPS
 
@@ -166,7 +166,7 @@ Pengunjung yang mengetik alamat tanpa `https://` dilayani lewat koneksi tanpa en
 Netlify ini otomatis; di Cloudflare ada sakelarnya sendiri di **SSL/TLS → Edge Certificates →
 Always Use HTTPS**.
 
-Menurut saya ini yang paling mendesak dari ketiganya. Juga paling gampang terlewat, karena di
+Menurut saya ini yang paling mendesak dari keduanya. Juga paling gampang terlewat, karena di
 browser Anda sendiri tidak akan terasa — browser modern sudah mencoba HTTPS lebih dulu.
 
 ### 2. Alamat www tidak ada
@@ -209,22 +209,6 @@ Setelah ini saya uji keempat pintu masuknya, dan semuanya bermuara ke alamat yan
 Yang dari `http://www` menempuh dua lompatan — dinaikkan ke HTTPS dulu, baru `www`-nya dibuang.
 Itu wajar.
 
-### 3. Login panel admin mati
-
-Kalau Anda memakai Decap CMS dengan backend GitHub, perhatikan baik-baik.
-
-Decap menitipkan proses login ke `api.netlify.com`. Jembatan OAuth itu disediakan Netlify
-**hanya untuk situs yang di-hosting di Netlify**, dan pencariannya berdasarkan nama domain
-situs. Begitu domain Anda tidak lagi terdaftar di sana, tombol login berhenti bekerja.
-
-Isi tulisan dan gambarnya aman. Yang hilang pintu masuk editornya.
-
-Pilihannya ada dua. Pasang OAuth proxy sendiri — ada beberapa yang bisa dijalankan sebagai
-Cloudflare Worker — lalu isi `base_url` di `config.yml`. Atau, kalau Anda memang menulis lewat
-editor teks seperti saya, hapus saja panelnya.
-
-Saya memilih yang kedua.
-
 ## Memastikan pindahnya benar
 
 Jangan percaya pada tampilan situs yang kelihatan normal. Situs lama yang masih di-cache juga
@@ -256,8 +240,8 @@ Kalau `notBefore`-nya beberapa jam lalu, itu sertifikat yang baru diterbitkan Cl
 warisan host lama.
 
 Terakhir, pastikan isinya memang hasil build terbaru. Cara termudah: buka alamat halaman yang
-baru Anda tulis, atau alamat yang baru Anda hapus. Saya menghapus `/admin/` sebelum pindah,
-jadi 404 di situ membuktikan build-nya berasal dari commit terbaru.
+baru Anda tulis. Kalau halaman yang belum pernah ada di host lama sudah bisa dibuka, build-nya
+memang berasal dari commit terbaru.
 
 ## Yang tidak perlu dikhawatirkan
 
@@ -329,4 +313,3 @@ Tampilan dasbor Cloudflare sering berubah. Kalau nama menunya bergeser, cari kat
 - [Berkas `_headers`](https://developers.cloudflare.com/workers/static-assets/headers/) — Cloudflare
 - [Redirect www ke root](https://developers.cloudflare.com/rules/url-forwarding/examples/redirect-www-to-root/) — Cloudflare
 - [Billing dan batasan static assets](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/) — Cloudflare
-- [Backend overview Decap CMS](https://decapcms.org/docs/backends-overview/) — Decap

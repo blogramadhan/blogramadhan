@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Memindahkan blog Hugo dari Netlify ke Cloudflare Workers: enam langkah, satu build yang gagal, dan tiga hal yang tidak otomatis seperti di Netlify">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Memindahkan blog Hugo dari Netlify ke Cloudflare Workers: delapan langkah, satu build yang gagal, dan dua hal yang tidak otomatis seperti di Netlify">
   <defs>
     <linearGradient id="nbg" x1="0" y1="0" x2="0.35" y2="1">
       <stop offset="0" stop-color="#2a1d0c"/><stop offset="0.5" stop-color="#14120f"/><stop offset="1" stop-color="#0b0d10"/>
@@ -30,12 +30,10 @@
     <!-- yang tidak ikut otomatis -->
     <text x="990" y="418" font-size="18" font-weight="700" letter-spacing="3" fill="#c99a9a">YANG TIDAK IKUT PINDAH SENDIRI</text>
     <g font-size="20" fill="#c9d1dc">
-      <rect x="990" y="436" width="510" height="54" rx="10" fill="#2e1a1a" stroke="#a45555" stroke-width="2"/>
-      <text x="1012" y="470">Pengalihan HTTP ke HTTPS</text>
-      <rect x="990" y="500" width="510" height="54" rx="10" fill="#2e1a1a" stroke="#a45555" stroke-width="2"/>
-      <text x="1012" y="534">Alamat www</text>
-      <rect x="990" y="564" width="510" height="54" rx="10" fill="#2e1a1a" stroke="#a45555" stroke-width="2"/>
-      <text x="1012" y="598">Login panel admin CMS</text>
+      <rect x="990" y="440" width="510" height="62" rx="10" fill="#2e1a1a" stroke="#a45555" stroke-width="2"/>
+      <text x="1012" y="478">Pengalihan HTTP ke HTTPS</text>
+      <rect x="990" y="516" width="510" height="62" rx="10" fill="#2e1a1a" stroke="#a45555" stroke-width="2"/>
+      <text x="1012" y="554">Alamat www</text>
     </g>
   </g>
 
@@ -53,7 +51,7 @@
       <text x="126" y="830" font-size="17" fill="#8a8178">berkas wajib di repo</text>
 
       <rect x="352" y="746" width="230" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#4a3f30" stroke-width="2"/>
-      <text x="378" y="798" font-size="38" font-weight="800" fill="#fbad41">3</text>
+      <text x="378" y="798" font-size="38" font-weight="800" fill="#fbad41">2</text>
       <text x="378" y="830" font-size="17" fill="#8a8178">hal yang perlu disetel manual</text>
 
       <rect x="604" y="746" width="250" height="118" rx="16" fill="#f6821f" fill-opacity="0.12" stroke="#f6821f" stroke-width="2.5"/>
