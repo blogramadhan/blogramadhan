@@ -397,8 +397,7 @@ Hasilnya tidak disimpan. `teks.strip()` saja tidak cukup; tulis `teks = teks.str
 
 ## Berikutnya
 
-Di **Bagian 05** kita mengajari program mengambil keputusan dengan `if`, `elif`, dan `else`.
-Di situ `bool` yang kita temui di Bagian 03 dan perbandingan seperti `in` tadi mulai benar-benar
-terpakai. Latihannya menandai baris yang nilainya melewati batas.
-
-Tautannya muncul di [halaman silabus](/tutorials/belajar-python-dasar/) begitu terbit.
+Di **[Bagian 05](/tutorials/python-dasar-05-percabangan/)** kita mengajari program mengambil
+keputusan dengan `if`, `elif`, dan `else`. Di situ `bool` yang kita temui di Bagian 03 dan
+perbandingan seperti `in` tadi mulai benar-benar terpakai. Latihannya menandai baris yang
+nilainya melewati batas.

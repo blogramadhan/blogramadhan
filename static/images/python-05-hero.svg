@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Python Dasar bagian 05: percabangan dengan if, elif, dan else. Satu nilai masuk, diperiksa berurutan dari atas, dan berhenti di cabang pertama yang cocok">
+  <defs>
+    <linearGradient id="p5bg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#0b1a2e"/><stop offset="0.5" stop-color="#0a1320"/><stop offset="1" stop-color="#080d14"/>
+    </linearGradient>
+    <linearGradient id="p5blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ad6fb"/><stop offset="1" stop-color="#2a6fbd"/>
+    </linearGradient>
+    <radialGradient id="p5glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3987e5" stop-opacity="0.20"/><stop offset="1" stop-color="#3987e5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#p5bg)"/>
+  <ellipse cx="1250" cy="430" rx="360" ry="310" fill="url(#p5glow)"/>
+
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace">
+    <!-- nilai masuk -->
+    <rect x="1002" y="236" width="180" height="56" rx="10" fill="#15202e" stroke="#5f82a8" stroke-width="2.5"/>
+    <text x="1092" y="272" font-size="22" fill="#9ec0e0" text-anchor="middle">nilai = 92</text>
+    <path d="M 1092 298 L 1092 326" stroke="#5f82a8" stroke-width="3"/>
+    <polygon points="1084,322 1100,322 1092,338" fill="#5f82a8"/>
+
+    <!-- cabang 1: cocok -->
+    <rect x="1002" y="344" width="480" height="60" rx="10" fill="#10303c" stroke="#5fd3a0" stroke-width="2.5"/>
+    <text x="1026" y="382" font-size="21" fill="#5fd3a0">if nilai &#62;= 90:</text>
+    <text x="1256" y="382" font-size="20" fill="#7fd4c1">cocok, berhenti di sini</text>
+
+    <!-- cabang berikutnya: tidak dibaca -->
+    <rect x="1002" y="420" width="480" height="56" rx="10" fill="#141a22" stroke="#39434f" stroke-width="2" stroke-dasharray="7 5"/>
+    <text x="1026" y="456" font-size="21" fill="#4e5866">elif nilai &#62;= 80:</text>
+    <rect x="1002" y="492" width="480" height="56" rx="10" fill="#141a22" stroke="#39434f" stroke-width="2" stroke-dasharray="7 5"/>
+    <text x="1026" y="528" font-size="21" fill="#4e5866">elif nilai &#62;= 70:</text>
+    <rect x="1002" y="564" width="480" height="56" rx="10" fill="#141a22" stroke="#39434f" stroke-width="2" stroke-dasharray="7 5"/>
+    <text x="1026" y="600" font-size="21" fill="#4e5866">else:</text>
+  </g>
+  <text x="1002" y="658" font-family="system-ui,sans-serif" font-size="19" fill="#6f8599">Tiga cabang di bawah tidak pernah diperiksa.</text>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="308" font-size="23" font-weight="700" letter-spacing="6" fill="#6ab8f4">BELAJAR PYTHON DASAR · BAGIAN 05</text>
+    <text x="96" y="424" font-size="77" font-weight="800" letter-spacing="-2.5" fill="#f1f5f9">PROGRAM YANG</text>
+    <text x="96" y="510" font-size="77" font-weight="800" letter-spacing="-2.5" fill="url(#p5blue)">MEMUTUSKAN</text>
+    <rect x="100" y="548" width="120" height="5" rx="2.5" fill="#2a6fbd"/>
+    <text x="100" y="620" font-size="31" fill="#8496a8">Diperiksa dari atas, berhenti di</text>
+    <text x="100" y="664" font-size="31" fill="#8496a8">yang pertama cocok.</text>
+
+    <g>
+      <rect x="100" y="744" width="222" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#23425c" stroke-width="2"/>
+      <text x="126" y="796" font-size="38" font-weight="800" fill="#f1f5f9">05/15</text>
+      <text x="126" y="828" font-size="17" fill="#7b8b9a">bagian kelima</text>
+
+      <rect x="344" y="744" width="222" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#23425c" stroke-width="2"/>
+      <text x="370" y="794" font-family="ui-monospace,Menlo,monospace" font-size="26" font-weight="800" fill="#7fb2e8">4 spasi</text>
+      <text x="370" y="828" font-size="17" fill="#7b8b9a">yang menentukan isi blok</text>
+
+      <rect x="588" y="744" width="260" height="118" rx="16" fill="#3987e5" fill-opacity="0.12" stroke="#3987e5" stroke-width="2.5"/>
+      <text x="614" y="794" font-family="ui-monospace,Menlo,monospace" font-size="30" font-weight="800" fill="#8ad6fb">if / elif</text>
+      <text x="614" y="828" font-size="17" fill="#7b8b9a">urutannya menentukan hasil</text>
+    </g>
+  </g>
+</svg>
