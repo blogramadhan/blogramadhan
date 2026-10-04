@@ -291,8 +291,6 @@ apakah syarat yang longgar tidak diletakkan di atas yang ketat.
 
 ## Berikutnya
 
-Di **Bagian 06** kita belajar perulangan dengan `for` dan `while`. Di situlah empat angka di
-latihan tadi tidak perlu lagi diganti satu per satu, dan Python mulai terasa benar-benar
-menghemat waktu.
-
-Tautannya muncul di [halaman silabus](/tutorials/belajar-python-dasar/) begitu terbit.
+Di **[Bagian 06](/tutorials/python-dasar-06-perulangan/)** kita belajar perulangan dengan
+`for` dan `while`. Di situlah empat angka di latihan tadi tidak perlu lagi diganti satu per
+satu, dan Python mulai terasa benar-benar menghemat waktu.

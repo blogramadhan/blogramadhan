@@ -74,7 +74,7 @@ memakai apa yang dibangun sebelumnya.
 | **03** · [Variabel dan Tipe Data](/tutorials/python-dasar-03-variabel-dan-tipe-data/) ✅ | Menyimpan nilai dan memberinya nama. Empat tipe dasar: teks, bilangan bulat, desimal, benar/salah — dan kenapa membedakannya menyelamatkan Anda dari bug yang membingungkan. |
 | **04** · [String: Merapikan Teks](/tutorials/python-dasar-04-string-merapikan-teks/) ✅ | Memotong, menggabung, mengubah huruf, membuang spasi berlebih. Latihan: menyeragamkan nama unit kerja yang ditulis lima orang dengan lima gaya berbeda. |
 | **05** · [Percabangan: if, elif, else](/tutorials/python-dasar-05-percabangan/) ✅ | Membuat program mengambil keputusan. Latihan: menandai baris yang nilainya melewati batas. |
-| **06** · Perulangan: for dan while | Mengerjakan hal yang sama berkali-kali tanpa menyalin kode. Di sinilah Python mulai terasa menghemat waktu. |
+| **06** · [Perulangan: for dan while](/tutorials/python-dasar-06-perulangan/) ✅ | Mengerjakan hal yang sama berkali-kali tanpa menyalin kode. Di sinilah Python mulai terasa menghemat waktu. |
 
 ### Tahap III — Menyimpan Banyak Data
 

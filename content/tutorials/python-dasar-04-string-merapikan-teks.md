@@ -351,7 +351,7 @@ huruf besarnya.
 **Tugas Anda:** jalankan baris itu untuk kelima isi `daftar` di atas, satu per satu, dan
 pastikan kelimanya menghasilkan `Dinas Pendidikan` yang sama persis.
 
-Untuk sekarang salin-tempel lima kali tidak apa-apa. Di Bagian 06 kita belajar perulangan,
+Untuk sekarang salin-tempel lima kali tidak apa-apa. Di [Bagian 06](/tutorials/python-dasar-06-perulangan/) kita belajar perulangan,
 dan pekerjaan ini selesai dalam tiga baris berapa pun banyaknya data.
 
 **Satu peringatan soal `title()`.** Coba ini:

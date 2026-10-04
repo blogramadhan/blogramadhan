@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Python Dasar bagian 06: perulangan dengan for dan while. Satu blok kode dijalankan berkali-kali untuk tiap isi daftar, menggantikan empat salinan kode yang hampir sama">
+  <defs>
+    <linearGradient id="p6bg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#0b1a2e"/><stop offset="0.5" stop-color="#0a1320"/><stop offset="1" stop-color="#080d14"/>
+    </linearGradient>
+    <linearGradient id="p6blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ad6fb"/><stop offset="1" stop-color="#2a6fbd"/>
+    </linearGradient>
+    <radialGradient id="p6glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3987e5" stop-opacity="0.20"/><stop offset="1" stop-color="#3987e5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#p6bg)"/>
+  <ellipse cx="1250" cy="430" rx="360" ry="310" fill="url(#p6glow)"/>
+
+  <!-- sebelum: empat salinan -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="17">
+    <text x="990" y="252" font-family="system-ui,sans-serif" font-size="18" font-weight="700" letter-spacing="3" fill="#6f7f92">SEBELUMNYA</text>
+    <g fill="#141a22" stroke="#39434f" stroke-width="1.8">
+      <rect x="990" y="268" width="214" height="46" rx="8"/>
+      <rect x="990" y="322" width="214" height="46" rx="8"/>
+      <rect x="990" y="376" width="214" height="46" rx="8"/>
+      <rect x="990" y="430" width="214" height="46" rx="8"/>
+    </g>
+    <g fill="#5a6676">
+      <text x="1008" y="297">salinan 1</text>
+      <text x="1008" y="351">salinan 2</text>
+      <text x="1008" y="405">salinan 3</text>
+      <text x="1008" y="459">salinan 4</text>
+    </g>
+  </g>
+
+  <!-- panah -->
+  <path d="M 1226 372 L 1272 372" stroke="#8ad6fb" stroke-width="3"/>
+  <polygon points="1268,364 1268,380 1284,372" fill="#8ad6fb"/>
+
+  <!-- sesudah: satu blok -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace">
+    <text x="1300" y="252" font-family="system-ui,sans-serif" font-size="18" font-weight="700" letter-spacing="3" fill="#6ab8f4">SEKARANG</text>
+    <rect x="1300" y="268" width="200" height="208" rx="10" fill="#10263c" stroke="#8ad6fb" stroke-width="2.5"/>
+    <text x="1320" y="320" font-size="18" fill="#8ad6fb">for n in daftar:</text>
+    <text x="1344" y="356" font-size="18" fill="#9ec0e0">hitung</text>
+    <text x="1344" y="388" font-size="18" fill="#9ec0e0">periksa</text>
+    <text x="1344" y="420" font-size="18" fill="#9ec0e0">tampilkan</text>
+    <path d="M 1400 440 a 34 22 0 1 0 -0.1 0" fill="none" stroke="#5fd3a0" stroke-width="2.5"/>
+    <polygon points="1392,452 1408,450 1398,464" fill="#5fd3a0"/>
+  </g>
+  <text x="990" y="528" font-family="system-ui,sans-serif" font-size="19" fill="#6f8599">Empat isi, empat kali jalan, satu blok kode.</text>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="308" font-size="23" font-weight="700" letter-spacing="6" fill="#6ab8f4">BELAJAR PYTHON DASAR · BAGIAN 06</text>
+    <text x="96" y="424" font-size="77" font-weight="800" letter-spacing="-2.5" fill="#f1f5f9">BERHENTI</text>
+    <text x="96" y="510" font-size="77" font-weight="800" letter-spacing="-2.5" fill="url(#p6blue)">MENYALIN KODE</text>
+    <rect x="100" y="548" width="120" height="5" rx="2.5" fill="#2a6fbd"/>
+    <text x="100" y="620" font-size="31" fill="#8496a8">Empat baris data atau empat ribu,</text>
+    <text x="100" y="664" font-size="31" fill="#8496a8">kodenya sama panjang.</text>
+
+    <g>
+      <rect x="100" y="744" width="222" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#23425c" stroke-width="2"/>
+      <text x="126" y="796" font-size="38" font-weight="800" fill="#f1f5f9">06/15</text>
+      <text x="126" y="828" font-size="17" fill="#7b8b9a">bagian keenam</text>
+
+      <rect x="344" y="744" width="222" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#23425c" stroke-width="2"/>
+      <text x="370" y="794" font-family="ui-monospace,Menlo,monospace" font-size="30" font-weight="800" fill="#7fb2e8">for</text>
+      <text x="370" y="828" font-size="17" fill="#7b8b9a">untuk tiap isi</text>
+
+      <rect x="588" y="744" width="260" height="118" rx="16" fill="#3987e5" fill-opacity="0.12" stroke="#3987e5" stroke-width="2.5"/>
+      <text x="614" y="794" font-family="ui-monospace,Menlo,monospace" font-size="30" font-weight="800" fill="#8ad6fb">while</text>
+      <text x="614" y="828" font-size="17" fill="#7b8b9a">selama syaratnya benar</text>
+    </g>
+  </g>
+</svg>
