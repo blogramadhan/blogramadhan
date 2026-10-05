@@ -311,7 +311,6 @@ setelah semuanya selesai.
 
 ## Berikutnya
 
-Di **Bagian 07** kita membahas *list* dengan serius — wadah yang sejak tadi kita pakai sambil
-lalu. Menambah isi, mengambil sebagian, mengurutkan, dan kapan sebaiknya memakai *tuple*.
-
-Tautannya muncul di [halaman silabus](/tutorials/belajar-python-dasar/) begitu terbit.
+Di **[Bagian 07](/tutorials/python-dasar-07-list-dan-tuple/)** kita membahas *list* dengan
+serius — wadah yang sejak tadi kita pakai sambil lalu. Menambah isi, mengambil sebagian,
+mengurutkan, dan kapan sebaiknya memakai *tuple*.

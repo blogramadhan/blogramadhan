@@ -80,7 +80,7 @@ memakai apa yang dibangun sebelumnya.
 
 | Bagian | Isinya |
 |---|---|
-| **07** · List dan Tuple | Menyimpan banyak nilai dalam satu wadah. Mengambil, menambah, mengurutkan — dan kapan sebaiknya memakai tuple. |
+| **07** · [List dan Tuple](/tutorials/python-dasar-07-list-dan-tuple/) ✅ | Menyimpan banyak nilai dalam satu wadah. Mengambil, menambah, mengurutkan — dan kapan sebaiknya memakai tuple. |
 | **08** · Dictionary dan Set | Pasangan kunci–nilai, wadah paling berguna untuk data nyata. Latihan: merekap jumlah per kategori. |
 | **09** · Comprehension | Menulis perulangan dalam satu baris. Ringkas, khas Python — dan batasnya, supaya tidak berubah jadi kode yang tak terbaca. |
 
