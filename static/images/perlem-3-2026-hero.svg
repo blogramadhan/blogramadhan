@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Peraturan LKPP Nomor 3 Tahun 2026 tentang Pedoman Persiapan dan Pelaksanaan Pengadaan melalui Penyedia: 12 pasal dan 3 lampiran, evaluasi pemilik manfaat mulai 1 November 2026, pengadaan langsung konstruksi sampai Rp400 juta">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#132238"/><stop offset="0.45" stop-color="#101825"/><stop offset="1" stop-color="#0d0f13"/>
+    </linearGradient>
+    <linearGradient id="azure" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6fb0f5"/><stop offset="1" stop-color="#3987e5"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3987e5" stop-opacity="0.30"/><stop offset="1" stop-color="#3987e5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+
+  <!-- tumpukan tiga lampiran -->
+  <ellipse cx="1220" cy="330" rx="420" ry="350" fill="url(#halo)"/>
+  <g fill="none" stroke-width="3">
+    <rect x="1090" y="150" width="300" height="380" rx="14" stroke="#3987e5" stroke-opacity="0.22"/>
+    <rect x="1060" y="180" width="300" height="380" rx="14" stroke="#3987e5" stroke-opacity="0.35"/>
+    <rect x="1030" y="210" width="300" height="380" rx="14" stroke="#6fb0f5" stroke-opacity="0.60" fill="#132238"/>
+  </g>
+  <g stroke="#3987e5" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round">
+    <line x1="1070" y1="300" x2="1290" y2="300"/>
+    <line x1="1070" y1="346" x2="1250" y2="346"/>
+    <line x1="1070" y1="438" x2="1270" y2="438"/>
+    <line x1="1070" y1="484" x2="1210" y2="484"/>
+    <line x1="1070" y1="530" x2="1240" y2="530"/>
+  </g>
+  <line x1="1070" y1="392" x2="1290" y2="392" stroke="#6fb0f5" stroke-opacity="0.75" stroke-width="5" stroke-linecap="round"/>
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-weight="700" font-size="20" fill="#6fb0f5" fill-opacity="0.8">
+    <text x="1070" y="258">LAMPIRAN I · II · III</text>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="322" font-size="23" font-weight="700" letter-spacing="6" fill="#6fb0f5">PERLEM LKPP 3/2026 · BERLAKU 22 SEPTEMBER</text>
+    <text x="96" y="432" font-size="86" font-weight="800" letter-spacing="-2.5" fill="#f2f4f8">PEDOMAN PENYEDIA</text>
+    <text x="96" y="530" font-size="86" font-weight="800" letter-spacing="-2.5" fill="url(#azure)">VERSI 2026</text>
+    <rect x="100" y="568" width="120" height="5" rx="2.5" fill="#3987e5"/>
+    <text x="100" y="638" font-size="31" fill="#a3aebd">Perlem 12/2021 dan 4/2024 dicabut.</text>
+    <text x="100" y="682" font-size="31" fill="#a3aebd">Pemilik manfaat mulai diperiksa.</text>
+
+    <g>
+      <rect x="100" y="748" width="270" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#2c3e57" stroke-width="2"/>
+      <text x="126" y="800" font-size="40" font-weight="800" fill="#6fb0f5">12 + 3</text>
+      <text x="126" y="832" font-size="17" fill="#8794a6">pasal + lampiran pedoman</text>
+
+      <rect x="392" y="748" width="290" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#2c3e57" stroke-width="2"/>
+      <text x="418" y="800" font-size="38" font-weight="800" fill="#7fd4c1">1 Nov 2026</text>
+      <text x="418" y="832" font-size="17" fill="#8794a6">evaluasi pemilik manfaat</text>
+
+      <rect x="704" y="748" width="300" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#2c3e57" stroke-width="2"/>
+      <text x="730" y="800" font-size="38" font-weight="800" fill="#6fb0f5">Rp400 jt</text>
+      <text x="730" y="832" font-size="17" fill="#8794a6">pengadaan langsung konstruksi</text>
+    </g>
+  </g>
+</svg>

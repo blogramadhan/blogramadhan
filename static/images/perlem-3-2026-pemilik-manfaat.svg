@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Tiga tahap evaluasi data pemilik manfaat dalam Perlem LKPP 3 Tahun 2026: pengumuman sampai 31 Oktober 2026 belum dievaluasi; 1 November sampai 31 Desember 2026 dievaluasi dari data sistem atau unggahan penyedia; mulai 1 Januari 2027 dievaluasi hanya dari data yang tersedia di sistem">
+  <rect width="1600" height="900" fill="#12171f"/>
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="70" y="104" font-size="50" font-weight="800" fill="#f2f4f8">Pemilik Manfaat: Tiga Tahap</text>
+    <text x="70" y="152" font-size="25" fill="#8a94a5">Yang menentukan tahapnya adalah tanggal pengumuman/undangan paket, bukan tanggal kontrak.</text>
+    <rect x="70" y="180" width="96" height="4" rx="2" fill="#3987e5"/>
+
+    <!-- sumbu -->
+    <line x1="130" y1="330" x2="1470" y2="330" stroke="#2a3340" stroke-width="3"/>
+    <line x1="130" y1="330" x2="560" y2="330" stroke="#4a5566" stroke-width="6" stroke-linecap="round"/>
+    <line x1="590" y1="330" x2="1010" y2="330" stroke="#3987e5" stroke-width="6" stroke-linecap="round"/>
+    <line x1="1040" y1="330" x2="1470" y2="330" stroke="#7fd4c1" stroke-width="6" stroke-linecap="round"/>
+
+    <circle cx="575" cy="330" r="11" fill="#3987e5" stroke="#12171f" stroke-width="4"/>
+    <circle cx="1025" cy="330" r="11" fill="#7fd4c1" stroke="#12171f" stroke-width="4"/>
+    <text x="575" y="290" text-anchor="middle" font-size="30" font-weight="800" fill="#6fb0f5">1 Nov 2026</text>
+    <text x="1025" y="290" text-anchor="middle" font-size="30" font-weight="800" fill="#7fd4c1">1 Jan 2027</text>
+
+    <!-- tahap 1 -->
+    <rect x="130" y="380" width="420" height="400" rx="16" fill="#ffffff" fill-opacity="0.04" stroke="#232c3a" stroke-width="2"/>
+    <text x="160" y="432" font-size="19" font-weight="700" letter-spacing="3" fill="#8a94a5">TAHAP 1</text>
+    <text x="160" y="476" font-size="30" font-weight="800" fill="#c9d1dc">s.d. 31 Okt 2026</text>
+    <text x="160" y="540" font-size="21" fill="#c9d1dc">Peserta tetap wajib</text>
+    <text x="160" y="572" font-size="21" fill="#c9d1dc">melaporkan data.</text>
+    <text x="160" y="626" font-size="21" fill="#c9d1dc">Datanya belum</text>
+    <text x="160" y="658" font-size="21" fill="#c9d1dc">dievaluasi.</text>
+    <text x="160" y="730" font-size="20" fill="#8a94a5">Masa pemanasan.</text>
+
+    <!-- tahap 2 -->
+    <rect x="590" y="380" width="420" height="400" rx="16" fill="#3987e5" fill-opacity="0.07" stroke="#2c3e57" stroke-width="2"/>
+    <text x="620" y="432" font-size="19" font-weight="700" letter-spacing="3" fill="#6fb0f5">TAHAP 2</text>
+    <text x="620" y="476" font-size="30" font-weight="800" fill="#f2f4f8">1 Nov – 31 Des 2026</text>
+    <text x="620" y="540" font-size="21" fill="#c9d1dc">Dievaluasi dari data di</text>
+    <text x="620" y="572" font-size="21" fill="#c9d1dc">sistem, atau dari dokumen</text>
+    <text x="620" y="604" font-size="21" fill="#c9d1dc">yang diunggah penyedia.</text>
+    <text x="620" y="658" font-size="21" fill="#c9d1dc">Tidak ada data → gugur.</text>
+    <text x="620" y="730" font-size="20" fill="#8a94a5">Masih ada jalan unggah.</text>
+
+    <!-- tahap 3 -->
+    <rect x="1050" y="380" width="420" height="400" rx="16" fill="#7fd4c1" fill-opacity="0.06" stroke="#2c4a46" stroke-width="2"/>
+    <text x="1080" y="432" font-size="19" font-weight="700" letter-spacing="3" fill="#7fd4c1">TAHAP 3</text>
+    <text x="1080" y="476" font-size="30" font-weight="800" fill="#f2f4f8">Mulai 1 Jan 2027</text>
+    <text x="1080" y="540" font-size="21" fill="#c9d1dc">Dievaluasi hanya dari</text>
+    <text x="1080" y="572" font-size="21" fill="#c9d1dc">data yang tersedia</text>
+    <text x="1080" y="604" font-size="21" fill="#c9d1dc">di sistem.</text>
+    <text x="1080" y="658" font-size="21" fill="#c9d1dc">Tidak ada data → gugur.</text>
+    <text x="1080" y="730" font-size="20" fill="#8a94a5">Tanpa jalur unggah.</text>
+
+    <text x="70" y="845" font-size="20" fill="#8a94a5">Aturan terpisah: peserta dengan pemilik manfaat yang sama dalam satu paket digugurkan (Pasal 8 ayat 3).</text>
+  </g>
+</svg>
