@@ -33,14 +33,14 @@ Kalau Anda sedang buru-buru, enam hal ini yang paling penting:
 
 1. **Data pemilik manfaat mulai dievaluasi 1 November 2026.** Peserta yang datanya tidak ada,
    gugur.
-2. **Pejabat Pengadaan** mengerjakan pengadaan langsung barang/jasa lainnya sampai **Rp200 juta**
-   dan konstruksi sampai **Rp400 juta**.
-3. **Pengadaan langsung sampai Rp50 juta cukup dicatat** di sistem, dan boleh pakai kuitansi.
+2. **Pejabat Pengadaan** mengerjakan pengadaan langsung barang/jasa lainnya sampai dengan **Rp200 juta**
+   dan konstruksi sampai dengan **Rp400 juta**.
+3. **Pengadaan langsung sampai dengan Rp50 juta cukup dicatat** di sistem, dan boleh pakai kuitansi.
 4. **Tender cepat** hanya membandingkan harga, tanpa sanggah, untuk penyedia yang sudah
    terkualifikasi dan berkinerja baik.
 5. **Uang muka untuk usaha mikro, kecil, dan koperasi** sekarang punya batas bawah: paling sedikit
    50% atau 30% dari nilai kontrak, tergantung nilainya.
-6. **Pekerjaan konstruksi dikunci per segmen usaha.** Paket sampai Rp2 miliar hanya untuk usaha
+6. **Pekerjaan konstruksi dikunci per segmen usaha.** Paket sampai dengan Rp2 miliar hanya untuk usaha
    kecil K1.
 
 Sisanya penjelasan.
@@ -85,11 +85,11 @@ Pembagian kerjanya mengikuti nilai HPS. Saya rangkum dalam satu tabel (Lampiran 
 
 | Jenis pekerjaan | Pejabat Pengadaan | Pokja Pemilihan |
 | --- | --- | --- |
-| Pengadaan langsung barang/jasa lainnya | sampai Rp200 juta | — |
-| Penunjukan langsung barang/jasa lainnya | sampai Rp200 juta | di atas Rp200 juta |
-| Pengadaan langsung konstruksi | sampai **Rp400 juta** | — |
-| Penunjukan langsung konstruksi | sampai Rp200 juta | di atas Rp200 juta |
-| Pengadaan langsung / penunjukan langsung jasa konsultansi | sampai Rp100 juta | di atas Rp100 juta (penunjukan langsung) |
+| Pengadaan langsung barang/jasa lainnya | sampai dengan Rp200 juta | — |
+| Penunjukan langsung barang/jasa lainnya | sampai dengan Rp200 juta | di atas Rp200 juta |
+| Pengadaan langsung konstruksi | sampai dengan **Rp400 juta** | — |
+| Penunjukan langsung konstruksi | sampai dengan Rp200 juta | di atas Rp200 juta |
+| Pengadaan langsung / penunjukan langsung jasa konsultansi | sampai dengan Rp100 juta | di atas Rp100 juta (penunjukan langsung) |
 | Tender, seleksi, tender cepat | — | semua nilai |
 
 Perhatikan baris konstruksi. Untuk **pengadaan langsung** batasnya Rp400 juta, tapi untuk
@@ -104,7 +104,7 @@ E-purchasing bisa dikerjakan PPK, Pejabat Pengadaan, maupun Pokja Pemilihan. Det
 
 Untuk percepatan pembangunan di Papua, batas Pejabat Pengadaan naik menjadi **Rp1 miliar** (barang,
 jasa lainnya, konstruksi) dan **Rp200 juta** (jasa konsultansi). Ada juga metode tambahan, **tender
-terbatas**, untuk paket di atas Rp1 miliar sampai Rp2,5 miliar (Pasal 2 ayat 4).
+terbatas**, untuk paket di atas Rp1 miliar sampai dengan Rp2,5 miliar (Pasal 2 ayat 4).
 
 ### Kalau tidak ada PPK
 
@@ -117,7 +117,7 @@ Ini metode yang paling sering dipakai, jadi saya bahas agak rinci.
 
 ### Sampai Rp50 juta: kuitansi dan fitur pencatatan
 
-Untuk barang/jasa lainnya sampai Rp50 juta, pengadaan langsung boleh pakai **bukti pembelian atau
+Untuk barang/jasa lainnya sampai dengan Rp50 juta, pengadaan langsung boleh pakai **bukti pembelian atau
 kuitansi** (Lampiran I, 5.3.3). Alurnya pendek: pesan, terima barang, terima kuitansi, bayar.
 
 Di sistem, paket seukuran ini cukup masuk lewat **fitur pencatatan**, bukan fitur transaksional
@@ -134,12 +134,12 @@ Jangan langsung dicatat.
 
 ### Paket kecil tanpa HPS
 
-HPS tidak perlu disusun untuk barang/jasa lainnya dengan **pagu sampai Rp10 juta** (Lampiran I,
+HPS tidak perlu disusun untuk barang/jasa lainnya dengan **pagu sampai dengan Rp10 juta** (Lampiran I,
 2.2.2). Perhatikan, patokannya pagu, bukan perkiraan harga.
 
 ### Di atas Rp50 juta: satu penyedia, dua sumber harga
 
-Untuk barang/jasa lainnya di atas Rp50 juta sampai Rp200 juta, dan jasa konsultansi sampai Rp100
+Untuk barang/jasa lainnya di atas Rp50 juta sampai dengan Rp200 juta, dan jasa konsultansi sampai dengan Rp100
 juta, pakai surat perintah kerja. Langkahnya:
 
 1. Pejabat Pengadaan mencari informasi harga dan **membandingkan paling sedikit dua sumber** yang
@@ -235,21 +235,21 @@ Pasal 4 menetapkan siapa boleh mengerjakan paket konstruksi berdasarkan **pagu a
 
 | Pagu anggaran | Kualifikasi penyedia pekerjaan konstruksi |
 | --- | --- |
-| sampai Rp2 miliar | usaha kecil **K1** |
-| > Rp2 miliar – Rp7,5 miliar | usaha kecil **K2** |
-| > Rp7,5 miliar – Rp15 miliar | usaha kecil **K3** |
-| > Rp15 miliar – Rp50 miliar | menengah |
-| > Rp50 miliar – Rp100 miliar | besar **non-BUMN** |
+| sampai dengan Rp2 miliar | usaha kecil **K1** |
+| di atas Rp2 miliar sampai dengan Rp7,5 miliar | usaha kecil **K2** |
+| di atas Rp7,5 miliar sampai dengan Rp15 miliar | usaha kecil **K3** |
+| di atas Rp15 miliar sampai dengan Rp50 miliar | menengah |
+| di atas Rp50 miliar sampai dengan Rp100 miliar | besar **non-BUMN** |
 | di atas Rp100 miliar | besar |
 
-Untuk konsultansi konstruksi: sampai Rp1 miliar usaha kecil, sampai Rp2,5 miliar menengah, di
+Untuk konsultansi konstruksi: sampai dengan Rp1 miliar usaha kecil, sampai dengan Rp2,5 miliar menengah, di
 atasnya besar.
 
 Dua hal yang perlu diperhatikan:
 
 - Kata yang dipakai **"hanya dapat dikerjakan"**. Paket Rp1,5 miliar tidak bisa dimenangkan
   kontraktor menengah, walau mereka sanggup.
-- Rentang Rp50–100 miliar ditutup untuk BUMN. Ruang untuk kontraktor swasta besar.
+- Rentang di atas Rp50 miliar sampai dengan Rp100 miliar ditutup untuk BUMN. Ruang untuk kontraktor swasta besar.
 
 Segmentasi K1–K3 berlaku sesuai ketentuan perizinan berusaha berbasis risiko dari kementerian PU
 (Pasal 4 ayat 3). Jadi cek juga apakah subkualifikasi penyedia di perizinannya sudah sesuai.
@@ -269,9 +269,9 @@ diatur begini (Lampiran I, 2.3.5):
 
 | Penyedia dan nilai kontrak | Uang muka |
 | --- | --- |
-| Usaha mikro/kecil/koperasi, Rp50 juta – Rp200 juta | **paling sedikit 50%** |
-| Usaha mikro/kecil/koperasi, > Rp200 juta – Rp2,5 miliar | **paling sedikit 30%** |
-| Usaha mikro/kecil/koperasi, > Rp2,5 miliar – Rp15 miliar | paling tinggi 30% |
+| Usaha mikro/kecil/koperasi, Rp50 juta sampai dengan Rp200 juta | **paling sedikit 50%** |
+| Usaha mikro/kecil/koperasi, di atas Rp200 juta sampai dengan Rp2,5 miliar | **paling sedikit 30%** |
+| Usaha mikro/kecil/koperasi, di atas Rp2,5 miliar sampai dengan Rp15 miliar | paling tinggi 30% |
 | (lihat catatan di bawah) dan jasa konsultansi | paling tinggi 20% |
 | Kontrak tahun jamak | paling tinggi 15% |
 
@@ -328,13 +328,13 @@ Ada dua hal di naskah ini yang kemungkinan besar akan ditanyakan.
 
 **Baris keempat tabel uang muka.** Naskahnya berbunyi "paling tinggi 20% dari nilai Kontrak untuk
 usaha mikro, usaha kecil, dan koperasi **dan** Penyedia Jasa Konsultansi". Padahal tiga baris di
-atasnya sudah mengatur usaha mikro, kecil, dan koperasi sampai Rp15 miliar. Kemungkinan besar yang
+atasnya sudah mengatur usaha mikro, kecil, dan koperasi sampai dengan Rp15 miliar. Kemungkinan besar yang
 dimaksud adalah penyedia **selain** usaha mikro, kecil, dan koperasi — seperti di aturan lama. Tapi
 dari naskahnya sendiri tidak bisa dipastikan.
 
 **Kata "paling sedikit" untuk uang muka.** Kalimat pembukanya berbunyi PPK "**dapat**" memberikan
 uang muka. Jadi uang muka tetap pilihan. Tapi kalau diberikan kepada usaha mikro/kecil/koperasi di
-rentang Rp50 juta–Rp2,5 miliar, besarnya tidak boleh di bawah 50% atau 30%. Paket di bawah Rp50
+rentang Rp50 juta sampai dengan Rp2,5 miliar, besarnya tidak boleh di bawah 50% atau 30%. Paket di bawah Rp50
 juta sama sekali tidak disebut di tabel itu.
 
 Untuk dua hal ini, sebelum menetapkan di rancangan kontrak, tanyakan dulu ke LKPP atau UKPBJ.
