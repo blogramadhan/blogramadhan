@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Membangun Portal PBJ dengan Grit Framework: satu repo untuk web, desktop, dan mobile, dengan Go dan TanStack">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#0f2a30"/><stop offset="0.45" stop-color="#101c22"/><stop offset="1" stop-color="#0b0f14"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6fe0cf"/><stop offset="1" stop-color="#2aa8a0"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#2aa8a0" stop-opacity="0.32"/><stop offset="1" stop-color="#2aa8a0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+
+  <!-- satu inti, tiga platform -->
+  <ellipse cx="1210" cy="400" rx="440" ry="380" fill="url(#halo)"/>
+  <g stroke="#3b6e72" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M1210 400 L1040 250"/>
+    <path d="M1210 400 L1390 250"/>
+    <path d="M1210 400 L1210 590" stroke-dasharray="4 12"/>
+  </g>
+  <circle cx="1210" cy="400" r="78" fill="#0f2a30" stroke="url(#accent)" stroke-width="5"/>
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif" text-anchor="middle">
+    <text x="1210" y="414" font-size="40" font-weight="800" fill="#6fe0cf">GO</text>
+
+    <rect x="950" y="190" width="180" height="70" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#3b6e72" stroke-width="2"/>
+    <text x="1040" y="234" font-size="26" font-weight="700" fill="#e8f3f2">Web</text>
+
+    <rect x="1300" y="190" width="180" height="70" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#3b6e72" stroke-width="2"/>
+    <text x="1390" y="234" font-size="26" font-weight="700" fill="#e8f3f2">Desktop</text>
+
+    <rect x="1120" y="590" width="180" height="70" rx="16" fill="none" stroke="#3b6e72" stroke-width="2" stroke-dasharray="6 8"/>
+    <text x="1210" y="634" font-size="26" font-weight="700" fill="#7f9a9c">Mobile</text>
+    <text x="1210" y="696" font-size="18" fill="#7f9a9c">rencana berikutnya</text>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="322" font-size="23" font-weight="700" letter-spacing="6" fill="#4fcfc0">GRIT FRAMEWORK · PORTAL PBJ</text>
+    <text x="96" y="432" font-size="88" font-weight="800" letter-spacing="-2.5" fill="#eef5f4">SATU REPO,</text>
+    <text x="96" y="530" font-size="88" font-weight="800" letter-spacing="-2.5" fill="url(#accent)">BANYAK PLATFORM</text>
+    <rect x="100" y="568" width="120" height="5" rx="2.5" fill="#2aa8a0"/>
+    <text x="100" y="638" font-size="31" fill="#9bb3b4">Go di belakang, TanStack di depan.</text>
+    <text x="100" y="682" font-size="31" fill="#9bb3b4">Pengalaman pertama membangun Portal PBJ.</text>
+
+    <g>
+      <rect x="100" y="748" width="230" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#2f5559" stroke-width="2"/>
+      <text x="126" y="800" font-size="40" font-weight="800" fill="#6fe0cf">Go</text>
+      <text x="126" y="832" font-size="17" fill="#86a1a2">backend &amp; API</text>
+
+      <rect x="352" y="748" width="230" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#2f5559" stroke-width="2"/>
+      <text x="378" y="800" font-size="40" font-weight="800" fill="#6fe0cf">TanStack</text>
+      <text x="378" y="832" font-size="17" fill="#86a1a2">frontend web</text>
+
+      <rect x="604" y="748" width="230" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#2f5559" stroke-width="2"/>
+      <text x="630" y="800" font-size="40" font-weight="800" fill="#f0c66f">Win + Mac</text>
+      <text x="630" y="832" font-size="17" fill="#86a1a2">desktop sudah dicoba</text>
+    </g>
+  </g>
+</svg>
