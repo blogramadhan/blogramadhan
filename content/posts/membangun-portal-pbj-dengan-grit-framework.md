@@ -1,6 +1,6 @@
 +++
 title = "Membangun Portal PBJ dengan Grit Framework"
-date = 2026-10-14T13:00:00+07:00
+date = 2026-10-14T11:00:00+07:00
 draft = false
 description = "Kenalan dengan Grit, framework full-stack Go + React yang bisa membuat API dan halaman admin dari satu perintah, dan cerita saya memakainya untuk membangun Portal PBJ."
 tags = ["grit", "go", "react", "portal-pbj", "pengadaan", "framework"]
