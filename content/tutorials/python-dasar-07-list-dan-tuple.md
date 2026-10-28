@@ -445,8 +445,7 @@ Anda menulis `daftar = daftar.sort()`. Hapus bagian `daftar = ` di depannya.
 
 ## Berikutnya
 
-Di **Bagian 08** kita masuk ke *dictionary*, wadah yang menyimpan pasangan nama dan nilai
-sekaligus. Itu jawaban untuk masalah dua daftar sejajar tadi, dan wadah yang paling sering
-saya pakai untuk data pekerjaan sungguhan.
-
-Tautannya muncul di [halaman silabus](/tutorials/belajar-python-dasar/) begitu terbit.
+Di **[Bagian 08](/tutorials/python-dasar-08-dictionary-dan-set/)** kita masuk ke
+*dictionary*, wadah yang menyimpan pasangan nama dan nilai sekaligus. Itu jawaban untuk
+masalah dua daftar sejajar tadi, dan wadah yang paling sering saya pakai untuk data pekerjaan
+sungguhan.
