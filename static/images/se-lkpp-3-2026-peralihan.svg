@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Empat periode masa peralihan Perlem LKPP 3/2026 menurut SE Kepala LKPP 3/2026: pemilihan yang dimulai sebelum 22 September 2026 memakai aturan lama; 22 September sampai 9 Oktober dilanjutkan dengan Perlem 12/2021 sampai kontrak selesai; 10 sampai 29 Oktober PA/KPA memilih melanjutkan dengan aturan lama atau membatalkan sebelum batas akhir penawaran lalu mengulang dengan aturan baru; setelah SE terbit wajib Perlem 3/2026">
+  <rect width="1600" height="900" fill="#12171f"/>
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="70" y="104" font-size="50" font-weight="800" fill="#f2f4f8">Paket Mana Pakai Aturan Mana</text>
+    <text x="70" y="152" font-size="25" fill="#8a94a5">Patokannya kapan persiapan dan pelaksanaan pengadaan berlangsung (SE 3/2026 angka 5–9, Perlem Pasal 10).</text>
+    <rect x="70" y="180" width="96" height="4" rx="2" fill="#3987e5"/>
+
+    <!-- sumbu -->
+    <line x1="70" y1="320" x2="1530" y2="320" stroke="#2a3340" stroke-width="3"/>
+    <line x1="70" y1="320" x2="410" y2="320" stroke="#4a5566" stroke-width="6" stroke-linecap="round"/>
+    <line x1="440" y1="320" x2="780" y2="320" stroke="#6fb0f5" stroke-opacity="0.6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="810" y1="320" x2="1150" y2="320" stroke="#3987e5" stroke-width="6" stroke-linecap="round"/>
+    <line x1="1180" y1="320" x2="1530" y2="320" stroke="#7fd4c1" stroke-width="6" stroke-linecap="round"/>
+
+    <circle cx="425" cy="320" r="11" fill="#6fb0f5" stroke="#12171f" stroke-width="4"/>
+    <circle cx="795" cy="320" r="11" fill="#3987e5" stroke="#12171f" stroke-width="4"/>
+    <circle cx="1165" cy="320" r="11" fill="#7fd4c1" stroke="#12171f" stroke-width="4"/>
+    <text x="425" y="276" text-anchor="middle" font-size="27" font-weight="800" fill="#6fb0f5">22 Sep</text>
+    <text x="425" y="250" text-anchor="middle" font-size="17" fill="#8a94a5">diundangkan</text>
+    <text x="795" y="276" text-anchor="middle" font-size="27" font-weight="800" fill="#6fb0f5">9 Okt</text>
+    <text x="795" y="250" text-anchor="middle" font-size="17" fill="#8a94a5">naskah dipublikasikan</text>
+    <text x="1165" y="276" text-anchor="middle" font-size="27" font-weight="800" fill="#7fd4c1">29 Okt</text>
+    <text x="1165" y="250" text-anchor="middle" font-size="17" fill="#8a94a5">SE 3/2026</text>
+
+    <!-- periode 1 -->
+    <rect x="70" y="370" width="340" height="420" rx="16" fill="#ffffff" fill-opacity="0.04" stroke="#232c3a" stroke-width="2"/>
+    <text x="96" y="420" font-size="18" font-weight="700" letter-spacing="3" fill="#8a94a5">PERIODE 1</text>
+    <text x="96" y="460" font-size="26" font-weight="800" fill="#c9d1dc">Sebelum 22 Sep</text>
+    <text x="96" y="520" font-size="20" fill="#c9d1dc">Pemilihan sudah dimulai:</text>
+    <text x="96" y="550" font-size="20" fill="#c9d1dc">selesaikan dengan</text>
+    <text x="96" y="580" font-size="20" fill="#c9d1dc">Perlem 12/2021 jo. 4/2024.</text>
+    <text x="96" y="640" font-size="20" fill="#c9d1dc">Kontrak yang sudah</text>
+    <text x="96" y="670" font-size="20" fill="#c9d1dc">diteken jalan terus.</text>
+    <text x="96" y="756" font-size="18" fill="#8a94a5">Perlem Pasal 10</text>
+
+    <!-- periode 2 -->
+    <rect x="440" y="370" width="340" height="420" rx="16" fill="#6fb0f5" fill-opacity="0.04" stroke="#2c3e57" stroke-width="2"/>
+    <text x="466" y="420" font-size="18" font-weight="700" letter-spacing="3" fill="#6fb0f5">PERIODE 2</text>
+    <text x="466" y="460" font-size="26" font-weight="800" fill="#f2f4f8">22 Sep – 9 Okt</text>
+    <text x="466" y="520" font-size="20" fill="#c9d1dc">Sudah pakai aturan lama:</text>
+    <text x="466" y="550" font-size="20" fill="#c9d1dc">lanjut sampai kontrak</text>
+    <text x="466" y="580" font-size="20" fill="#c9d1dc">berakhir.</text>
+    <text x="466" y="640" font-size="20" fill="#c9d1dc">Kalau gagal, PA/KPA pilih</text>
+    <text x="466" y="670" font-size="20" fill="#c9d1dc">ulang pakai lama atau baru.</text>
+    <text x="466" y="756" font-size="18" fill="#8a94a5">SE angka 5</text>
+
+    <!-- periode 3 -->
+    <rect x="810" y="370" width="340" height="420" rx="16" fill="#3987e5" fill-opacity="0.07" stroke="#2c3e57" stroke-width="2"/>
+    <text x="836" y="420" font-size="18" font-weight="700" letter-spacing="3" fill="#6fb0f5">PERIODE 3</text>
+    <text x="836" y="460" font-size="26" font-weight="800" fill="#f2f4f8">10 – 29 Okt</text>
+    <text x="836" y="520" font-size="20" fill="#c9d1dc">Masih pakai aturan lama:</text>
+    <text x="836" y="550" font-size="20" fill="#c9d1dc">PA/KPA memilih lanjut,</text>
+    <text x="836" y="580" font-size="20" fill="#c9d1dc">atau batal (sebelum batas</text>
+    <text x="836" y="610" font-size="20" fill="#c9d1dc">akhir penawaran) lalu</text>
+    <text x="836" y="640" font-size="20" fill="#c9d1dc">ulang dengan aturan baru.</text>
+    <text x="836" y="756" font-size="18" fill="#8a94a5">SE angka 6</text>
+
+    <!-- periode 4 -->
+    <rect x="1180" y="370" width="350" height="420" rx="16" fill="#7fd4c1" fill-opacity="0.06" stroke="#2c4a46" stroke-width="2"/>
+    <text x="1206" y="420" font-size="18" font-weight="700" letter-spacing="3" fill="#7fd4c1">PERIODE 4</text>
+    <text x="1206" y="460" font-size="26" font-weight="800" fill="#f2f4f8">Setelah SE terbit</text>
+    <text x="1206" y="520" font-size="20" fill="#c9d1dc">Wajib Perlem 3/2026,</text>
+    <text x="1206" y="550" font-size="20" fill="#c9d1dc">dengan penyesuaian</text>
+    <text x="1206" y="580" font-size="20" fill="#c9d1dc">yang dijelaskan SE.</text>
+    <text x="1206" y="640" font-size="20" fill="#c9d1dc">Beberapa ketentuan</text>
+    <text x="1206" y="670" font-size="20" fill="#c9d1dc">masih ditunda.</text>
+    <text x="1206" y="756" font-size="18" fill="#8a94a5">SE angka 9</text>
+
+    <text x="70" y="845" font-size="20" fill="#8a94a5">Paket yang sudah memakai Perlem 3/2026 dengan penyesuaian berdasarkan penilaian profesional tetap dilanjutkan sampai kontrak berakhir (angka 8).</text>
+  </g>
+</svg>

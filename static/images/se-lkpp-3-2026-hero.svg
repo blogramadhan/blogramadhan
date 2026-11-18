@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Surat Edaran Kepala LKPP 3/2026 tanggal 29 Oktober 2026 tentang penjelasan pelaksanaan Perlem LKPP 3/2026: empat periode masa peralihan, domisili pelaku usaha lokal dibuktikan dengan NIB, afirmasi lokal konstruksi sampai Rp7,5 miliar">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#132238"/><stop offset="0.45" stop-color="#101825"/><stop offset="1" stop-color="#0d0f13"/>
+    </linearGradient>
+    <linearGradient id="azure" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6fb0f5"/><stop offset="1" stop-color="#3987e5"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7fd4c1" stop-opacity="0.22"/><stop offset="1" stop-color="#7fd4c1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+
+  <!-- naskah -> daftar periksa -->
+  <ellipse cx="1230" cy="360" rx="420" ry="350" fill="url(#halo)"/>
+  <g fill="none" stroke-width="3">
+    <rect x="1000" y="170" width="250" height="330" rx="14" stroke="#3987e5" stroke-opacity="0.35"/>
+    <rect x="1130" y="230" width="300" height="380" rx="14" stroke="#7fd4c1" stroke-opacity="0.65" fill="#122a2c" fill-opacity="0.6"/>
+  </g>
+  <g stroke="#3987e5" stroke-opacity="0.3" stroke-width="3" stroke-linecap="round">
+    <line x1="1030" y1="240" x2="1110" y2="240"/>
+    <line x1="1030" y1="280" x2="1100" y2="280"/>
+    <line x1="1030" y1="320" x2="1110" y2="320"/>
+    <line x1="1030" y1="360" x2="1090" y2="360"/>
+  </g>
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-weight="700" font-size="20" fill="#7fd4c1" fill-opacity="0.85">
+    <text x="1166" y="282">DAFTAR PERIKSA</text>
+  </g>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <g fill="none" stroke="#7fd4c1" stroke-width="4">
+      <rect x="1166" y="318" width="30" height="30" rx="6"/>
+      <polyline points="1173,333 1180,341 1192,325"/>
+      <rect x="1166" y="390" width="30" height="30" rx="6"/>
+      <polyline points="1173,405 1180,413 1192,397"/>
+      <rect x="1166" y="462" width="30" height="30" rx="6"/>
+      <polyline points="1173,477 1180,485 1192,469"/>
+      <rect x="1166" y="534" width="30" height="30" rx="6" stroke-opacity="0.45"/>
+    </g>
+    <g stroke="#7fd4c1" stroke-opacity="0.45" stroke-width="3">
+      <line x1="1218" y1="333" x2="1390" y2="333"/>
+      <line x1="1218" y1="405" x2="1370" y2="405"/>
+      <line x1="1218" y1="477" x2="1395" y2="477"/>
+      <line x1="1218" y1="549" x2="1340" y2="549" stroke-opacity="0.25"/>
+    </g>
+  </g>
+
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="100" y="322" font-size="23" font-weight="700" letter-spacing="6" fill="#7fd4c1">PENJELASAN PERLEM 3/2026 · 29 OKTOBER</text>
+    <text x="96" y="432" font-size="76" font-weight="800" letter-spacing="-2.5" fill="#f2f4f8">SURAT EDARAN</text>
+    <text x="96" y="530" font-size="76" font-weight="800" letter-spacing="-2.5" fill="url(#azure)">KEPALA LKPP 3/2026</text>
+    <rect x="100" y="568" width="120" height="5" rx="2.5" fill="#7fd4c1"/>
+    <text x="100" y="638" font-size="31" fill="#a3aebd">Paket mana pakai aturan mana,</text>
+    <text x="100" y="682" font-size="31" fill="#a3aebd">apa yang ditunda, apa yang wajib sekarang.</text>
+
+    <g>
+      <rect x="100" y="748" width="270" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#2c3e57" stroke-width="2"/>
+      <text x="126" y="800" font-size="40" font-weight="800" fill="#6fb0f5">4 periode</text>
+      <text x="126" y="832" font-size="17" fill="#8794a6">masa peralihan</text>
+
+      <rect x="392" y="748" width="290" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#2c3e57" stroke-width="2"/>
+      <text x="418" y="800" font-size="40" font-weight="800" fill="#7fd4c1">NIB</text>
+      <text x="418" y="832" font-size="17" fill="#8794a6">bukti domisili pelaku usaha lokal</text>
+
+      <rect x="704" y="748" width="300" height="118" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#2c3e57" stroke-width="2"/>
+      <text x="730" y="800" font-size="38" font-weight="800" fill="#6fb0f5">Rp7,5 M</text>
+      <text x="730" y="832" font-size="17" fill="#8794a6">batas afirmasi lokal konstruksi</text>
+    </g>
+  </g>
+</svg>

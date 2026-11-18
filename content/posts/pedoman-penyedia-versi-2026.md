@@ -9,6 +9,10 @@ featured_image = "/images/perlem-3-2026-hero.svg"
 toc = true
 +++
 
+> **Pembaruan 18 November 2026:** SE Kepala LKPP 3/2026 (29 Oktober 2026) menunda beberapa ketentuan
+> di bawah — segmentasi usaha konstruksi dan syarat kinerja penyedia — dan merujukkan uang muka ke
+> Perpres. Baca juga [SE Kepala LKPP Nomor 3 Tahun 2026](/posts/se-kepala-lkpp-3-2026/).
+
 Tiga minggu setelah aturan katalog elektronik berganti, giliran pedoman pengadaan melalui penyedia.
 Peraturan LKPP Nomor 3 Tahun 2026 diundangkan 22 September 2026 dan langsung berlaku hari itu juga.
 Perlem 12/2021 beserta perubahannya, Perlem 4/2024, dicabut.

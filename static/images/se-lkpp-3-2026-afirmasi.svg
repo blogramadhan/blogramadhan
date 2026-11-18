@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Tangga afirmasi pelaku usaha lokal untuk tender pekerjaan konstruksi menurut SE Kepala LKPP 3/2026: pagu sampai Rp2 miliar dimulai dari kabupaten/kota, lalu provinsi, lalu nasional atau penunjukan langsung; pagu di atas Rp2 miliar sampai Rp7,5 miliar dimulai dari provinsi lalu nasional; di DKI Jakarta pagu sampai Rp7,5 miliar dimulai dari DKI Jakarta lalu nasional. Satu penawaran lokal yang lulus evaluasi tidak membuat tender gagal">
+  <rect width="1600" height="900" fill="#12171f"/>
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+    <text x="70" y="104" font-size="50" font-weight="800" fill="#f2f4f8">Afirmasi Lokal: Tender Konstruksi</text>
+    <text x="70" y="152" font-size="25" fill="#8a94a5">Tender dibuka berjenjang. Naik satu anak tangga hanya kalau tidak ada penawaran atau tidak ada yang lulus.</text>
+    <rect x="70" y="180" width="96" height="4" rx="2" fill="#3987e5"/>
+
+    <!-- kolom judul -->
+    <text x="70" y="260" font-size="18" font-weight="700" letter-spacing="3" fill="#8a94a5">PAGU ANGGARAN</text>
+    <text x="70" y="340" font-size="30" font-weight="800" fill="#f2f4f8">s.d. Rp2 M</text>
+    <text x="70" y="372" font-size="18" fill="#8a94a5">angka 11 huruf a</text>
+    <text x="70" y="520" font-size="30" font-weight="800" fill="#f2f4f8">&gt; Rp2 M – Rp7,5 M</text>
+    <text x="70" y="552" font-size="18" fill="#8a94a5">angka 11 huruf b</text>
+    <text x="70" y="700" font-size="30" font-weight="800" fill="#f2f4f8">DKI, s.d. Rp7,5 M</text>
+    <text x="70" y="732" font-size="18" fill="#8a94a5">angka 11 huruf c</text>
+
+    <g font-size="22" font-weight="700" text-anchor="middle">
+      <!-- baris 1 -->
+      <rect x="420" y="300" width="250" height="84" rx="14" fill="#7fd4c1" fill-opacity="0.12" stroke="#7fd4c1" stroke-opacity="0.7" stroke-width="2"/>
+      <text x="545" y="350" fill="#7fd4c1">Kabupaten/kota</text>
+      <rect x="740" y="300" width="250" height="84" rx="14" fill="#3987e5" fill-opacity="0.10" stroke="#3987e5" stroke-opacity="0.6" stroke-width="2"/>
+      <text x="865" y="350" fill="#6fb0f5">Provinsi</text>
+      <rect x="1060" y="300" width="470" height="84" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#4a5566" stroke-width="2"/>
+      <text x="1295" y="338" fill="#c9d1dc">Tender nasional, atau</text>
+      <text x="1295" y="366" fill="#c9d1dc" font-weight="400" font-size="19">penunjukan langsung (kab/kota → prov → nasional)</text>
+
+      <!-- baris 2 -->
+      <rect x="420" y="480" width="250" height="84" rx="14" fill="#3987e5" fill-opacity="0.10" stroke="#3987e5" stroke-opacity="0.6" stroke-width="2"/>
+      <text x="545" y="530" fill="#6fb0f5">Provinsi</text>
+      <rect x="740" y="480" width="250" height="84" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#4a5566" stroke-width="2"/>
+      <text x="865" y="530" fill="#c9d1dc">Nasional</text>
+      <rect x="1060" y="480" width="470" height="84" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#4a5566" stroke-width="2"/>
+      <text x="1295" y="518" fill="#c9d1dc">Penunjukan langsung</text>
+      <text x="1295" y="546" fill="#c9d1dc" font-weight="400" font-size="19">(provinsi → nasional), persetujuan PA/KPA</text>
+
+      <!-- baris 3 -->
+      <rect x="420" y="660" width="250" height="84" rx="14" fill="#3987e5" fill-opacity="0.10" stroke="#3987e5" stroke-opacity="0.6" stroke-width="2"/>
+      <text x="545" y="710" fill="#6fb0f5">DKI Jakarta</text>
+      <rect x="740" y="660" width="250" height="84" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#4a5566" stroke-width="2"/>
+      <text x="865" y="710" fill="#c9d1dc">Nasional</text>
+      <rect x="1060" y="660" width="470" height="84" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#4a5566" stroke-width="2"/>
+      <text x="1295" y="698" fill="#c9d1dc">Penunjukan langsung</text>
+      <text x="1295" y="726" fill="#c9d1dc" font-weight="400" font-size="19">(DKI → nasional), persetujuan PA/KPA</text>
+    </g>
+
+    <!-- panah -->
+    <g stroke="#6a7484" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="678" y1="342" x2="728" y2="342"/><polyline points="718,332 730,342 718,352"/>
+      <line x1="998" y1="342" x2="1048" y2="342"/><polyline points="1038,332 1050,342 1038,352"/>
+      <line x1="678" y1="522" x2="728" y2="522"/><polyline points="718,512 730,522 718,532"/>
+      <line x1="998" y1="522" x2="1048" y2="522"/><polyline points="1038,512 1050,522 1038,532"/>
+      <line x1="678" y1="702" x2="728" y2="702"/><polyline points="718,692 730,702 718,712"/>
+      <line x1="998" y1="702" x2="1048" y2="702"/><polyline points="1038,692 1050,702 1038,712"/>
+    </g>
+    <text x="1040" y="270" font-size="17" fill="#8a94a5" text-anchor="end">gagal → evaluasi penyebab → naik satu tingkat</text>
+
+    <text x="70" y="830" font-size="20" fill="#8a94a5">Hanya satu penawaran lokal yang lulus evaluasi? Tender tidak gagal: lanjut klarifikasi dan negosiasi teknis serta harga.</text>
+    <text x="70" y="862" font-size="20" fill="#8a94a5">Tender cepat dan e-purchasing mini kompetisi: satu penawaran saja sudah dianggap gagal, lalu diulang lebih luas atau beralih ke tender.</text>
+  </g>
+</svg>
